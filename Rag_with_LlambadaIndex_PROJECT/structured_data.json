@@ -1,0 +1,973 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-14T22:54:10.969347+00:00",
+  "sources": [
+    {
+      "tool": "local-parser",
+      "root_path": "kiro-steering",
+      "files": [
+        {
+          "path": "kiro-steering/product.md",
+          "last_modified": "2026-07-14T09:52:15.089549+00:00",
+          "hash": "sha256:f1db49456c7078707c6a083703e59985be5107c4814be3bf2a7a0c5320468306"
+        },
+        {
+          "path": "kiro-steering/structure.md",
+          "last_modified": "2026-07-14T09:52:24.824865+00:00",
+          "hash": "sha256:fc4585785a4342377aa6dcd206dc3e13d35ec45faa15f4935fad1027d83c0be8"
+        },
+        {
+          "path": "kiro-steering/tech.md",
+          "last_modified": "2026-07-14T09:52:30.905231+00:00",
+          "hash": "sha256:9335b82d790f3eb1ef56aed6eb235cbd755dc2d13b5f6e13e245d4b90a92eafe"
+        },
+        {
+          "path": "README.md",
+          "last_modified": "2026-07-14T22:38:59.782453+00:00",
+          "hash": "sha256:a020301228c778381d81b92d4dadd970f27b62e97faaeb387e7d6d1ef5b66bc2"
+        },
+        {
+          "path": "project_documentation.md",
+          "last_modified": "2026-07-14T22:52:03.417454+00:00",
+          "hash": "sha256:78a024e99fc528879859b75ce86950c60bb028fa7865779135ad5cac9ae75304"
+        }
+      ]
+    }
+  ],
+  "items": {
+    "decisions": [
+      {
+        "id": "dec-001",
+        "title": "**Socket System**: Manages WebSocket communication",
+        "summary": "**Socket System**: Manages WebSocket communication",
+        "source": {
+          "tool": "local-parser",
+          "file": "kiro-steering/structure.md",
+          "anchor": "",
+          "line_range": [
+            41,
+            41
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.965328+00:00",
+        "tags": [
+          "architecture"
+        ],
+        "type": "decision"
+      },
+      {
+        "id": "dec-002",
+        "title": "**Physics System**: Handles collision detection and movement",
+        "summary": "**Physics System**: Handles collision detection and movement",
+        "source": {
+          "tool": "local-parser",
+          "file": "kiro-steering/structure.md",
+          "anchor": "",
+          "line_range": [
+            42,
+            42
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.965328+00:00",
+        "tags": [
+          "architecture"
+        ],
+        "type": "decision"
+      },
+      {
+        "id": "dec-003",
+        "title": "**Game Object System**: Tracks on-screen objects",
+        "summary": "**Game Object System**: Tracks on-screen objects",
+        "source": {
+          "tool": "local-parser",
+          "file": "kiro-steering/structure.md",
+          "anchor": "",
+          "line_range": [
+            43,
+            43
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.965328+00:00",
+        "tags": [
+          "architecture"
+        ],
+        "type": "decision"
+      },
+      {
+        "id": "dec-004",
+        "title": "**Item/Inventory Systems**: Manage game items and storage",
+        "summary": "**Item/Inventory Systems**: Manage game items and storage",
+        "source": {
+          "tool": "local-parser",
+          "file": "kiro-steering/structure.md",
+          "anchor": "",
+          "line_range": [
+            44,
+            44
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.965328+00:00",
+        "tags": [
+          "architecture"
+        ],
+        "type": "decision"
+      },
+      {
+        "id": "dec-005",
+        "title": "Migrated engine architecture to an Event-Driven workflow in [workflow_engine.py]",
+        "summary": "Migrated engine architecture to an Event-Driven workflow in [workflow_engine.py](workflow_engine.py).",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            4,
+            4
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "architecture"
+        ],
+        "type": "decision"
+      },
+      {
+        "id": "dec-006",
+        "title": "Steps are explicit and typed by events: ingest -> validate_query -> route_search",
+        "summary": "Steps are explicit and typed by events: ingest -> validate_query -> route_search -> run_search -> handle_retry/handle_failure -> format_result.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            5,
+            5
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "architecture"
+        ],
+        "type": "decision"
+      },
+      {
+        "id": "dec-007",
+        "title": "Runtime services (Gemini, Cohere, Pinecone) are initialized lazily to avoid proc",
+        "summary": "Runtime services (Gemini, Cohere, Pinecone) are initialized lazily to avoid process crash at import/startup.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            6,
+            6
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "architecture"
+        ],
+        "type": "decision"
+      },
+      {
+        "id": "dec-008",
+        "title": "Workflow state is minimal and local to the workflow instance; routing decisions ",
+        "summary": "Workflow state is minimal and local to the workflow instance; routing decisions are carried via events.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            7,
+            7
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "architecture"
+        ],
+        "type": "decision"
+      },
+      {
+        "id": "dec-009",
+        "title": "Stage C architecture added: a structured data layer is generated from markdown d",
+        "summary": "Stage C architecture added: a structured data layer is generated from markdown docs via [prepare.py](prepare.py) and queried for list/time/recency questions.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            8,
+            8
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "architecture"
+        ],
+        "type": "decision"
+      },
+      {
+        "id": "dec-010",
+        "title": "Router decision now happens inside workflow using query heuristics to choose bet",
+        "summary": "Router decision now happens inside workflow using query heuristics to choose between `structured` and `semantic` paths.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            9,
+            9
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "architecture"
+        ],
+        "type": "decision"
+      }
+    ],
+    "rules": [
+      {
+        "id": "rule-001",
+        "title": "**Bun**: Primary JavaScript runtime for both client and server development",
+        "summary": "**Bun**: Primary JavaScript runtime for both client and server development",
+        "source": {
+          "tool": "local-parser",
+          "file": "kiro-steering/tech.md",
+          "anchor": "",
+          "line_range": [
+            4,
+            4
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.966328+00:00",
+        "tags": [
+          "policy"
+        ],
+        "type": "rule"
+      },
+      {
+        "id": "rule-002",
+        "title": "**Docker/Podman**: Containerized development environment with compose orchestrat",
+        "summary": "**Docker/Podman**: Containerized development environment with compose orchestration",
+        "source": {
+          "tool": "local-parser",
+          "file": "kiro-steering/tech.md",
+          "anchor": "",
+          "line_range": [
+            5,
+            5
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.966328+00:00",
+        "tags": [
+          "policy"
+        ],
+        "type": "rule"
+      },
+      {
+        "id": "rule-003",
+        "title": "**TypeScript**: Used throughout the codebase for type safety",
+        "summary": "**TypeScript**: Used throughout the codebase for type safety",
+        "source": {
+          "tool": "local-parser",
+          "file": "kiro-steering/tech.md",
+          "anchor": "",
+          "line_range": [
+            6,
+            6
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.966328+00:00",
+        "tags": [
+          "policy"
+        ],
+        "type": "rule"
+      },
+      {
+        "id": "rule-004",
+        "title": "http://127.0.0.1:7860",
+        "summary": "http://127.0.0.1:7860",
+        "source": {
+          "tool": "local-parser",
+          "file": "README.md",
+          "anchor": "",
+          "line_range": [
+            29,
+            29
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.968331+00:00",
+        "tags": [
+          "policy"
+        ],
+        "type": "rule"
+      },
+      {
+        "id": "rule-005",
+        "title": "Not applicable for this backend refactor stage.",
+        "summary": "Not applicable for this backend refactor stage.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            12,
+            12
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "policy"
+        ],
+        "type": "rule"
+      },
+      {
+        "id": "rule-006",
+        "title": "No frontend visual changes were made in this phase.",
+        "summary": "No frontend visual changes were made in this phase.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            13,
+            13
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "policy"
+        ],
+        "type": "rule"
+      }
+    ],
+    "warnings": [],
+    "env_vars": [
+      {
+        "id": "env-001",
+        "name": "AWS",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "kiro-steering/product.md",
+          "anchor": "",
+          "line_range": [
+            17,
+            17
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.964328+00:00"
+      },
+      {
+        "id": "env-002",
+        "name": "CSS",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "kiro-steering/structure.md",
+          "anchor": "",
+          "line_range": [
+            20,
+            20
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.965328+00:00"
+      },
+      {
+        "id": "env-003",
+        "name": "YAML",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "kiro-steering/structure.md",
+          "anchor": "",
+          "line_range": [
+            53,
+            53
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.965328+00:00"
+      },
+      {
+        "id": "env-004",
+        "name": "API",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "kiro-steering/tech.md",
+          "anchor": "",
+          "line_range": [
+            9,
+            9
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.966328+00:00"
+      },
+      {
+        "id": "env-005",
+        "name": "AWS",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "kiro-steering/tech.md",
+          "anchor": "",
+          "line_range": [
+            17,
+            17
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.966328+00:00"
+      },
+      {
+        "id": "env-006",
+        "name": "SDK",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "kiro-steering/tech.md",
+          "anchor": "",
+          "line_range": [
+            17,
+            17
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.966328+00:00"
+      },
+      {
+        "id": "env-007",
+        "name": "AWS",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "kiro-steering/tech.md",
+          "anchor": "",
+          "line_range": [
+            17,
+            17
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.966328+00:00"
+      },
+      {
+        "id": "env-008",
+        "name": "COHERE_API_KEY",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "README.md",
+          "anchor": "",
+          "line_range": [
+            14,
+            14
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.967328+00:00"
+      },
+      {
+        "id": "env-009",
+        "name": "PINECONE_API_KEY",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "README.md",
+          "anchor": "",
+          "line_range": [
+            15,
+            15
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.967328+00:00"
+      },
+      {
+        "id": "env-010",
+        "name": "GEMINI_API_KEY",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "README.md",
+          "anchor": "",
+          "line_range": [
+            16,
+            16
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.967328+00:00"
+      },
+      {
+        "id": "env-011",
+        "name": "PINECONE_INDEX_NAME",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "README.md",
+          "anchor": "",
+          "line_range": [
+            17,
+            17
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.967328+00:00"
+      },
+      {
+        "id": "env-012",
+        "name": "PINECONE_NAMESPACE",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "README.md",
+          "anchor": "",
+          "line_range": [
+            18,
+            18
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.968331+00:00"
+      },
+      {
+        "id": "env-013",
+        "name": "ALLOW_OFFLINE_FALLBACK",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "README.md",
+          "anchor": "",
+          "line_range": [
+            19,
+            19
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.968331+00:00"
+      },
+      {
+        "id": "env-014",
+        "name": "LLM",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "README.md",
+          "anchor": "",
+          "line_range": [
+            33,
+            33
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.968331+00:00"
+      },
+      {
+        "id": "env-015",
+        "name": "SSL",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "README.md",
+          "anchor": "",
+          "line_range": [
+            34,
+            34
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.968331+00:00"
+      },
+      {
+        "id": "env-016",
+        "name": "API",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "README.md",
+          "anchor": "",
+          "line_range": [
+            38,
+            38
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.968331+00:00"
+      },
+      {
+        "id": "env-017",
+        "name": "ALLOW_OFFLINE_FALLBACK",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "README.md",
+          "anchor": "",
+          "line_range": [
+            39,
+            39
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.968331+00:00"
+      },
+      {
+        "id": "env-018",
+        "name": "LLM",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            16,
+            16
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00"
+      },
+      {
+        "id": "env-019",
+        "name": "SSL",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            19,
+            19
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00"
+      },
+      {
+        "id": "env-020",
+        "name": "COHERE_API_KEY",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            20,
+            20
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00"
+      },
+      {
+        "id": "env-021",
+        "name": "GEMINI_API_KEY",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            20,
+            20
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00"
+      },
+      {
+        "id": "env-022",
+        "name": "PINECONE_API_KEY",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            20,
+            20
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00"
+      },
+      {
+        "id": "env-023",
+        "name": "PINECONE_INDEX_NAME",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            20,
+            20
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00"
+      },
+      {
+        "id": "env-024",
+        "name": "PINECONE_NAMESPACE",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            20,
+            20
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00"
+      },
+      {
+        "id": "env-025",
+        "name": "SSL",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            21,
+            21
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00"
+      },
+      {
+        "id": "env-026",
+        "name": "ALLOW_OFFLINE_FALLBACK",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            22,
+            22
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00"
+      },
+      {
+        "id": "env-027",
+        "name": "LLM",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            23,
+            23
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00"
+      },
+      {
+        "id": "env-028",
+        "name": "SSL",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            41,
+            41
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00"
+      },
+      {
+        "id": "env-029",
+        "name": "README",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            42,
+            42
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00"
+      },
+      {
+        "id": "env-030",
+        "name": "README",
+        "summary": "Environment variable reference found in markdown.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            42,
+            42
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00"
+      }
+    ],
+    "changes": [
+      {
+        "id": "chg-001",
+        "title": "2026-07-15: Rewrote [workflow_engine.py](workflow_engine.py) to Event-Driven arc",
+        "summary": "2026-07-15: Rewrote [workflow_engine.py](workflow_engine.py) to Event-Driven architecture with explicit event routing.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            37,
+            37
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "timeline"
+        ],
+        "type": "change"
+      },
+      {
+        "id": "chg-002",
+        "title": "2026-07-15: Added validation and retry logic for low-quality or missing retrieva",
+        "summary": "2026-07-15: Added validation and retry logic for low-quality or missing retrieval results.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            38,
+            38
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "timeline"
+        ],
+        "type": "change"
+      },
+      {
+        "id": "chg-003",
+        "title": "2026-07-15: Implemented lazy runtime initialization and graceful error handling ",
+        "summary": "2026-07-15: Implemented lazy runtime initialization and graceful error handling for external provider failures.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            39,
+            39
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "timeline"
+        ],
+        "type": "change"
+      },
+      {
+        "id": "chg-004",
+        "title": "2026-07-15: Re-created root documentation file [project_documentation.md](projec",
+        "summary": "2026-07-15: Re-created root documentation file [project_documentation.md](project_documentation.md) to preserve project knowledge tracking.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            40,
+            40
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "timeline"
+        ],
+        "type": "change"
+      },
+      {
+        "id": "chg-005",
+        "title": "2026-07-15: Added offline fallback mode for SSL-blocked environments so Gradio r",
+        "summary": "2026-07-15: Added offline fallback mode for SSL-blocked environments so Gradio remains usable and returns retrieval-based answers.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            41,
+            41
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "timeline"
+        ],
+        "type": "change"
+      },
+      {
+        "id": "chg-006",
+        "title": "2026-07-15: Added deployment/run instructions and troubleshooting guide in [READ",
+        "summary": "2026-07-15: Added deployment/run instructions and troubleshooting guide in [README.md](README.md).",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            42,
+            42
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "timeline"
+        ],
+        "type": "change"
+      },
+      {
+        "id": "chg-007",
+        "title": "2026-07-15: Refactored [prepare.py](prepare.py) into reusable structured extract",
+        "summary": "2026-07-15: Refactored [prepare.py](prepare.py) into reusable structured extraction and query utilities.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            43,
+            43
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "timeline"
+        ],
+        "type": "change"
+      },
+      {
+        "id": "chg-008",
+        "title": "2026-07-15: Generated [structured_data.json](structured_data.json) from markdown",
+        "summary": "2026-07-15: Generated [structured_data.json](structured_data.json) from markdown sources.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            44,
+            44
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "timeline"
+        ],
+        "type": "change"
+      },
+      {
+        "id": "chg-009",
+        "title": "2026-07-15: Integrated Stage C routing into [workflow_engine.py](workflow_engine",
+        "summary": "2026-07-15: Integrated Stage C routing into [workflow_engine.py](workflow_engine.py) with explicit `structured` vs `semantic` path selection.",
+        "source": {
+          "tool": "local-parser",
+          "file": "project_documentation.md",
+          "anchor": "",
+          "line_range": [
+            45,
+            45
+          ]
+        },
+        "observed_at": "2026-07-14T22:54:10.969347+00:00",
+        "tags": [
+          "timeline"
+        ],
+        "type": "change"
+      }
+    ]
+  }
+}
