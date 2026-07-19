@@ -1,7 +1,7 @@
 {
   "name": "file-browser-agent",
   "version": "0.1.0",
-  "description": "Windows file browser with an embedded Claude agent chat panel",
+  "description": "Windows file browser with an embedded Gemini agent chat panel",
   "main": "./out/main/index.js",
   "author": "",
   "license": "MIT",
@@ -14,9 +14,7 @@
     "typecheck": "npm run typecheck:node && npm run typecheck:web"
   },
   "dependencies": {
-    "@ai-sdk/anthropic": "^4.0.0",
-    "@anthropic-ai/sdk": "^0.106.0",
-    "ai": "^7.0.2",
+    "@google/genai": "^1.14.0",
     "dotenv": "^17.4.2",
     "fflate": "^0.8.3",
     "react-markdown": "^10.1.0",

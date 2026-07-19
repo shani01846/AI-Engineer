@@ -1,12 +1,21 @@
 import { spawn } from 'node:child_process';
-import type Anthropic from '@anthropic-ai/sdk';
-import { betaTool } from '@anthropic-ai/sdk/helpers/beta/json-schema';
 import type { ChatStreamEvent } from '@shared/types';
 import * as fsService from './fs-service';
-import { uploadFileBlock } from './file-attachments';
 import { waitForApproval } from './command-approvals';
 import { SKILLS_STORE } from './skills';
 type Emit = (e: ChatStreamEvent) => void;
+
+export interface LocalTool {
+  name: string;
+  description: string;
+  inputSchema: {
+    type: 'object';
+    properties: Record<string, unknown>;
+    required?: string[];
+    additionalProperties?: boolean;
+  };
+  run: (input: Record<string, unknown>) => Promise<unknown>;
+}
 
 const msg = (e: unknown): string => (e instanceof Error ? e.message : String(e));
 
@@ -74,7 +83,7 @@ function runCommand(command: string, cwd: string): Promise<string> {
  * `load_file` is the expensive "send me the actual file" escape hatch — it
  * returns the file as native content blocks (PDF/image/text) in the tool result.
  */
-export function makeTools(emit: Emit, client: Anthropic, workDir: string) {
+export function makeTools(emit: Emit, workDir: string): LocalTool[] {
   let seq = 0;
   const start = (name: string, input: unknown): string => {
     const id = `t${Date.now()}_${seq++}`;
@@ -85,7 +94,7 @@ export function makeTools(emit: Emit, client: Anthropic, workDir: string) {
   const fail = (id: string, preview: string): void => emit({ type: 'tool_result', id, ok: false, preview });
 
   return [
-    betaTool({
+    {
       name: 'run_command',
       description:
         "Run a shell command on the user's computer — for example, a script listed in an " +
@@ -93,17 +102,23 @@ export function makeTools(emit: Emit, client: Anthropic, workDir: string) {
         "Commands run from the user's selected folder (the folder containing the " +
         'selected file) unless you pass a different cwd — NOT the skill folder. ' +
         'If a script lives in the skill folder, reference it by its absolute path.',
-      inputSchema: runCommandSchema,
+      inputSchema: runCommandSchema as unknown as LocalTool['inputSchema'],
       run: async ({ command, cwd }) => {
         const id = start('run_command', { command, cwd });
         // Default to the user's working folder — never the skill folder.
-        const dir = cwd || workDir || process.cwd();
+        const cmd = typeof command === 'string' ? command : '';
+        const dir = typeof cwd === 'string' && cwd ? cwd : workDir || process.cwd();
+
+        if (!cmd.trim()) {
+          fail(id, 'missing command');
+          return 'Missing command.';
+        }
 
         // Ask the user to approve, then pause until they click a button.
         emit({
           type: 'command_approval_required',
           id,
-          command,
+          command: cmd,
           cwd: dir,
           explanation: 'The agent wants to run this command.'
         });
@@ -114,22 +129,23 @@ export function makeTools(emit: Emit, client: Anthropic, workDir: string) {
           return 'The user denied this command, so it was not run.';
         }
 
-        const output = await runCommand(command, dir);
+        const output = await runCommand(cmd, dir);
         ok(id, 'done');
         return output;
       }
-    }),
+    },
 
-    betaTool({
+    {
       name: 'get_file_info',
       description:
         'Get metadata (kind, size in bytes, modified time) for a file or folder. ' +
         'Cheap — prefer this over loading file content.',
-      inputSchema: pathSchema,
+      inputSchema: pathSchema as unknown as LocalTool['inputSchema'],
       run: async ({ path }) => {
+        const resolvedPath = typeof path === 'string' ? path : '';
         const id = start('get_file_info', { path });
         try {
-          const st = await fsService.stat(path);
+          const st = await fsService.stat(resolvedPath);
           ok(id, st.kind);
           return JSON.stringify(st);
         } catch (e) {
@@ -137,45 +153,48 @@ export function makeTools(emit: Emit, client: Anthropic, workDir: string) {
           return `Error: ${msg(e)}`;
         }
       }
-    }),
-betaTool({
-  name: "activate_skill",
-  description: "The following skills provide specialized instructions for specific tasks. " +
-    "When a task matches a skill's description, call the activate_skill tool "+
-    "with the skill's name to load its full instructions. " +
-    "== Available Agent Skills ==\n" +
-    SKILLS_STORE.getBulletList(),
-  inputSchema: skillNameSchema,
-  run: async({name}) => {
-    const id = start('activate_skill', { name });
+    },
+    {
+      name: 'activate_skill',
+      description:
+        "The following skills provide specialized instructions for specific tasks. " +
+        "When a task matches a skill's description, call the activate_skill tool " +
+        "with the skill's name to load its full instructions. " +
+        '== Available Agent Skills ==\n' +
+        SKILLS_STORE.getBulletList(),
+      inputSchema: skillNameSchema as unknown as LocalTool['inputSchema'],
+      run: async ({ name }) => {
+        const skillName = typeof name === 'string' ? name : '';
+        const id = start('activate_skill', { name: skillName });
 
-    const skill = SKILLS_STORE.getByName(name)
-    if(!skill){
-      fail(id, `no skill found with name ${name}`);
-      return `No skill named "${name}". Available skills: ${SKILLS_STORE.getBulletList()}. Call activate_skill tool again with one of thes exact names.`;
-    }
+        const skill = SKILLS_STORE.getByName(skillName);
+        if (!skill) {
+          fail(id, `no skill found with name ${skillName}`);
+          return `No skill named "${skillName}". Available skills: ${SKILLS_STORE.getBulletList()}. Call activate_skill again with one of these exact names.`;
+        }
 
-    ok(id, `${name} activated`)
+        ok(id, `${skillName} activated`);
 
-    return  [
-      `Activated skill: ${name}`,
-      `Skill folder (read-only — use absolute paths to run its scripts): ${skill.location}`,
-      `Commands run in: ${workDir} (write your output files here, not in the skill folder).`,
-      '',
-      'Use the following instructions for the rest of this task:',
-      '',
-      skill.body
-    ].join('\n');
-  }
-}),
-    betaTool({
+        return [
+          `Activated skill: ${skillName}`,
+          `Skill folder (read-only — use absolute paths to run its scripts): ${skill.location}`,
+          `Commands run in: ${workDir} (write your output files here, not in the skill folder).`,
+          '',
+          'Use the following instructions for the rest of this task:',
+          '',
+          skill.body
+        ].join('\n');
+      }
+    },
+    {
       name: 'list_dir',
       description: 'List the files and sub-folders of a directory.',
-      inputSchema: pathSchema,
+      inputSchema: pathSchema as unknown as LocalTool['inputSchema'],
       run: async ({ path }) => {
+        const resolvedPath = typeof path === 'string' ? path : '';
         const id = start('list_dir', { path });
         try {
-          const listing = await fsService.listDir(path);
+          const listing = await fsService.listDir(resolvedPath);
           ok(id, `${listing.entries.length} items`);
           return JSON.stringify(
             listing.entries.map((e) => ({ name: e.name, kind: e.kind, sizeBytes: e.sizeBytes }))
@@ -185,18 +204,19 @@ betaTool({
           return `Error: ${msg(e)}`;
         }
       }
-    }),
+    },
 
-    betaTool({
+    {
       name: 'read_text_file',
       description:
         'Read the UTF-8 text of a text file (code, .txt, .md, .json, etc.). ' +
         'Returns an error for binary files like PDF or images — use load_file for those.',
-      inputSchema: pathSchema,
+      inputSchema: pathSchema as unknown as LocalTool['inputSchema'],
       run: async ({ path }) => {
+        const resolvedPath = typeof path === 'string' ? path : '';
         const id = start('read_text_file', { path });
         try {
-          const { text, truncated } = await fsService.readFile(path, TEXT_READ_LIMIT);
+          const { text, truncated } = await fsService.readFile(resolvedPath, TEXT_READ_LIMIT);
           if (text.includes(NULL)) {
             ok(id, 'binary');
             return 'This file is binary and cannot be read as text. Use load_file instead.';
@@ -208,27 +228,31 @@ betaTool({
           return `Error: ${msg(e)}`;
         }
       }
-    }),
+    },
 
-    betaTool({
+    {
       name: 'load_file',
       description:
-        "Load a file's full content into the conversation so you can read it directly — " +
-        'PDFs and images are loaded natively (you can see them). ' +
-        'Use ONLY when metadata and the cheaper tools cannot answer the question; ' +
-        'this is token-expensive, especially for large or scanned documents.',
-      inputSchema: pathSchema,
+        "Load a file's content into the conversation. " +
+        'For Gemini in this app, this currently supports text files only. ' +
+        'Use ONLY when metadata and cheaper tools cannot answer the question.',
+      inputSchema: pathSchema as unknown as LocalTool['inputSchema'],
       run: async ({ path }) => {
+        const resolvedPath = typeof path === 'string' ? path : '';
         const id = start('load_file', { path });
         try {
-          const blocks = await uploadFileBlock(client, path);
-          ok(id, 'uploaded');
-          return blocks;
+          const { text, truncated } = await fsService.readFile(resolvedPath, 1024 * 1024);
+          if (text.includes(NULL)) {
+            fail(id, 'binary unsupported');
+            return 'This file appears binary (PDF/image/etc). In the Gemini mode, load_file currently supports text files only.';
+          }
+          ok(id, truncated ? 'loaded (truncated)' : 'loaded');
+          return truncated ? `${text}\n…[truncated]` : text || '(empty file)';
         } catch (e) {
           fail(id, msg(e));
           return `Error: ${msg(e)}`;
         }
       }
-    })
+    }
   ];
 }

@@ -1,35 +1,45 @@
-import { app, safeStorage } from 'electron';
+import { app } from 'electron';
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
 
-// API key is stored encrypted at rest via Electron safeStorage (DPAPI on
-// Windows). It lives only in the main process and is never sent to the renderer.
-// ANTHROPIC_API_KEY env var takes precedence for dev convenience.
+// API key is kept in-memory for the current app session only.
+// This forces a fresh key prompt on every app restart.
 
 function keyFilePath(): string {
-  return path.join(app.getPath('userData'), 'anthropic.key.enc');
+  return path.join(app.getPath('userData'), 'google-ai-studio.key.enc');
 }
+
+export type ApiKeySource = 'session' | 'none';
+let sessionApiKey: string | null = null;
 
 export async function setApiKey(key: string): Promise<void> {
   const trimmed = key.trim();
-  if (!safeStorage.isEncryptionAvailable()) {
-    throw new Error('OS encryption is not available; cannot store the API key securely.');
-  }
-  const encrypted = safeStorage.encryptString(trimmed);
-  await fs.writeFile(keyFilePath(), encrypted);
+  if (!trimmed) throw new Error('API key cannot be empty.');
+  sessionApiKey = trimmed;
+}
+
+export async function getApiKeyWithSource(): Promise<{ key: string | null; source: ApiKeySource }> {
+  if (sessionApiKey) return { key: sessionApiKey, source: 'session' };
+
+  return { key: null, source: 'none' };
 }
 
 export async function getApiKey(): Promise<string | null> {
-  if (process.env.ANTHROPIC_API_KEY) return process.env.ANTHROPIC_API_KEY;
-  try {
-    const buf = await fs.readFile(keyFilePath());
-    if (!safeStorage.isEncryptionAvailable()) return null;
-    return safeStorage.decryptString(buf);
-  } catch {
-    return null;
-  }
+  const { key } = await getApiKeyWithSource();
+  return key;
 }
 
 export async function hasApiKey(): Promise<boolean> {
   return (await getApiKey()) !== null;
+}
+
+export async function clearStoredApiKey(): Promise<void> {
+  sessionApiKey = null;
+  try {
+    // Cleanup legacy persisted key file from previous versions.
+    await fs.unlink(keyFilePath());
+  } catch (err) {
+    const code = (err as NodeJS.ErrnoException).code;
+    if (code !== 'ENOENT') throw err;
+  }
 }

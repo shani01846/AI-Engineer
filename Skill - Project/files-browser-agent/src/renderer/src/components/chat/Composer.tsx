@@ -21,7 +21,7 @@ export function Composer() {
     <div className="composer-row">
       <textarea
         className="composer composer--multiline"
-        placeholder="Ask Claude about the selected file…"
+        placeholder="Ask Gemini about the selected file…"
         value={text}
         rows={2}
         onChange={(e) => setText(e.target.value)}

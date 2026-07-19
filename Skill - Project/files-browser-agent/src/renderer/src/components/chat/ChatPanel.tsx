@@ -21,6 +21,17 @@ export function ChatPanel() {
   // Subscribe to streaming events once.
   useEffect(() => window.api.onChatEvent(handleEvent), [handleEvent]);
 
+  // If the backend reports a leaked key, force showing the key prompt again.
+  useEffect(() => {
+    return window.api.onChatEvent((e) => {
+      if (e.type !== 'error') return;
+      const lower = e.message.toLowerCase();
+      if (lower.includes('reported as leaked') || lower.includes('flagged as leaked')) {
+        setHasKey(false);
+      }
+    });
+  }, []);
+
   useEffect(() => {
     window.api.hasKey().then(setHasKey);
   }, []);
@@ -47,7 +58,7 @@ export function ChatPanel() {
           <div className="chat-main">
             <div className="panel__body messages" ref={scrollRef}>
               {messages.length === 0 && (
-                <p className="muted">Ask Claude anything about the selected file or folder.</p>
+                <p className="muted">Ask Gemini anything about the selected file or folder.</p>
               )}
               {messages.map((m) =>
                 m.role === 'notice' ? (
@@ -59,7 +70,7 @@ export function ChatPanel() {
                   </div>
                 ) : (
                   <div key={m.id} className={`msg msg--${m.role} ${m.error ? 'msg--error' : ''}`}>
-                    <div className="msg__role">{m.role === 'user' ? 'You' : 'Claude'}</div>
+                    <div className="msg__role">{m.role === 'user' ? 'You' : 'Gemini'}</div>
                     {m.tools && m.tools.length > 0 && (
                       <div className="msg__tools">
                         {m.tools.map((t) => (

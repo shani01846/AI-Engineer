@@ -48,6 +48,7 @@ const api = {
   // secrets
   hasKey: (): Promise<boolean> => ipcRenderer.invoke('secret:hasKey'),
   setKey: (key: string): Promise<void> => ipcRenderer.invoke('secret:setKey', { key }),
+  clearStoredKey: (): Promise<void> => ipcRenderer.invoke('secret:clearStoredKey'),
 
   // skills
   listSkills: (): Promise<SkillInfo[]> => ipcRenderer.invoke('skill:list'),

@@ -1,8 +1,8 @@
 import { ipcMain, BrowserWindow } from 'electron';
 import type { ChatMessage } from '@shared/types';
-import { runChat, abortChat } from '../services/anthropic-chat';
+import { runChat, abortChat } from '../services/gemini-chat';
 import { answerApproval } from '../services/command-approvals';
-import { hasApiKey, setApiKey } from '../secrets';
+import { clearStoredApiKey, hasApiKey, setApiKey } from '../secrets';
 
 /** Registers chat:* and secret:* IPC channels. Call once during app init. */
 export function registerChatHandlers(): void {
@@ -30,4 +30,5 @@ export function registerChatHandlers(): void {
 
   ipcMain.handle('secret:hasKey', () => hasApiKey());
   ipcMain.handle('secret:setKey', (_e, { key }: { key: string }) => setApiKey(key));
+  ipcMain.handle('secret:clearStoredKey', () => clearStoredApiKey());
 }

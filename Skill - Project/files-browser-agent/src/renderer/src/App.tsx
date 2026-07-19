@@ -10,7 +10,7 @@ import { ChatPanel } from './components/chat/ChatPanel';
 
 /**
  * Three-panel layout from SPEC.md.
- * Left = chat (Claude agent), Center = file browser, Right = folder tree.
+ * Left = chat (Gemini agent), Center = file browser, Right = folder tree.
  * M1: the center browser shows real drives + directory contents.
  */
 function App() {

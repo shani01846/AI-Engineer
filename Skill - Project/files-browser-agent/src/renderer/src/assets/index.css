@@ -675,7 +675,7 @@ body {
   white-space: pre-wrap;
 }
 
-/* Rendered Markdown (Claude replies) */
+/* Rendered Markdown (Gemini replies) */
 .markdown {
   text-align: start;
 }
@@ -774,6 +774,16 @@ body {
 .markdown table {
   border-collapse: collapse;
   margin: 0 0 8px;
+}
+
+.markdown img {
+  display: block;
+  max-width: min(100%, 520px);
+  height: auto;
+  margin: 6px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
 }
 
 .markdown th,

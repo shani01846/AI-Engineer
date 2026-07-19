@@ -1,109 +1,87 @@
-# File Browser Agent
+# SKILL-PROJECT (File Browser Agent)
 
-A Windows desktop app (Electron) that works like a file browser, with a chat panel
-in the style of Claude Code. The chat is connected as an agent to your file system
-and automatically receives the selected file or folder as context.
+אפליקציית Electron/React לדפדוף קבצים עם צ'אט Agent מובנה. הצ'אט מחובר להקשר של בחירת קובץ/תיקייה ומסוגל להפעיל כלים (Tools), להריץ פקודות באישור משתמש, ולהשתמש ב-Skills מתוך תיקיית Skills.
 
-The agent can read, list, and inspect files (and write them — with your approval).
-It also supports **Agent Skills**: `SKILL.md` folders that are loaded at runtime to
-extend what the agent can do.
+> מסמך הדרישות המקורי נמצא ב-[SPEC.md](SPEC.md).
 
-> The full product spec, IPC channels, and tools are documented in [SPEC.md](SPEC.md).
+## מה בוצע בפרויקט
 
----
+### 1. מעבר מלא ל-Google Gemini
+- הוחלף החיבור מ-Anthropic ל-Gemini דרך `@google/genai`.
+- הוחלף chat service ל-[src/main/services/gemini-chat.ts](src/main/services/gemini-chat.ts).
+- נשמרה לוגיקת Tool Calling עם הכלים הקיימים ב-[src/main/services/agent-tools.ts](src/main/services/agent-tools.ts).
 
-## Requirements
+### 2. ניהול API Key מעודכן
+- נוספה תמיכה ידידותית בשגיאות `403` ו-`reported as leaked`.
+- נוספה אפשרות `Reset stored key` במסך הזנת מפתח.
+- מצב נוכחי: המפתח נשמר רק לסשן ריצה נוכחי, ולכן בכל פתיחה מחדש של האפליקציה תתבקש הזנה מחדש.
 
-- Node.js 18+
-- Windows (the app is built around Windows drives, `safeStorage`, and Explorer)
-- An Anthropic API key (enter it in the app, or via `.env` — see below)
+קבצים מרכזיים:
+- [src/main/secrets.ts](src/main/secrets.ts)
+- [src/main/ipc/chat-handlers.ts](src/main/ipc/chat-handlers.ts)
+- [src/preload/index.ts](src/preload/index.ts)
+- [src/renderer/src/components/chat/ApiKeyPrompt.tsx](src/renderer/src/components/chat/ApiKeyPrompt.tsx)
 
----
+### 3. תצוגת תמונות ויזואלית בצ'אט
+- במקום להציג רק URL, הצ'אט מציג תמונה inline כאשר מתקבל קישור תמונה ישיר.
+- יש תמיכה גם בסינטקס Markdown של תמונה.
 
-## Install & Run
+קבצים מרכזיים:
+- [src/renderer/src/components/chat/Markdown.tsx](src/renderer/src/components/chat/Markdown.tsx)
+- [src/renderer/src/assets/index.css](src/renderer/src/assets/index.css)
+
+## תמונת דוגמה ותוצר
+
+### תמונה מקומית בתיקיית assets
+![Example Output](assets/example.png)
+
+### URL תוצר לדוגמה
+https://image.pollinations.ai/prompt/A%20vibrant%20green%20apple,%20realistic,%20close-up,%20studio%20lighting,%20detailed%20texture,%20fresh%20and%20crisp,%20white%20background
+
+## Skills שצורפו
+
+| Skill | מיקום | מטרה |
+|---|---|---|
+| summarize-to-readme | [assets/skills/summarize-to-readme/SKILL.md](assets/skills/summarize-to-readme/SKILL.md) | קריאת טקסט ארוך ויצירת README מקצועי ומובנה (כולל טבלאות/דיאגרמות כשצריך) |
+| file-to-image-generator | [assets/skills/file-content-to-image-generator/SKILL.md](assets/skills/file-content-to-image-generator/SKILL.md) | ניתוח מסמך, יצירת prompt מפורט, והפקת URL לתמונה דרך Pollinations |
+
+## הרצה מקומית
+
+דרישות:
+- Windows
+- Node.js 20+
+
+פקודות:
 
 ```bash
-# 1. Install dependencies
 npm i
-
-# 2. Finish installing the Electron binary
-#    Required step — without it the app won't start correctly
 node node_modules/electron/install.js
-
-# 3. Run in development mode
 npm run dev
 ```
 
-> ⚠️ Don't skip step 2. In this setup `npm i` doesn't always fully download the
-> Electron binary, and running `node node_modules/electron/install.js` completes it.
-
-Other scripts:
+פקודות נוספות:
 
 | Command | Description |
-|---------|-------------|
-| `npm run dev` | Run in development mode (HMR) |
-| `npm run build` | Build the app (`electron-vite build`) |
-| `npm start` | Run the build (preview) |
-| `npm run typecheck` | Type-check both main and renderer |
+|---|---|
+| npm run dev | הרצה בפיתוח |
+| npm run build | בניית האפליקציה |
+| npm start | הרצת build |
+| npm run typecheck | בדיקות TypeScript |
 
----
+## מבנה פרויקט (תמציתי)
 
-## Skills folder
-
-Skills are stored in **your user folder**, by default under:
-
-```
-C:\Users\<username>\.file-browser-agent\skills
-```
-
-(for example: `C:\Users\user1\.file-browser-agent\skills`)
-
-Each skill is a sub-folder containing a `SKILL.md` file. When you install a skill
-with the "Add skill" button in the app, it is extracted into this folder.
-
-**Make sure this folder exists, or the app won't work.** You can create it manually:
-
-```powershell
-mkdir "$env:USERPROFILE\.file-browser-agent\skills"
-```
-
-### Changing the folder location
-
-The location is controlled by the `FILE_BROWSER_SKILLS_DIR` environment variable.
-To change it, copy [.env.example](.env.example) to `.env` and edit the value:
-
-```env
-# Defaults to ~/.file-browser-agent/skills when unset.
-FILE_BROWSER_SKILLS_DIR=C:\Users\user1\.file-browser-agent\skills
-```
-
-The `.env` file is loaded when the Electron main process starts.
-
----
-
-## API key
-
-There are two ways to provide the Anthropic API key:
-
-1. **In the app** — on first launch you'll be prompted to enter a key; it is stored
-   encrypted using Electron `safeStorage`.
-2. **Via `.env`** — add `ANTHROPIC_API_KEY=sk-ant-...` to your `.env` file.
-
----
-
-## Tech stack
-
-- **Electron** + **electron-vite** — scaffolding and bundling
-- **React 19** + **TypeScript** — renderer UI
-- **Zustand** — state management
-- **@anthropic-ai/sdk** + **ai** — agent loop and tools
-- **fflate** — extracting skills from zip files
-
-Project structure:
-
-```
+```text
 src/
-├─ main/        ← Main process (Node): IPC, fs-service, agent, secrets, skills
-├─ preload/     ← contextBridge: exposes a small window.api to the renderer
-└─ renderer/    ← React app (chat, browser, tree)
+   main/      Main process: IPC, services, chat agent, skills
+   preload/   contextBridge API ל-renderer
+   renderer/  React UI (chat, file browser, tree)
 ```
+
+## סטאק טכנולוגי
+
+- Electron + electron-vite
+- React 19 + TypeScript
+- Zustand
+- @google/genai
+- react-markdown + remark-gfm
+- fflate

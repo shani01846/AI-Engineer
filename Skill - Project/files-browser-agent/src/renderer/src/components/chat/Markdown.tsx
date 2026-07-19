@@ -1,8 +1,21 @@
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
+function looksLikeImageUrl(value: string): boolean {
+  const t = value.trim();
+  if (!/^https?:\/\//i.test(t)) return false;
+  // Accept common image extensions, optionally followed by query/hash.
+  return /\.(png|jpe?g|gif|webp|bmp|svg)(?:[?#].*)?$/i.test(t);
+}
+
+function toDisplayContent(content: string): string {
+  const t = content.trim();
+  if (!looksLikeImageUrl(t)) return content;
+  return `![Generated image](${t})`;
+}
+
 /**
- * Renders Claude's Markdown replies.
+ * Renders Gemini markdown replies.
  *
  * The wrapper is RTL so Hebrew text aligns to the right, while each block uses
  * `unicode-bidi: plaintext` (see .markdown in index.css) so the Unicode
@@ -11,6 +24,8 @@ import remarkGfm from 'remark-gfm';
  * code) flowing left-to-right without scrambling the surrounding Hebrew.
  */
 export function Markdown({ content }: { content: string }) {
+  const display = toDisplayContent(content);
+
   return (
     <div className="markdown" dir="rtl">
       <ReactMarkdown
@@ -19,10 +34,13 @@ export function Markdown({ content }: { content: string }) {
           // Open links in the user's browser instead of navigating the app.
           a: ({ node, ...props }) => (
             <a {...props} target="_blank" rel="noopener noreferrer" />
+          ),
+          img: ({ node, ...props }) => (
+            <img {...props} loading="lazy" referrerPolicy="no-referrer" />
           )
         }}
       >
-        {content}
+        {display}
       </ReactMarkdown>
     </div>
   );
