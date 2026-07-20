@@ -1,100 +1,135 @@
-import time
+import os
+import re
 from mcp.server.fastmcp import FastMCP
 from playwright.async_api import async_playwright
 
 mcp = FastMCP("Israel-Weather-Automation")
 
-browser = None
-page = None
 pw = None
+browser = None
+context = None
+page = None
+
 
 @mcp.tool()
-async def init_browser():
-    global browser, page, pw
+async def init_browser() -> str:
+    """Initialize Playwright browser context once."""
+    global pw, browser, context, page
+
     if page is None:
         pw = await async_playwright().start()
-        browser = await pw.chromium.launch(headless=True)
-        page = await browser.new_page()
-# 3. הגדרת הכלים (Tools) עבור ה-AI - ללא העברת אובייקט ה-page מבחוץ
+        headless = os.getenv("PLAYWRIGHT_HEADLESS", "false").strip().lower() == "true"
+        browser_channel = (os.getenv("PLAYWRIGHT_BROWSER_CHANNEL") or "chromium").strip().lower()
+
+        # Use regular launch for stability. Persistent profiles can crash/lock on some Windows setups.
+        try:
+            if browser_channel == "chromium":
+                browser = await pw.chromium.launch(headless=headless)
+            else:
+                browser = await pw.chromium.launch(headless=headless, channel=browser_channel)
+        except Exception:
+            browser = await pw.chromium.launch(headless=headless)
+
+        context = await browser.new_context()
+        page = await context.new_page()
+
+    return "browser initialized"
+
+
 @mcp.tool()
-async def open_forecast_page():
+async def open_weather_forecast_israel() -> str:
+    """Open weather2day forecast page for Israel workflow."""
     await init_browser()
-    await page.goto("https://www.weather2day.co.il/forecast")
-    return "page opened"
+    await page.goto("https://www.weather2day.co.il/forecast", wait_until="domcontentloaded")
+    await page.wait_for_timeout(1200)
+    return "opened weather forecast page"
 
 
 @mcp.tool()
-async def search_city(city_name: str):
+async def enter_weather_forecast_city_israel(city_name: str) -> str:
+    """Type city name in weather2day forecast search field."""
     await init_browser()
     await page.locator("#city_search_forecast").fill(city_name)
-    await page.keyboard.press("Enter")
-    await page.wait_for_load_state("networkidle")
-    return f"searched {city_name}"
+    await page.wait_for_timeout(500)
+    # Trigger autocomplete consistently across keyboard layouts.
+    await page.keyboard.press("Space")
+    await page.keyboard.press("Backspace")
+    await page.wait_for_timeout(500)
+    return f"typed city: {city_name}"
+
 
 @mcp.tool()
-async def get_forecast_text() -> str:
+async def select_weather_forecast_city_israel() -> str:
+    """Select first city option from weather2day autocomplete list."""
     await init_browser()
-    text = await page.locator("body").inner_text()
-    return text[:1000]
 
-# הוסיפי את הפונקציות האלו לקובץ func.py הקיים שלך
+    options = page.locator(".ui-menu-item a, .ui-menu-item-wrapper, .pac-item")
+    option_count = await options.count()
+
+    if option_count > 0:
+        try:
+            await options.first.click()
+        except Exception:
+            await page.keyboard.press("ArrowDown")
+            await page.keyboard.press("Enter")
+    else:
+        await page.keyboard.press("ArrowDown")
+        await page.keyboard.press("Enter")
+
+    # Fallback: if still on forecast root, press Enter once more.
+    await page.wait_for_timeout(900)
+    if page.url.rstrip("/") == "https://www.weather2day.co.il/forecast":
+        await page.keyboard.press("Enter")
+
+    await page.wait_for_timeout(1600)
+    return "selected city and submitted search"
+
 
 @mcp.tool()
-async def login_to_gmail():
-    """חיבור ל-Gmail לצורך שליפת הודעות"""
+async def extract_weather_forecast_content_israel() -> str:
+    """Extract and lightly clean current forecast page text for LLM reasoning."""
     await init_browser()
-    # ניווט לתיבת הדואר
-    await page.goto("https://mail.google.com/")
-    # המתנה כדי שתוכלי לבצע Login ידני אם זה לא שמור
-    # בשימוש ב-launch_persistent_context זה יישמר לפעם הבאה
-    await page.wait_for_load_state("networkidle")
-    return "Gmail page loaded"
-
-@mcp.tool()
-async def get_unread_emails_list() -> str:
-    """שליפת 5 ההודעות האחרונות שלא נקראו"""
-    await init_browser()
-    # ניווט ישיר לחיפוש הודעות שלא נקראו
-    await page.goto("https://mail.google.com/mail/u/0/#search/is%3Aunread")
-    await page.wait_for_load_state("networkidle")
-    
-    # המתנה להופעת שורות ההודעות (הקלאס zA מסמן הודעה ב-Gmail)
-    try:
-        await page.wait_for_selector('tr.zA', timeout=10000)
-        email_elements = await page.query_selector_all('tr.zA')
-        
-        results = []
-        # שליפת 5 ההודעות הראשונות
-        for i, el in enumerate(email_elements[:5]):
-            text = await el.inner_text()
-            results.append(f"הודעה {i+1}: {text.strip()}")
-            
-        if not results:
-            return "לא נמצאו הודעות שלא נקראו."
-        return "\n".join(results)
-        
-    except Exception as e:
-        return f"שגיאה בשליפת הודעות: {str(e)}"
-
-import re
-
-@mcp.tool()
-async def get_page_content() -> str:
-    """שליפת וניקוי תוכן הדף הנוכחי כדי שה-AI יוכל לנתח אותו"""
-    if page is None:
-        return "הדפדפן אינו פתוח. אנא הפעילי אותו תחילה."
-
-    # 1. שליפת ה-HTML של ה-body
     content = await page.evaluate("document.body.innerText")
-    
-    # 2. ניקוי בסיסי של רווחים מיותרים ושורות ריקות
-    # הפיכת טקסט לטקסט נקי יותר לקריאת ה-AI
-    cleaned_content = re.sub(r'\n\s*\n', '\n', content)
-    cleaned_content = re.sub(r'\s{2,}', ' ', cleaned_content)
-    
-    # 3. הגבלת כמות הטקסט (כדי לא לחרוג ממכסת הטוקנים של Groq)
-    # אנחנו שומרים את ה-10,000 תווים הראשונים שהם בדרך כלל מספיקים לתוכן המרכזי
-    return cleaned_content[:10000]
-# 4. הרצת שרת ה-MCP (השרת ימשיך לרוץ ויאזין לפקודות)
+    cleaned_content = re.sub(r"\n\s*\n", "\n", content)
+    cleaned_content = re.sub(r"\s{2,}", " ", cleaned_content)
+    return cleaned_content[:12000]
+
+
+@mcp.tool()
+async def close_browser() -> str:
+    """Close browser resources at end of workflow."""
+    global pw, browser, context, page
+
+    if page is not None:
+        try:
+            await page.close()
+        except Exception:
+            pass
+    page = None
+
+    if context is not None:
+        try:
+            await context.close()
+        except Exception:
+            pass
+    context = None
+
+    if browser is not None:
+        try:
+            await browser.close()
+        except Exception:
+            pass
+    browser = None
+
+    if pw is not None:
+        try:
+            await pw.stop()
+        except Exception:
+            pass
+    pw = None
+
+    return "browser closed"
+
+
 if __name__ == "__main__":
     mcp.run()

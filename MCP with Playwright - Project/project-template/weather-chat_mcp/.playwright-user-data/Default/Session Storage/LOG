@@ -1,0 +1,4 @@
+2026/07/19-16:25:58.552 4eb0 Reusing MANIFEST C:\Users\User\Documents\Courses\שנה ב\Ai_Engeenier_Course\MCP with Playwright - Project\project-template\weather-chat_mcp\.playwright-user-data\Default\Session Storage/MANIFEST-000001
+2026/07/19-16:25:58.557 4eb0 Recovering log #3
+2026/07/19-16:25:58.922 4eb0 Level-0 table #3: started
+2026/07/19-16:25:58.923 4eb0 Level-0 table #3: 0 bytes IO error: C:\Users\User\Documents\Courses\שנה ב\Ai_Engeenier_Course\MCP with Playwright - Project\project-template\weather-chat_mcp\.playwright-user-data\Default\Session Storage/000003.ldb: Unable to create writable file (ChromeMethodBFE: 9::NewWritableFile::16)

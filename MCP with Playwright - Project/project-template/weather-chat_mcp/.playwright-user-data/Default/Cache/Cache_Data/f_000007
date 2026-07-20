@@ -1,0 +1,1034 @@
+<!doctype html>
+<html lang="iw" dir="rtl" itemscope itemtype="https://schema.org/WebPage">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>‫Gmail: שירות אימייל בטוח לכולם, שמבוסס על AI‏ | Google Workspace</title>
+    <meta name="description" content="‫Gmail ‒ עכשיו עם Gemini AI. דרכים חדשות לענות לאימיילים, לכתוב ולארגן אותם. גם אתם יכולים ליהנות מאימייל מתקדם ובטוח יותר." />
+    <link rel="canonical" href="https://workspace.google.com/intl/iw/gmail/" />
+    <link href="https://www.gstatic.com/images/branding/googleg_gradient/1x/googleg_gradient_standard_20dp.png" rel="shortcut icon" type="image/png" />
+    <meta name="author" content="Google Workspace" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="‫Gmail: שירות אימייל בטוח לכולם, שמבוסס על AI‏ | Google Workspace" />
+    <meta name="og:description" content="‫Gmail ‒ עכשיו עם Gemini AI. דרכים חדשות לענות לאימיילים, לכתוב ולארגן אותם. גם אתם יכולים ליהנות מאימייל מתקדם ובטוח יותר." />
+    <meta content="https://lh3.googleusercontent.com/T7W1dtnp8wpsoSebZbSCHL-_CRUtr4MCj8IDsbi5hFXZ7cfBbPq5umG5QOOJqbXqcwMTLrGCVeiERi1IfIHnUBXOwqiaj7Y9jLoR=w1200-e365" property="og:image" />
+    <meta property="og:site_name" content="Google Workspace" />
+    <meta property="og:url" content="https://workspace.google.com/intl/iw/gmail/" />
+    <meta property="og:locale" content="iw" />
+    <meta name="twitter:title" content="‫Gmail: שירות אימייל בטוח לכולם, שמבוסס על AI‏ | Google Workspace" />
+    <meta name="twitter:description" content="‫Gmail ‒ עכשיו עם Gemini AI. דרכים חדשות לענות לאימיילים, לכתוב ולארגן אותם. גם אתם יכולים ליהנות מאימייל מתקדם ובטוח יותר." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://lh3.googleusercontent.com/T7W1dtnp8wpsoSebZbSCHL-_CRUtr4MCj8IDsbi5hFXZ7cfBbPq5umG5QOOJqbXqcwMTLrGCVeiERi1IfIHnUBXOwqiaj7Y9jLoR=w1200-e365" />
+    <meta name="twitter:site" content="@googleworkspace" />
+    <meta name="twitter:creator" content="@googleworkspace" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Google+Sans:500,700|Google+Sans+Text:400,500|Roboto:400,500&amp;subset=latin&amp;display=swap" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <script nonce="sy5PKanYsQMyAneVg7b9sA">
+      (function() {
+        var l = !1;
+
+        function o() {
+          if (!l) {
+            l = !0;
+            var n = document.createElement('link');
+            n.rel = 'stylesheet', n.href = 'https://fonts.googleapis.com/css?family=Google+Sans:400|Google+Sans+Text:700|Roboto:700|Noto+Sans+KR&subset=latin&display=swap', document.head.appendChild(n)
+          }
+        } ['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(function(n) {
+          window.addEventListener(n, o, {
+            once: !0
+          })
+        }), setTimeout(o, 3e3)
+      })();
+    </script>
+    <style>
+      @layer legacy, base, component, template;
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://workspace.google.com/gmail/" hreflang="x-default" rel="alternate" />
+    <link href="https://workspace.google.com/gmail/" hreflang="en-US" rel="alternate" />
+    <link href="https://workspace.google.com/intl/en_au/gmail/" hreflang="en-AU" rel="alternate" />
+    <link href="https://workspace.google.com/intl/en_ca/gmail/" hreflang="en-CA" rel="alternate" />
+    <link href="https://workspace.google.com/intl/en_id/gmail/" hreflang="en-ID" rel="alternate" />
+    <link href="https://workspace.google.com/intl/en_ie/gmail/" hreflang="en-IE" rel="alternate" />
+    <link href="https://workspace.google.com/intl/en_my/gmail/" hreflang="en-MY" rel="alternate" />
+    <link href="https://workspace.google.com/intl/en_nz/gmail/" hreflang="en-NZ" rel="alternate" />
+    <link href="https://workspace.google.com/intl/en_ph/gmail/" hreflang="en-PH" rel="alternate" />
+    <link href="https://workspace.google.com/intl/en_in/gmail/" hreflang="en-IN" rel="alternate" />
+    <link href="https://workspace.google.com/intl/en_sg/gmail/" hreflang="en-SG" rel="alternate" />
+    <link href="https://workspace.google.com/intl/en_uk/gmail/" hreflang="en-GB" rel="alternate" />
+    <link href="https://workspace.google.com/intl/en_za/gmail/" hreflang="en-ZA" rel="alternate" />
+    <link href="https://workspace.google.com/intl/es-419/gmail/" hreflang="es-419" rel="alternate" />
+    <link href="https://workspace.google.com/intl/ja/gmail/" hreflang="ja" rel="alternate" />
+    <link href="https://workspace.google.com/intl/da/gmail/" hreflang="da" rel="alternate" />
+    <link href="https://workspace.google.com/intl/de/gmail/" hreflang="de-DE" rel="alternate" />
+    <link href="https://workspace.google.com/intl/de_ch/gmail/" hreflang="de-CH" rel="alternate" />
+    <link href="https://workspace.google.com/intl/es-419_ar/gmail/" hreflang="es-AR" rel="alternate" />
+    <link href="https://workspace.google.com/intl/es-419_mx/gmail/" hreflang="es-MX" rel="alternate" />
+    <link href="https://workspace.google.com/intl/es-419_us/gmail/" hreflang="es-US" rel="alternate" />
+    <link href="https://workspace.google.com/intl/es/gmail/" hreflang="es-ES" rel="alternate" />
+    <link href="https://workspace.google.com/intl/fi/gmail/" hreflang="fi-FI" rel="alternate" />
+    <link href="https://workspace.google.com/intl/fr/gmail/" hreflang="fr-FR" rel="alternate" />
+    <link href="https://workspace.google.com/intl/fr_ca/gmail/" hreflang="fr-CA" rel="alternate" />
+    <link href="https://workspace.google.com/intl/fr_ch/gmail/" hreflang="fr-CH" rel="alternate" />
+    <link href="https://workspace.google.com/intl/hu/gmail/" hreflang="hu-HU" rel="alternate" />
+    <link href="https://workspace.google.com/intl/id/gmail/" hreflang="id-ID" rel="alternate" />
+    <link href="https://workspace.google.com/intl/it/gmail/" hreflang="it-IT" rel="alternate" />
+    <link href="https://workspace.google.com/intl/iw/gmail/" hreflang="iw" rel="alternate" />
+    <link href="https://workspace.google.com/intl/zh-TW/gmail/" hreflang="zh-TW" rel="alternate" />
+    <link href="https://workspace.google.com/intl/zh-HK/gmail/" hreflang="zh-HK" rel="alternate" />
+    <link href="https://workspace.google.com/intl/zh-CN/gmail/" hreflang="zh-CN" rel="alternate" />
+    <link href="https://workspace.google.com/intl/uk/gmail/" hreflang="uk" rel="alternate" />
+    <link href="https://workspace.google.com/intl/vi/gmail/" hreflang="vi" rel="alternate" />
+    <link href="https://workspace.google.com/intl/tr/gmail/" hreflang="tr-TR" rel="alternate" />
+    <link href="https://workspace.google.com/intl/sv/gmail/" hreflang="sv" rel="alternate" />
+    <link href="https://workspace.google.com/intl/th/gmail/" hreflang="th-TH" rel="alternate" />
+    <link href="https://workspace.google.com/intl/ru/gmail/" hreflang="ru-RU" rel="alternate" />
+    <link href="https://workspace.google.com/intl/ko/gmail/" hreflang="ko" rel="alternate" />
+    <link href="https://workspace.google.com/intl/nl/gmail/" hreflang="nl-NL" rel="alternate" />
+    <link href="https://workspace.google.com/intl/no/gmail/" hreflang="no-NO" rel="alternate" />
+    <link href="https://workspace.google.com/intl/pl/gmail/" hreflang="pl-PL" rel="alternate" />
+    <link href="https://workspace.google.com/intl/pt-BR/gmail/" hreflang="pt-BR" rel="alternate" />
+    <link href="https://workspace.google.com/intl/pt-PT/gmail/" hreflang="pt-PT" rel="alternate" />
+    <link href="https://workspace.google.com/intl/cs/gmail/" hreflang="cs" rel="alternate" />
+    <link href="https://workspace.google.com/intl/ar_eg/gmail/" hreflang="ar-EG" rel="alternate" />
+    <link href="https://workspace.google.com/intl/ar/gmail/" hreflang="ar" rel="alternate" />
+    <link href="https://workspace.google.com/intl/fa/gmail/" hreflang="fa" rel="alternate" />
+    <script nonce="sy5PKanYsQMyAneVg7b9sA">
+      window.GWS_GLOBAL_SETTINGS = {
+        "locale": "iw",
+        "country": "iw",
+        "language": "iw",
+        "subid": "iw-iw-xs-aw-z-a-dyn-accounts_wsft!o3",
+        "region": "emea",
+        "hreflang": "iw",
+        "experimentId": "",
+        "experimentName": ""
+      };
+    </script>
+    <script nonce="sy5PKanYsQMyAneVg7b9sA">
+      var cookiepathValue = function() {
+        var pna = location.pathname.split('/');
+        var cp = '/';
+        if (pna.length > 2) {
+          cp = '/' + pna[1] + '/';
+        }
+        return cp;
+      };
+      var uaRef = function() {
+        var dr = document.referrer;
+        var internalPaths = /\/(enterprise|work|edu|a\/signup)\//;
+        var refPathMatch = dr.match(/\..+?\/([^\?#]*)/);
+        var refPath = refPathMatch && refPathMatch.length > 1 ? '/' + refPathMatch[1] : '';
+        var refHostMatch = dr.match(/\/\/(.+?)\//);
+        var refHost = refHostMatch && refHostMatch.length > 1 ? refHostMatch[1] : '';
+        var newRef = '';
+        if (!(refPath.match(internalPaths) && refHost.match(/\.google(?:goro)?\./))) {
+          newRef = dr.split('?')[0];
+        }
+        return newRef;
+      };
+
+      const uaProps = {
+        'uaReferrer': uaRef(),
+        'country': GWS_GLOBAL_SETTINGS.country,
+        'region': GWS_GLOBAL_SETTINGS.region,
+        'language': GWS_GLOBAL_SETTINGS.language,
+        'host': location.host,
+        'hostNoSub': location.host.replace(/^(.+\.)google/g, "google"),
+        'path': location.pathname,
+        'cookiePath': cookiepathValue(),
+        'cookiePathCopy': ['/work/apps/business/', 'intl'],
+        'file': 'index.html',
+        'fileNoSuffix': 'index'
+      };
+
+      const expProps = {
+        'experimentName': GWS_GLOBAL_SETTINGS.experimentName,
+        'experimentID': GWS_GLOBAL_SETTINGS.experimentId
+      };
+
+      dataLayer = GWS_GLOBAL_SETTINGS.experimentId ? [Object.assign(expProps, uaProps)] : [uaProps];
+
+      var originPath = localStorage.getItem('CONTACT_FORM::ORIGIN');
+      if (originPath) {
+        dataLayer[0]['pageNameOverride'] = originPath;
+        dataLayer[0]['gtm.blacklist'] = ['customScripts', 'nonGoogleScripts', 'nonGooglePixels', 'customPixels'];
+      }
+      localStorage.removeItem('CONTACT_FORM::ORIGIN');
+    </script>
+    <link href="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.css" rel="stylesheet" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <script src="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.js" data-glue-cookie-notification-bar-analytics-storage="true" data-glue-cookie-notification-bar-auto-margin-class="footer" data-glue-cookie-notification-bar-category="2A" data-glue-cookie-notification-bar-site-name="Google Workspace" data-glue-cookie-notification-bar-site-id="workspace.google.com" nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script nonce="sy5PKanYsQMyAneVg7b9sA">
+      const {
+        instance,
+        status: CookieNotificationBarStatus
+      } = window.glue.CookieNotificationBar;
+      instance.listen('loaded', (event) => {
+        window.localStorage.setItem('isEeaCountry', event.detail.eea);
+      });
+    </script>
+    <script nonce="sy5PKanYsQMyAneVg7b9sA">
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-Q4J6');
+    </script>
+    <script type="application/ld+json" nonce="sy5PKanYsQMyAneVg7b9sA">
+      {
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+              "@type": "Question",
+              "name": "איך Gmail שומר על האבטחה והפרטיות של התכתובות שלי באימייל?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "מאז ומתמיד Gmail התבסס על אבטחה חזקה. אנחנו עושים את כל המאמצים כדי להגן עליכם מפני ספאם, פישינג ותוכנות זדוניות, ולא מאפשרים להם להגיע לתיבת הדואר הנכנס. יכולות סינון הספאם שלנו, שמבוססות על AI, חוסמות קרוב ל-10 מיליון הודעות ספאם מדי דקה."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "אתם משתמשים בכתובת האימייל שלי כדי להציג לי מודעות?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "לא. גם אם מופיעות מודעות בחשבון Gmail החינמי שלכם, האימיילים נשארים פרטיים. ‫Google לא סורקת ולא מעבדת את התכנים ב-Gmail למטרות פרסום."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "איך אפשר להגביר את האבטחה של האימיילים?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "התכונות של Gmail כבר מספיק מאובטחות לרוב המשתמשים, אבל בחלק מהחשבונות נדרשות שכבות אבטחה נוספות. תוכנית ההגנה המתקדמת של Google מגינה על משתמשים מוכרים בציבור ובעלי מידע רגיש, שנמצאים בסיכון להתקפות סייבר ממוקדות. מידע נוסף"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "מה אם אני רוצה להשתמש ב-Gmail לעבודה או לעסק שלי?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "‫Gmail הוא חלק מ-Google Workspace, שבו אפשר לבחור מבין תוכניות שונות. בנוסף לתכונות המוכרות של Gmail, אתם מקבלים כתובת אימייל עסקית עם דומיין משלכם (‎@yourcompany.com), כתובות אימייל קבוצתיות בלי הגבלה, הבטחה שהשירות יהיה זמין 99.9% מהזמן, שטח אחסון כפול מזה שמקבלים בגרסה האישית של Gmail, אפס מודעות, תמיכה מסביב לשעון, הכלי Google Workspace Sync for Microsoft Outlook ועוד. מידע נוסף"
+              }
+            }
+          ]
+        }
+      }
+    </script>
+    <link rel="preload" href="https://lh3.googleusercontent.com/Ldc3EqSMv2snq4Q9YO0RSKpjleqgOlgrm14NyeJAT9Y-d60_7A_5mwZrsCgIe55gYaetowY3LszOXBFhlXfrVq1UE3keXEJtK_HN=e365-pa-nu-rw-w1132" as="image" fetchpriority="high" media="(min-width: 1024px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/Ldc3EqSMv2snq4Q9YO0RSKpjleqgOlgrm14NyeJAT9Y-d60_7A_5mwZrsCgIe55gYaetowY3LszOXBFhlXfrVq1UE3keXEJtK_HN=e365-pa-nu-rw-w566" as="image" fetchpriority="high" media="(min-width: 1024px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/PSIGlLguPKlDJnw1s-s7qGjlxBJGqgbEahvEJdtV2_mE0v8W_-mlCP56ZuPdtUZeIRwO-lVVZihbrNlgvD31n4JMmOzkRjdlNaWR=e365-pa-nu-rw-w1536" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/PSIGlLguPKlDJnw1s-s7qGjlxBJGqgbEahvEJdtV2_mE0v8W_-mlCP56ZuPdtUZeIRwO-lVVZihbrNlgvD31n4JMmOzkRjdlNaWR=e365-pa-nu-rw-w966" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/wUaUOyzVlSZC-kcx_92dw-wrLwD2HK2GXakbIw6o3aSzxxNmwWRZWPvP_vjocaWjQP483PKGVZ2Gdqh6qkiYJdpwUn50qqv8Ezhx=e365-pa-nu-rw-w720" as="image" fetchpriority="high" media="(max-width: 599px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/wUaUOyzVlSZC-kcx_92dw-wrLwD2HK2GXakbIw6o3aSzxxNmwWRZWPvP_vjocaWjQP483PKGVZ2Gdqh6qkiYJdpwUn50qqv8Ezhx=e365-pa-nu-rw-w528" as="image" fetchpriority="high" media="(max-width: 599px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/rfjvxGoQzWKS1bvxxlQnB9W6ZzY4XJt0hCvuZcKLod6EJ2WIL4K3HYQNkzXCv3ArK1Zl-zaldkMO7HpDehY-eBgySm4PQXfrqm8M0w=e365-pa-nu-rw-w1368" as="image" fetchpriority="high" media="(max-width: 599px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/rfjvxGoQzWKS1bvxxlQnB9W6ZzY4XJt0hCvuZcKLod6EJ2WIL4K3HYQNkzXCv3ArK1Zl-zaldkMO7HpDehY-eBgySm4PQXfrqm8M0w=e365-pa-nu-rw-w684" as="image" fetchpriority="high" media="(max-width: 599px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/TCfCwjzKzdDqrfH4VjlmTWLJbAIZ7FCMtKtfUc0Abd7eVcaZSlXbuN3tX02FrFfjiDlY6n5tAKiZdqx6Yyq3L0EMngEDd3A9HafI=e365-pa-nu-rw-w1368" as="image" fetchpriority="high" media="(max-width: 599px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/TCfCwjzKzdDqrfH4VjlmTWLJbAIZ7FCMtKtfUc0Abd7eVcaZSlXbuN3tX02FrFfjiDlY6n5tAKiZdqx6Yyq3L0EMngEDd3A9HafI=e365-pa-nu-rw-w684" as="image" fetchpriority="high" media="(max-width: 599px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/gcnRxUvUaJhG9ZYULig73HM1mEaagSEiUhPzkCrcL0ZBIgociaD8h02-sm08cT3RzATFFRqCH1XlKvruRZXDQtn7pu6yy39PFDM=e365-pa-nu-rw-w1368" as="image" fetchpriority="high" media="(max-width: 599px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/gcnRxUvUaJhG9ZYULig73HM1mEaagSEiUhPzkCrcL0ZBIgociaD8h02-sm08cT3RzATFFRqCH1XlKvruRZXDQtn7pu6yy39PFDM=e365-pa-nu-rw-w684" as="image" fetchpriority="high" media="(max-width: 599px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/rfjvxGoQzWKS1bvxxlQnB9W6ZzY4XJt0hCvuZcKLod6EJ2WIL4K3HYQNkzXCv3ArK1Zl-zaldkMO7HpDehY-eBgySm4PQXfrqm8M0w=e365-pa-nu-rw-w1368" as="image" fetchpriority="high" media="(min-width: 1024px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/rfjvxGoQzWKS1bvxxlQnB9W6ZzY4XJt0hCvuZcKLod6EJ2WIL4K3HYQNkzXCv3ArK1Zl-zaldkMO7HpDehY-eBgySm4PQXfrqm8M0w=e365-pa-nu-rw-w684" as="image" fetchpriority="high" media="(min-width: 1024px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/KXIMHculTh5UPLhdFlVt3x1mM-UmNr5XA7bwLP0NOpcTPvMNHxomU0kirwkHHM8sSpKZwwgJXdHw0M7E3HJIR1AF7f--_woipuIF=e365-pa-nu-rw-w944" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/KXIMHculTh5UPLhdFlVt3x1mM-UmNr5XA7bwLP0NOpcTPvMNHxomU0kirwkHHM8sSpKZwwgJXdHw0M7E3HJIR1AF7f--_woipuIF=e365-pa-nu-rw-w632" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/inapc0_DHeYpXzemlv53m-Y7Y_gfS118p9l7aSNlXuSQY6yLLbfTqjqMUZcKWPsjnLzQjPHwrenLkeCwpJiY6gOKhgJGtYSxhjc=e365-pa-nu-rw-w608" as="image" fetchpriority="high" media="(max-width: 599px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/inapc0_DHeYpXzemlv53m-Y7Y_gfS118p9l7aSNlXuSQY6yLLbfTqjqMUZcKWPsjnLzQjPHwrenLkeCwpJiY6gOKhgJGtYSxhjc=e365-pa-nu-rw-w527" as="image" fetchpriority="high" media="(max-width: 599px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/TCfCwjzKzdDqrfH4VjlmTWLJbAIZ7FCMtKtfUc0Abd7eVcaZSlXbuN3tX02FrFfjiDlY6n5tAKiZdqx6Yyq3L0EMngEDd3A9HafI=e365-pa-nu-rw-w1368" as="image" fetchpriority="high" media="(min-width: 1024px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/TCfCwjzKzdDqrfH4VjlmTWLJbAIZ7FCMtKtfUc0Abd7eVcaZSlXbuN3tX02FrFfjiDlY6n5tAKiZdqx6Yyq3L0EMngEDd3A9HafI=e365-pa-nu-rw-w684" as="image" fetchpriority="high" media="(min-width: 1024px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/2xdT6p7Pk1h9Qy05AW63VbBJu8zcU5GuW8LP-v-62bJ28NF0_HxSErkssOOdwJooW6YcQwAhwOJNQHEPi2svTvvwMWlEmTBCcrI=e365-pa-nu-rw-w944" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/2xdT6p7Pk1h9Qy05AW63VbBJu8zcU5GuW8LP-v-62bJ28NF0_HxSErkssOOdwJooW6YcQwAhwOJNQHEPi2svTvvwMWlEmTBCcrI=e365-pa-nu-rw-w632" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/5JYpqfAicJ0Qn8idomu-PYDcWbmmXNH4tk13oHjZARNSjpf75kgxsqdzI99Qm216kKYKM2wH6OTr9BTmHYaCU0hMYMo6-Xv7qm3yIg=e365-pa-nu-rw-w608" as="image" fetchpriority="high" media="(max-width: 599px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/5JYpqfAicJ0Qn8idomu-PYDcWbmmXNH4tk13oHjZARNSjpf75kgxsqdzI99Qm216kKYKM2wH6OTr9BTmHYaCU0hMYMo6-Xv7qm3yIg=e365-pa-nu-rw-w527" as="image" fetchpriority="high" media="(max-width: 599px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-7LhoZoRSU32Sn20yI8213k-92d83d07ba564bddac887d329c3589c2-Vector.svg" as="image" fetchpriority="high" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/gcnRxUvUaJhG9ZYULig73HM1mEaagSEiUhPzkCrcL0ZBIgociaD8h02-sm08cT3RzATFFRqCH1XlKvruRZXDQtn7pu6yy39PFDM=e365-pa-nu-rw-w1368" as="image" fetchpriority="high" media="(min-width: 1024px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/gcnRxUvUaJhG9ZYULig73HM1mEaagSEiUhPzkCrcL0ZBIgociaD8h02-sm08cT3RzATFFRqCH1XlKvruRZXDQtn7pu6yy39PFDM=e365-pa-nu-rw-w684" as="image" fetchpriority="high" media="(min-width: 1024px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/b9C0sXYQVeiZdtI6GzmjIDgA6Kq120WxiNiCi4vK6d5Qq2ZotsfoJIX49pEfHabex2zx-ObsELqKvVjERe1lTThrOQSuM58Gjio=e365-pa-nu-rw-w944" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/b9C0sXYQVeiZdtI6GzmjIDgA6Kq120WxiNiCi4vK6d5Qq2ZotsfoJIX49pEfHabex2zx-ObsELqKvVjERe1lTThrOQSuM58Gjio=e365-pa-nu-rw-w632" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/CS_SeuufBeMXO_TS_SvxlMViLUkq7dTB4sg7WwPOyVyeG5HCqreNQu42w8tcj0XVU9Gxm0hMZUNrVK7x5EExVj1FRoCtWgJz_4M=e365-pa-nu-rw-w608" as="image" fetchpriority="high" media="(max-width: 599px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/CS_SeuufBeMXO_TS_SvxlMViLUkq7dTB4sg7WwPOyVyeG5HCqreNQu42w8tcj0XVU9Gxm0hMZUNrVK7x5EExVj1FRoCtWgJz_4M=e365-pa-nu-rw-w527" as="image" fetchpriority="high" media="(max-width: 599px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/BR_gXTPBQrwb4aTeTpBYAMSpl_xOZieCCxX_5Awuir3UOuPsWK1J-zdPZyIEZAxwLO6tnX_Ea_3wKAnqkEYn0Wj9zGnt6m4ZqAI=e365-pa-nu-rw-w1368" as="image" fetchpriority="high" media="(min-width: 1024px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/BR_gXTPBQrwb4aTeTpBYAMSpl_xOZieCCxX_5Awuir3UOuPsWK1J-zdPZyIEZAxwLO6tnX_Ea_3wKAnqkEYn0Wj9zGnt6m4ZqAI=e365-pa-nu-rw-w684" as="image" fetchpriority="high" media="(min-width: 1024px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/TjTAVBYWc7dFWaZh5G9wXNVeznp7bm6DvJ-XNcC05YNYgfu1FHHE9TjksiYtG1nkT7u1KqHj6FczrfHjoGubKWQgl-Rz00itCLb1=e365-pa-nu-rw-w945" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/TjTAVBYWc7dFWaZh5G9wXNVeznp7bm6DvJ-XNcC05YNYgfu1FHHE9TjksiYtG1nkT7u1KqHj6FczrfHjoGubKWQgl-Rz00itCLb1=e365-pa-nu-rw-w632" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/f1FCowp2z17NBacYzg905JXHLqg1dyuxVMGhbkvBmwWOtcesAP5hC7b-yf_7rxgBB0gTzjCvEzd3g6DGX9-PTrwJoweFAMoSe9s=e365-pa-nu-rw-w720" as="image" fetchpriority="high" media="(max-width: 599px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/f1FCowp2z17NBacYzg905JXHLqg1dyuxVMGhbkvBmwWOtcesAP5hC7b-yf_7rxgBB0gTzjCvEzd3g6DGX9-PTrwJoweFAMoSe9s=e365-pa-nu-rw-w527" as="image" fetchpriority="high" media="(max-width: 599px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/anHngb0tJ-B9-VaFjDnxWDKl-RpamfssMXb1d6KmM0b_kt6kArsV309b_ig_qGifZq8Zfp2o4uCznEqGQiVVuI2MCkHBRbPffo2s=e365-pa-nu-rw-w1368" as="image" fetchpriority="high" media="(min-width: 1024px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/anHngb0tJ-B9-VaFjDnxWDKl-RpamfssMXb1d6KmM0b_kt6kArsV309b_ig_qGifZq8Zfp2o4uCznEqGQiVVuI2MCkHBRbPffo2s=e365-pa-nu-rw-w684" as="image" fetchpriority="high" media="(min-width: 1024px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/_o9uwKnQegmqapAsOCw1dscBCSNOgEE05ViYQi3onu7R5K-kn3F5g3dYFUUsoyDCAR0wEHCSTPInwHiHZO601gYixDJ6yuGj8DwStQ=e365-pa-nu-rw-w944" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/_o9uwKnQegmqapAsOCw1dscBCSNOgEE05ViYQi3onu7R5K-kn3F5g3dYFUUsoyDCAR0wEHCSTPInwHiHZO601gYixDJ6yuGj8DwStQ=e365-pa-nu-rw-w632" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/YrylOA0gU0IjQ9CbRQda_cAshA-BNAEB_sTGRY1yGQSy3_u8zVqAVhKqh9fWWXEOZRdI5VclOYD7lgsuCWhLoFudHIGeRMk2Cns=e365-pa-nu-rw-w608" as="image" fetchpriority="high" media="(max-width: 599px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/YrylOA0gU0IjQ9CbRQda_cAshA-BNAEB_sTGRY1yGQSy3_u8zVqAVhKqh9fWWXEOZRdI5VclOYD7lgsuCWhLoFudHIGeRMk2Cns=e365-pa-nu-rw-w527" as="image" fetchpriority="high" media="(max-width: 599px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/j73UcrFihOUZ-WL-asfh7KViJVGHmWyf8t8qC_PPEXUxpFvBo72oh5IgVUgqpJP7_tbu__rmcvI7QNOy40N7CEs2DraTv6Xl7cY=e365-pa-nu-rw-w1368" as="image" fetchpriority="high" media="(min-width: 1024px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/j73UcrFihOUZ-WL-asfh7KViJVGHmWyf8t8qC_PPEXUxpFvBo72oh5IgVUgqpJP7_tbu__rmcvI7QNOy40N7CEs2DraTv6Xl7cY=e365-pa-nu-rw-w684" as="image" fetchpriority="high" media="(min-width: 1024px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/E2B-If-44mKRaB-EuLhzCmMlmAOgzKYDSBYlDNJx39Ft-KCtVt5eDR9Yn8F_4HlFqR9V2g_9ea5E1ahjHTiJvp4waoxB6047LMR4=e365-pa-nu-rw-w944" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/E2B-If-44mKRaB-EuLhzCmMlmAOgzKYDSBYlDNJx39Ft-KCtVt5eDR9Yn8F_4HlFqR9V2g_9ea5E1ahjHTiJvp4waoxB6047LMR4=e365-pa-nu-rw-w632" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/kpWr95tuV8tFDQ3zN4e02OPtjqoS_OFDBMNFEhrWtOfzeouoJylllG55i_4FNi7tDeZedjmkZwhwG5qfpHKOQnz34eeojGpB8dE=e365-pa-nu-rw-w720" as="image" fetchpriority="high" media="(max-width: 599px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/kpWr95tuV8tFDQ3zN4e02OPtjqoS_OFDBMNFEhrWtOfzeouoJylllG55i_4FNi7tDeZedjmkZwhwG5qfpHKOQnz34eeojGpB8dE=e365-pa-nu-rw-w527" as="image" fetchpriority="high" media="(max-width: 599px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/8cHO7WaYQsOObHs3PA0_7Au93UCIvvRzCoYA6XSZMd1W3TGBRQtJgroL6ruN_4TmIuyiCWqgwlhZz4IZaZfcVc3Q9o-Eykla3VLcOA=e365-pa-nu-rw-w1368" as="image" fetchpriority="high" media="(min-width: 1024px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/8cHO7WaYQsOObHs3PA0_7Au93UCIvvRzCoYA6XSZMd1W3TGBRQtJgroL6ruN_4TmIuyiCWqgwlhZz4IZaZfcVc3Q9o-Eykla3VLcOA=e365-pa-nu-rw-w684" as="image" fetchpriority="high" media="(min-width: 1024px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/TGIWw3Mf1gLXkS7pMdY8SAvsaKhs3Atd9swXXP0DbLDCEynRgs6CEJm5pVCpqJoG08qVWIF1WjR-ehnZ-KRKTCpGMgM39NOeMBhT=e365-pa-nu-rw-w944" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/TGIWw3Mf1gLXkS7pMdY8SAvsaKhs3Atd9swXXP0DbLDCEynRgs6CEJm5pVCpqJoG08qVWIF1WjR-ehnZ-KRKTCpGMgM39NOeMBhT=e365-pa-nu-rw-w632" as="image" fetchpriority="high" media="(min-width: 600px) and (max-width: 1023px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/RbClFf663t2-x5CoRLt_MAvt6nK6hy27j-I389v9JLO7ZCNMok9dk94Lj1xwLx9A3waBpds4Q3fstY5L8sGJxUXl73xGOquTBGJ8DA=e365-pa-nu-rw-w720" as="image" fetchpriority="high" media="(max-width: 599px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/RbClFf663t2-x5CoRLt_MAvt6nK6hy27j-I389v9JLO7ZCNMok9dk94Lj1xwLx9A3waBpds4Q3fstY5L8sGJxUXl73xGOquTBGJ8DA=e365-pa-nu-rw-w527" as="image" fetchpriority="high" media="(max-width: 599px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/BR_gXTPBQrwb4aTeTpBYAMSpl_xOZieCCxX_5Awuir3UOuPsWK1J-zdPZyIEZAxwLO6tnX_Ea_3wKAnqkEYn0Wj9zGnt6m4ZqAI=e365-pa-nu-rw-w1368" as="image" fetchpriority="high" media="(max-width: 599px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/BR_gXTPBQrwb4aTeTpBYAMSpl_xOZieCCxX_5Awuir3UOuPsWK1J-zdPZyIEZAxwLO6tnX_Ea_3wKAnqkEYn0Wj9zGnt6m4ZqAI=e365-pa-nu-rw-w684" as="image" fetchpriority="high" media="(max-width: 599px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/anHngb0tJ-B9-VaFjDnxWDKl-RpamfssMXb1d6KmM0b_kt6kArsV309b_ig_qGifZq8Zfp2o4uCznEqGQiVVuI2MCkHBRbPffo2s=e365-pa-nu-rw-w1368" as="image" fetchpriority="high" media="(max-width: 599px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/anHngb0tJ-B9-VaFjDnxWDKl-RpamfssMXb1d6KmM0b_kt6kArsV309b_ig_qGifZq8Zfp2o4uCznEqGQiVVuI2MCkHBRbPffo2s=e365-pa-nu-rw-w684" as="image" fetchpriority="high" media="(max-width: 599px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/j73UcrFihOUZ-WL-asfh7KViJVGHmWyf8t8qC_PPEXUxpFvBo72oh5IgVUgqpJP7_tbu__rmcvI7QNOy40N7CEs2DraTv6Xl7cY=e365-pa-nu-rw-w1368" as="image" fetchpriority="high" media="(max-width: 599px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/j73UcrFihOUZ-WL-asfh7KViJVGHmWyf8t8qC_PPEXUxpFvBo72oh5IgVUgqpJP7_tbu__rmcvI7QNOy40N7CEs2DraTv6Xl7cY=e365-pa-nu-rw-w684" as="image" fetchpriority="high" media="(max-width: 599px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/8cHO7WaYQsOObHs3PA0_7Au93UCIvvRzCoYA6XSZMd1W3TGBRQtJgroL6ruN_4TmIuyiCWqgwlhZz4IZaZfcVc3Q9o-Eykla3VLcOA=e365-pa-nu-rw-w1368" as="image" fetchpriority="high" media="(max-width: 599px) and (min-resolution: 2dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="preload" href="https://lh3.googleusercontent.com/8cHO7WaYQsOObHs3PA0_7Au93UCIvvRzCoYA6XSZMd1W3TGBRQtJgroL6ruN_4TmIuyiCWqgwlhZz4IZaZfcVc3Q9o-Eykla3VLcOA=e365-pa-nu-rw-w684" as="image" fetchpriority="high" media="(max-width: 599px) and (max-resolution: 1.99dppx)" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="stylesheet" href="/assets/DCmj3Mip.css" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="stylesheet" href="/assets/DKbE2S74.css" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="stylesheet" href="/assets/4YOAvo23.css" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="stylesheet" href="/assets/Bgq2PlYv.css" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="stylesheet" href="/assets/DV4LvBRk.css" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="stylesheet" href="/assets/B3urgusE.css" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="stylesheet" href="/assets/BoId0ZMe.css" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <link rel="stylesheet" href="/assets/Cq_qN0Gt.css" nonce="sy5PKanYsQMyAneVg7b9sA" />
+    <script type="module" src="/assets/Bdody8o02.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/N_qxqBfI.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/BHbPPzKl2.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/BWdxQ9vt.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/ByuriiX6.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/Dv8LJzNH.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/DbRkqkba.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/Dc0K8oO6.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/sZJRQGWH2.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/gDNT_UYY.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/BhXi8zg6.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/Cw5aTQ58.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/CEJ-Npoi.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/BEXHOy4k.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/Dolu6bAE.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/TpfQjcdr.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/DatwDKmy.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+    <script type="module" src="/assets/CsQy1yJr.min.js" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+  </head>
+
+  <body data-theme="light">
+    <div id="root" class="base_main"><gws-header>
+        <header simple-header="true" data-show-footer-action-bar="true" class="TemplateHeader_header TemplateHeader_header--simple">
+          <div class="TemplateHeader_headerContent TemplateHeader_headerDesktopNav TemplateHeader_headerAllNav">
+            <div class="TemplateHeader_headerLogos"><a href="/intl/iw/gmail/" data-g-action="header logo click" data-g-event="gmail_asw: globalnav" data-g-label="/intl/iw/" event="autotrack-data-g" aria-label="הדף Google Gmail ייפתח" class="TemplateHeader_headerLogo--gmail"><img src="https://www.gstatic.com/images/branding/productlogos/gmail_2026/v2/web/192px.svg" alt="Gmail" loading="lazy" /><span>Gmail</span></a></div>
+            <div class="TemplateHeader_headerBackground"></div>
+            <nav class="TemplateHeader_headerNav"><a href="#main" class="TemplateHeader_headerSkipDesktop">Skip to main content</a></nav>
+            <div class="TemplateHeader_headerAside"><span class="gws-button"><a href="/intl/iw/products/gmail/" data-g-event="gmail_asw: globalnav" data-g-action="for work" data-g-label="/intl/iw/products/gmail/" data-uj-def="globalnav" aria-label="לדף המוצר של Gmail" class="button button--small button--low button--rtl"><span class="button__content">לעבודה</span></a></span><span class="gws-button breakpoints--mobile"><a href="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp&amp;ec=asw-gmail-[module]-create&amp;source=gafb-gmail_asw-globalnav-iw&amp;hl=iw&amp;ga_region=amer&amp;ga_country=us&amp;ga_lang=iw" target="_blank" rel="noopener noreferrer" data-g-event="gmail_asw: globalnav" data-g-action="sign in" data-g-label="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp&amp;ec=asw-gmail-[module]-create" data-uj-def="globalnav" aria-label="הרשמה לחשבון Gmail " class="button button--small button--rtl"><span class="button__content">להתקנת Gmail</span></a></span><span class="gws-button breakpoints--mobile breakpoints--tablet breakpoints--desktop"><a href="https://accounts.google.com/AccountChooser/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Fservice%3Dmail%26flowName%3DGlifWebSignIn%26flowEntry%3DAccountChooser%26ec%3Dasw-gmail-globalnav-signin" target="_blank" rel="noopener noreferrer" data-g-event="gmail_asw: globalnav" data-g-action="sign in" data-g-label="https://accounts.google.com/AccountChooser/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Fservice%3Dmail%26flowName%3DGlifWebSignIn%26flowEntry%3DAccountChooser%26ec%3Dasw-gmail-globalnav-signin" data-uj-def="globalnav" aria-label="כניסה ל-Gmail" class="button button--small button--medium button--rtl"><span class="button__content">כניסה לחשבון</span></a></span><dropdown-button-wrapper class="dropdown-wrapper breakpoints--tablet breakpoints--desktop">
+                <div class="dropdown-gws-button variant-primary size-small align-right valign-below">
+                  <details>
+                    <summary aria-label="יצירת חשבון" data-g-event="gmail_asw: globalnav" data-g-action="create an account" data-g-label="in-page interaction"><span class="button-label">יצירת חשבון</span><span class="button-divider"></span><span class="button-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="chevron">
+                          <path d="M10 13.3333L5 8.33333H15L10 13.3333Z" fill="currentColor"></path>
+                        </svg></span></summary>
+                    <nav role="menu" class="dropdown-menu"><a href="https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp&amp;ec=asw-gmail-[module]-create&amp;theme=glif&amp;source=gafb-gmail_asw-globalnav-iw&amp;hl=iw&amp;ga_region=amer&amp;ga_country=us&amp;ga_lang=iw" role="menuitem" aria-label="‫Gmail – לשימוש אישי" data-g-event="gmail_asw: globalnav" data-g-action="https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https%3a%2f%2fmail.google.com%2fmail%2f&amp;flowname=glifwebsignin&amp;flowentry=signup&amp;ec=asw-gmail-%5bmodule%5d-create&amp;theme=glif" data-g-label="https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https://mail.google.com/mail/&amp;flowname=glifwebsignin&amp;flowentry=signup&amp;ec=asw-gmail-[module]-create&amp;theme=glif">לשימוש פרטי</a><a href="https://workspace.google.com/business/signup/newbusiness?xsell=google_accounts&amp;source=gafb-gmail_asw-globalnav-iw&amp;back=https%3A%2F%2Faccounts.google.com%2FSignUp%3Fec%3Dasw-gmail-[module]-create2%26biz%3Dtrue&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowEntry=SignUp&amp;flowName=GlifWebSignIn&amp;service=mail&amp;theme=glif&amp;ec=asw-gmail-[module]-create2&amp;hl=iw&amp;ga_region=amer&amp;ga_country=us&amp;ga_lang=iw" role="menuitem" aria-label="‫Gmail – לשימוש בעבודה או בעסק" data-g-event="gmail_asw: globalnav" data-g-action="https://workspace.google.com/business/signup/newbusiness?xsell=google_accounts&amp;source=gafb-gmailasw-%5bmodule%5d-%5blanguage%5d&amp;back=https%3a%2f%2faccounts.google.com%2fsignup%3fec%3dasw-gmail-%5bmodule%5d-create2%26biz%3dtrue&amp;continue=https%3a%2f%2fmail.google.com%2fmail%2f&amp;flowentry=signup&amp;flowname=glifwebsignin&amp;service=mail&amp;theme=glif&amp;ec=asw-gmail-%5bmodule%5d-create2" data-g-label="https://workspace.google.com/business/signup/newbusiness?xsell=google_accounts&amp;source=gafb-gmailasw-[module]-[language]&amp;back=https%3a%2f%2faccounts.google.com%2fsignup%3fec%3dasw-gmail-[module]-create2%26biz%3dtrue&amp;continue=https://mail.google.com/mail/&amp;flowentry=signup&amp;flowname=glifwebsignin&amp;service=mail&amp;theme=glif&amp;ec=asw-gmail-[module]-create2">לשימוש בעבודה או בעסק</a></nav>
+                  </details>
+                </div>
+              </dropdown-button-wrapper></div>
+            <div class="WispParticle_wispParticleContainer">
+              <div data-slot-id="wisp-account-particle"></div>
+            </div>
+          </div><gws-gmail-app-header-toggle></gws-gmail-app-header-toggle>
+        </header><gws-action-bar visible="true"><dropdown-button-wrapper class="dropdown-wrapper breakpoints--tablet breakpoints--desktop">
+            <div class="dropdown-gws-button variant-primary size-normal align-right valign-above">
+              <details>
+                <summary aria-label="יצירת חשבון" data-g-event="gmail_asw: globalnav" data-g-action="create an account" data-g-label="in-page interaction"><span class="button-label">יצירת חשבון</span><span class="button-divider"></span><span class="button-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="chevron">
+                      <path d="M10 13.3333L5 8.33333H15L10 13.3333Z" fill="currentColor"></path>
+                    </svg></span></summary>
+                <nav role="menu" class="dropdown-menu"><a href="https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp&amp;ec=asw-gmail-[module]-create&amp;theme=glif&amp;source=gafb-gmail_asw-globalnav-iw&amp;hl=iw&amp;ga_region=amer&amp;ga_country=us&amp;ga_lang=iw" role="menuitem" aria-label="‫Gmail – לשימוש אישי" data-g-event="gmail_asw: globalnav" data-g-action="https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https%3a%2f%2fmail.google.com%2fmail%2f&amp;flowname=glifwebsignin&amp;flowentry=signup&amp;ec=asw-gmail-%5bmodule%5d-create&amp;theme=glif" data-g-label="https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https://mail.google.com/mail/&amp;flowname=glifwebsignin&amp;flowentry=signup&amp;ec=asw-gmail-[module]-create&amp;theme=glif">לשימוש פרטי</a><a href="https://workspace.google.com/business/signup/newbusiness?xsell=google_accounts&amp;source=gafb-gmail_asw-globalnav-iw&amp;back=https%3A%2F%2Faccounts.google.com%2FSignUp%3Fec%3Dasw-gmail-[module]-create2%26biz%3Dtrue&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowEntry=SignUp&amp;flowName=GlifWebSignIn&amp;service=mail&amp;theme=glif&amp;ec=asw-gmail-[module]-create2&amp;hl=iw&amp;ga_region=amer&amp;ga_country=us&amp;ga_lang=iw" role="menuitem" aria-label="‫Gmail – לשימוש בעבודה או בעסק" data-g-event="gmail_asw: globalnav" data-g-action="https://workspace.google.com/business/signup/newbusiness?xsell=google_accounts&amp;source=gafb-gmailasw-%5bmodule%5d-%5blanguage%5d&amp;back=https%3a%2f%2faccounts.google.com%2fsignup%3fec%3dasw-gmail-%5bmodule%5d-create2%26biz%3dtrue&amp;continue=https%3a%2f%2fmail.google.com%2fmail%2f&amp;flowentry=signup&amp;flowname=glifwebsignin&amp;service=mail&amp;theme=glif&amp;ec=asw-gmail-%5bmodule%5d-create2" data-g-label="https://workspace.google.com/business/signup/newbusiness?xsell=google_accounts&amp;source=gafb-gmailasw-[module]-[language]&amp;back=https%3a%2f%2faccounts.google.com%2fsignup%3fec%3dasw-gmail-[module]-create2%26biz%3dtrue&amp;continue=https://mail.google.com/mail/&amp;flowentry=signup&amp;flowname=glifwebsignin&amp;service=mail&amp;theme=glif&amp;ec=asw-gmail-[module]-create2">לשימוש בעבודה או בעסק</a></nav>
+              </details>
+            </div>
+          </dropdown-button-wrapper><span class="gws-button breakpoints--mobile breakpoints--tablet breakpoints--desktop"><a href="https://accounts.google.com/AccountChooser/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Fservice%3Dmail%26flowName%3DGlifWebSignIn%26flowEntry%3DAccountChooser%26ec%3Dasw-gmail-globalnav-signin" target="_blank" rel="noopener noreferrer" data-g-event="gmail_asw: globalnav" data-g-action="sign in" data-g-label="https://accounts.google.com/AccountChooser/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Fservice%3Dmail%26flowName%3DGlifWebSignIn%26flowEntry%3DAccountChooser%26ec%3Dasw-gmail-globalnav-signin" data-uj-def="globalnav" aria-label="כניסה ל-Gmail" class="button button--small button--medium button--rtl"><span class="button__content">כניסה לחשבון</span></a></span><span class="gws-button breakpoints--mobile"><a href="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp&amp;ec=asw-gmail-[module]-create&amp;source=gafb-gmail_asw-globalnav-iw&amp;hl=iw&amp;ga_region=amer&amp;ga_country=us&amp;ga_lang=iw" target="_blank" rel="noopener noreferrer" data-g-event="gmail_asw: globalnav" data-g-action="sign in" data-g-label="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp&amp;ec=asw-gmail-[module]-create" data-uj-def="globalnav" aria-label="הרשמה לחשבון Gmail " class="button button--small button--rtl"><span class="button__content">להתקנת Gmail</span></a></span><span class="gws-button"><a href="/intl/iw/products/gmail/" data-g-event="gmail_asw: globalnav" data-g-action="for work" data-g-label="/intl/iw/products/gmail/" data-uj-def="globalnav" aria-label="לדף המוצר של Gmail" class="button button--small button--low button--rtl"><span class="button__content">לעבודה</span></a></span></gws-action-bar>
+      </gws-header>
+      <main id="main">
+        <section id="m1" data-module="TemplateLocalizedModuleContainer" data-g-section-id="localized-module-container"></section>
+        <div id="m2" data-module="TemplateSpacer" data-g-section-id="spacer">
+          <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:24px;--gws-spacer-tablet-size:24px;--gws-spacer-desktop-size:24px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+        </div>
+        <section id="m3" data-module="Template5050Hero" data-g-section-id="5050-hero">
+          <div>
+            <div style="Grid_grid" class="Grid_grid Template5050Hero_wrapper">
+              <div style="--gws-column-tablet-start:1;--gws-column-tablet-end:12;--gws-column-laptop-start:2;--gws-column-laptop-end:6;" class="Grid_column Template5050Hero_content Template5050Hero_fixedRightPadding">
+                <div class="Template5050Hero_heading">
+                  <h1 class="Heading_heading heading Heading_size:h1">שירות אימייל מבוסס-AI שפתוח לכולם</h1>
+                </div>
+                <div class="Text_container Text_body Text_lg Template5050Hero_body">
+                  <p>שירות אימייל מאובטח, חכם, פופולרי וקל לשימוש – עכשיו עם היכולות המשופרות של Gemini.</p>
+                  <div class="ButtonGroup_buttonGroup ButtonGroup_buttonGroupHorizontal button-group-with-dropdown button-group horizontal"><dropdown-button-wrapper class="dropdown-wrapper">
+                      <div class="dropdown-gws-button variant-primary size-normal align-left valign-below">
+                        <details>
+                          <summary data-g-event="gmail_asw: hero #5050-hero" data-g-action="create an account" data-g-label="in-page interaction"><span class="button-label">יצירת חשבון</span><span class="button-divider"></span><span class="button-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="chevron">
+                                <path d="M10 13.3333L5 8.33333H15L10 13.3333Z" fill="currentColor"></path>
+                              </svg></span></summary>
+                          <nav role="menu" class="dropdown-menu"><a href="https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp&amp;ec=asw-gmail-[module]-create&amp;theme=glif&amp;source=gafb-gmail_asw-hero-iw&amp;hl=iw&amp;ga_region=amer&amp;ga_country=us&amp;ga_lang=iw" role="menuitem" aria-label="‫Gmail – לשימוש אישי" data-g-event="gmail_asw: hero #5050-hero" data-g-action="https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https%3a%2f%2fmail.google.com%2fmail%2f&amp;flowname=glifwebsignin&amp;flowentry=signup&amp;ec=asw-gmail-%5bmodule%5d-create&amp;theme=glif" data-g-label="https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https://mail.google.com/mail/&amp;flowname=glifwebsignin&amp;flowentry=signup&amp;ec=asw-gmail-[module]-create&amp;theme=glif">לשימוש פרטי</a><a href="https://workspace.google.com/business/signup/newbusiness?xsell=google_accounts&amp;source=gafb-gmail_asw-hero-iw&amp;back=https%3A%2F%2Faccounts.google.com%2FSignUp%3Fec%3Dasw-gmail-[module]-create2%26biz%3Dtrue&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowEntry=SignUp&amp;flowName=GlifWebSignIn&amp;service=mail&amp;theme=glif&amp;ec=asw-gmail-[module]-create2&amp;hl=iw&amp;ga_region=amer&amp;ga_country=us&amp;ga_lang=iw" role="menuitem" aria-label="‫Gmail – לשימוש בעבודה או בעסק" data-g-event="gmail_asw: hero #5050-hero" data-g-action="https://workspace.google.com/business/signup/newbusiness?xsell=google_accounts&amp;source=gafb-gmailasw-%5bmodule%5d-%5blanguage%5d&amp;back=https%3a%2f%2faccounts.google.com%2fsignup%3fec%3dasw-gmail-%5bmodule%5d-create2%26biz%3dtrue&amp;continue=https%3a%2f%2fmail.google.com%2fmail%2f&amp;flowentry=signup&amp;flowname=glifwebsignin&amp;service=mail&amp;theme=glif&amp;ec=asw-gmail-%5bmodule%5d-create2" data-g-label="https://workspace.google.com/business/signup/newbusiness?xsell=google_accounts&amp;source=gafb-gmailasw-[module]-[language]&amp;back=https%3a%2f%2faccounts.google.com%2fsignup%3fec%3dasw-gmail-[module]-create2%26biz%3dtrue&amp;continue=https://mail.google.com/mail/&amp;flowentry=signup&amp;flowname=glifwebsignin&amp;service=mail&amp;theme=glif&amp;ec=asw-gmail-[module]-create2">לשימוש בעבודה או בעסק</a></nav>
+                        </details>
+                      </div>
+                    </dropdown-button-wrapper><span class="gws-button"><a href="/intl/iw/products/gmail/" data-g-event="gmail_asw: hero #5050-hero" data-g-action="for work" data-g-label="/intl/iw/products/gmail/" data-uj-def="hero_5050_hero" aria-label="לדף המוצר של Gmail" class="button button--low button--rtl"><span class="button__content">לעבודה</span></a></span></div>
+                </div>
+              </div>
+              <div style="--gws-column-tablet-start:1;--gws-column-tablet-end:12;--gws-column-laptop-start:7;--gws-column-laptop-end:11;" class="Grid_column Template5050Hero_featureImage">
+                <picture>
+                  <source srcset="https://lh3.googleusercontent.com/Ldc3EqSMv2snq4Q9YO0RSKpjleqgOlgrm14NyeJAT9Y-d60_7A_5mwZrsCgIe55gYaetowY3LszOXBFhlXfrVq1UE3keXEJtK_HN=e365-pa-nu-rw-w566 1x, https://lh3.googleusercontent.com/Ldc3EqSMv2snq4Q9YO0RSKpjleqgOlgrm14NyeJAT9Y-d60_7A_5mwZrsCgIe55gYaetowY3LszOXBFhlXfrVq1UE3keXEJtK_HN=e365-pa-nu-rw-w1132 2x" media="(min-width: 1024px)" width="1416" height="1260" type="image/webp" />
+                  <source srcset="https://lh3.googleusercontent.com/PSIGlLguPKlDJnw1s-s7qGjlxBJGqgbEahvEJdtV2_mE0v8W_-mlCP56ZuPdtUZeIRwO-lVVZihbrNlgvD31n4JMmOzkRjdlNaWR=e365-pa-nu-rw-w966 1x, https://lh3.googleusercontent.com/PSIGlLguPKlDJnw1s-s7qGjlxBJGqgbEahvEJdtV2_mE0v8W_-mlCP56ZuPdtUZeIRwO-lVVZihbrNlgvD31n4JMmOzkRjdlNaWR=e365-pa-nu-rw-w1536 2x" media="(min-width: 600px)" width="1536" height="980" type="image/webp" /><img src="https://lh3.googleusercontent.com/wUaUOyzVlSZC-kcx_92dw-wrLwD2HK2GXakbIw6o3aSzxxNmwWRZWPvP_vjocaWjQP483PKGVZ2Gdqh6qkiYJdpwUn50qqv8Ezhx=e365-pa-nu-rw-w528" srcset="https://lh3.googleusercontent.com/wUaUOyzVlSZC-kcx_92dw-wrLwD2HK2GXakbIw6o3aSzxxNmwWRZWPvP_vjocaWjQP483PKGVZ2Gdqh6qkiYJdpwUn50qqv8Ezhx=e365-pa-nu-rw-w528 1x, https://lh3.googleusercontent.com/wUaUOyzVlSZC-kcx_92dw-wrLwD2HK2GXakbIw6o3aSzxxNmwWRZWPvP_vjocaWjQP483PKGVZ2Gdqh6qkiYJdpwUn50qqv8Ezhx=e365-pa-nu-rw-w720 2x" alt="אישה נעזרת ב-AI כדי להתכונן למצגת ב-Gmail, ומקבלת עזרה בחיפוש, הנחיות לכתיבה והצעות לתשובות שמותאמות לסגנון הכתיבה." width="720" height="500" loading="eager" fetchpriority="high" />
+                </picture>
+              </div>
+            </div>
+          </div><gws-gmail-app-header-toggle></gws-gmail-app-header-toggle>
+        </section>
+        <div id="m4" data-module="TemplateSpacer" data-g-section-id="spacer">
+          <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:60px;--gws-spacer-desktop-size:80px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+        </div>
+        <section id="m5" data-module="TemplateSectionBreak" data-g-section-id="section-break">
+          <div style="Grid_grid" class="Grid_grid TemplateSectionBreak_grid">
+            <div style="--gws-column-laptop-start:3;--gws-column-laptop-end:10;" class="Grid_column TemplateSectionBreak_container">
+              <div class="Text_container Text_body Text_lg TemplateSectionBreak_copyGroup">
+                <h2 class="Heading_heading heading Heading_size:h3">‫Gemini ב-Gmail</h2>
+                <p>עם השילוב הזה, אתם מקבלים עוזר אישי וחכם בתיבת הדואר הנכנס שעוזר לכם לנסח תגובות במהירות ובסגנון שלכם, להשלים משימות מהר יותר ולמצוא מידע בקלות.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="m6" data-module="TemplateSpacer" data-g-section-id="spacer">
+          <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:36px;--gws-spacer-tablet-size:36px;--gws-spacer-desktop-size:36px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+        </div>
+        <section id="m7" data-module="Template5050Accordion" data-g-section-id="5050-accordion"><gws-accordion-5050-container slide-timing="15" current="0">
+            <div style="Grid_grid" class="Grid_grid Template5050Accordion_container">
+              <div style="--gws-column-tablet-start:3;--gws-column-tablet-end:10;--gws-column-laptop-start:2;--gws-column-laptop-end:7;" class="Grid_column Template5050Accordion_featuredImage">
+                <div class="Template5050Accordion_column">
+                  <div data-image-index="0" data-image-state="visible">
+                    <picture><img src="https://lh3.googleusercontent.com/rfjvxGoQzWKS1bvxxlQnB9W6ZzY4XJt0hCvuZcKLod6EJ2WIL4K3HYQNkzXCv3ArK1Zl-zaldkMO7HpDehY-eBgySm4PQXfrqm8M0w=e365-pa-nu-rw-w684" srcset="https://lh3.googleusercontent.com/rfjvxGoQzWKS1bvxxlQnB9W6ZzY4XJt0hCvuZcKLod6EJ2WIL4K3HYQNkzXCv3ArK1Zl-zaldkMO7HpDehY-eBgySm4PQXfrqm8M0w=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/rfjvxGoQzWKS1bvxxlQnB9W6ZzY4XJt0hCvuZcKLod6EJ2WIL4K3HYQNkzXCv3ArK1Zl-zaldkMO7HpDehY-eBgySm4PQXfrqm8M0w=e365-pa-nu-rw-w1368 2x" alt="‫Gmail מציע תשובה מ-AI להזמנה לשיעור פיקלבול, בהתאם לסגנון הכתיבה של המשתמש." width="1368" height="1000" loading="eager" fetchpriority="high" attrs="[object Object]" class="Template5050Accordion_laptopImage" /></picture>
+                  </div>
+                  <div data-image-index="1" data-image-state="hidden">
+                    <picture><img src="https://lh3.googleusercontent.com/TCfCwjzKzdDqrfH4VjlmTWLJbAIZ7FCMtKtfUc0Abd7eVcaZSlXbuN3tX02FrFfjiDlY6n5tAKiZdqx6Yyq3L0EMngEDd3A9HafI=e365-pa-nu-rw-w684" srcset="https://lh3.googleusercontent.com/TCfCwjzKzdDqrfH4VjlmTWLJbAIZ7FCMtKtfUc0Abd7eVcaZSlXbuN3tX02FrFfjiDlY6n5tAKiZdqx6Yyq3L0EMngEDd3A9HafI=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/TCfCwjzKzdDqrfH4VjlmTWLJbAIZ7FCMtKtfUc0Abd7eVcaZSlXbuN3tX02FrFfjiDlY6n5tAKiZdqx6Yyq3L0EMngEDd3A9HafI=e365-pa-nu-rw-w1368 2x" alt="‫Gmail מראה סיכום AI של שרשור אימיילים קבוצתי בנושא הרשמה לשיעור פיקלבול." width="1368" height="1000" loading="eager" fetchpriority="high" attrs="[object Object]" class="Template5050Accordion_laptopImage" /></picture>
+                  </div>
+                  <div data-image-index="2" data-image-state="hidden">
+                    <picture><img src="https://lh3.googleusercontent.com/gcnRxUvUaJhG9ZYULig73HM1mEaagSEiUhPzkCrcL0ZBIgociaD8h02-sm08cT3RzATFFRqCH1XlKvruRZXDQtn7pu6yy39PFDM=e365-pa-nu-rw-w684" srcset="https://lh3.googleusercontent.com/gcnRxUvUaJhG9ZYULig73HM1mEaagSEiUhPzkCrcL0ZBIgociaD8h02-sm08cT3RzATFFRqCH1XlKvruRZXDQtn7pu6yy39PFDM=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/gcnRxUvUaJhG9ZYULig73HM1mEaagSEiUhPzkCrcL0ZBIgociaD8h02-sm08cT3RzATFFRqCH1XlKvruRZXDQtn7pu6yy39PFDM=e365-pa-nu-rw-w1368 2x" alt="‫Gmail מציג סקירת AI לשאלה שמשתמש שאל, בכל הנוגע לפרטים של משחק פיקלבול." width="1368" height="1000" loading="eager" fetchpriority="high" attrs="[object Object]" class="Template5050Accordion_laptopImage" /></picture>
+                  </div>
+                </div>
+              </div>
+              <div style="--gws-column-tablet-start:3;--gws-column-tablet-end:10;--gws-column-laptop-start:8;--gws-column-laptop-end:11;" class="Grid_column">
+                <div class="Template5050Accordion_column">
+                  <div class="Template5050Accordion_inner"><gws-accordion-item index="0" current="true" data-g-event="gmail: body" data-g-label="/gmail/" data-g-action="click:  gmail app  accordion item  write better emails with the help of ai  ntk ">
+                      <div slot="heading">
+                        <h3 style="--text-font-weight:500;" class="Text_container Text_subheading Text_weight AccordionItem_heading">עם AI קל לכתוב אימיילים מלוטשים</h3>
+                      </div>
+                      <div slot="body">
+                        <div class="Text_container Text_body Text_lg AccordionItem_body">
+                          <p>‫Gemini in Gmail חוסך לכם בזמן על ניסוח אימיילים ונותן הצעות לתשובות, כך שתוכלו להשיב בקליק אחד ובסגנון שלכם.</p>
+                        </div>
+                      </div>
+                      <div slot="image" class="AccordionItem_imageContainer AccordionItem_ytContainer">
+                        <picture>
+                          <source srcset="https://lh3.googleusercontent.com/rfjvxGoQzWKS1bvxxlQnB9W6ZzY4XJt0hCvuZcKLod6EJ2WIL4K3HYQNkzXCv3ArK1Zl-zaldkMO7HpDehY-eBgySm4PQXfrqm8M0w=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/rfjvxGoQzWKS1bvxxlQnB9W6ZzY4XJt0hCvuZcKLod6EJ2WIL4K3HYQNkzXCv3ArK1Zl-zaldkMO7HpDehY-eBgySm4PQXfrqm8M0w=e365-pa-nu-rw-w1368 2x" media="(min-width: 1024px)" width="1368" height="1000" type="image/webp" />
+                          <source srcset="https://lh3.googleusercontent.com/KXIMHculTh5UPLhdFlVt3x1mM-UmNr5XA7bwLP0NOpcTPvMNHxomU0kirwkHHM8sSpKZwwgJXdHw0M7E3HJIR1AF7f--_woipuIF=e365-pa-nu-rw-w632 1x, https://lh3.googleusercontent.com/KXIMHculTh5UPLhdFlVt3x1mM-UmNr5XA7bwLP0NOpcTPvMNHxomU0kirwkHHM8sSpKZwwgJXdHw0M7E3HJIR1AF7f--_woipuIF=e365-pa-nu-rw-w944 2x" media="(min-width: 600px)" width="944" height="600" type="image/webp" /><img src="https://lh3.googleusercontent.com/inapc0_DHeYpXzemlv53m-Y7Y_gfS118p9l7aSNlXuSQY6yLLbfTqjqMUZcKWPsjnLzQjPHwrenLkeCwpJiY6gOKhgJGtYSxhjc=e365-pa-nu-rw-w527" srcset="https://lh3.googleusercontent.com/inapc0_DHeYpXzemlv53m-Y7Y_gfS118p9l7aSNlXuSQY6yLLbfTqjqMUZcKWPsjnLzQjPHwrenLkeCwpJiY6gOKhgJGtYSxhjc=e365-pa-nu-rw-w527 1x, https://lh3.googleusercontent.com/inapc0_DHeYpXzemlv53m-Y7Y_gfS118p9l7aSNlXuSQY6yLLbfTqjqMUZcKWPsjnLzQjPHwrenLkeCwpJiY6gOKhgJGtYSxhjc=e365-pa-nu-rw-w608 2x" alt="‫Gmail מציע תשובה מ-AI להזמנה לשיעור פיקלבול, בהתאם לסגנון הכתיבה של המשתמש." width="608" height="500" loading="eager" fetchpriority="high" />
+                        </picture>
+                      </div>
+                    </gws-accordion-item><gws-accordion-item index="1" current="false" data-g-event="gmail: body" data-g-label="/gmail/" data-g-action="click:  gmail app  accordion item  search your inbox in a whole new way  ntk ">
+                      <div slot="heading">
+                        <h3 style="--text-font-weight:500;" class="Text_container Text_subheading Text_weight AccordionItem_heading">התעדכנו במהירות לגבי שרשורי אימיילים</h3>
+                      </div>
+                      <div slot="body">
+                        <div class="Text_container Text_body Text_lg AccordionItem_body">
+                          <p>כשאתם פותחים שרשור ארוך, Gmail ייתן לכם סקירת AI עם סיכום תמציתי, כך שתוכלו להתעדכן לגבי הנקודות העיקריות.</p>
+                        </div>
+                      </div>
+                      <div slot="image" class="AccordionItem_imageContainer AccordionItem_ytContainer">
+                        <picture>
+                          <source srcset="https://lh3.googleusercontent.com/TCfCwjzKzdDqrfH4VjlmTWLJbAIZ7FCMtKtfUc0Abd7eVcaZSlXbuN3tX02FrFfjiDlY6n5tAKiZdqx6Yyq3L0EMngEDd3A9HafI=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/TCfCwjzKzdDqrfH4VjlmTWLJbAIZ7FCMtKtfUc0Abd7eVcaZSlXbuN3tX02FrFfjiDlY6n5tAKiZdqx6Yyq3L0EMngEDd3A9HafI=e365-pa-nu-rw-w1368 2x" media="(min-width: 1024px)" width="1368" height="1000" type="image/webp" />
+                          <source srcset="https://lh3.googleusercontent.com/2xdT6p7Pk1h9Qy05AW63VbBJu8zcU5GuW8LP-v-62bJ28NF0_HxSErkssOOdwJooW6YcQwAhwOJNQHEPi2svTvvwMWlEmTBCcrI=e365-pa-nu-rw-w632 1x, https://lh3.googleusercontent.com/2xdT6p7Pk1h9Qy05AW63VbBJu8zcU5GuW8LP-v-62bJ28NF0_HxSErkssOOdwJooW6YcQwAhwOJNQHEPi2svTvvwMWlEmTBCcrI=e365-pa-nu-rw-w944 2x" media="(min-width: 600px)" width="944" height="600" type="image/webp" /><img src="https://lh3.googleusercontent.com/5JYpqfAicJ0Qn8idomu-PYDcWbmmXNH4tk13oHjZARNSjpf75kgxsqdzI99Qm216kKYKM2wH6OTr9BTmHYaCU0hMYMo6-Xv7qm3yIg=e365-pa-nu-rw-w527" srcset="https://lh3.googleusercontent.com/5JYpqfAicJ0Qn8idomu-PYDcWbmmXNH4tk13oHjZARNSjpf75kgxsqdzI99Qm216kKYKM2wH6OTr9BTmHYaCU0hMYMo6-Xv7qm3yIg=e365-pa-nu-rw-w527 1x, https://lh3.googleusercontent.com/5JYpqfAicJ0Qn8idomu-PYDcWbmmXNH4tk13oHjZARNSjpf75kgxsqdzI99Qm216kKYKM2wH6OTr9BTmHYaCU0hMYMo6-Xv7qm3yIg=e365-pa-nu-rw-w608 2x" alt="‫Gmail מראה סיכום AI של שרשור אימיילים קבוצתי בנושא הרשמה לשיעור פיקלבול." width="608" height="500" loading="eager" fetchpriority="high" />
+                        </picture>
+                      </div>
+                    </gws-accordion-item><gws-accordion-item index="2" current="false" data-g-event="gmail: body" data-g-label="/gmail/" data-g-action="click:  gmail app  accordion item  ask your inbox anything  ntk ">
+                      <div slot="heading">
+                        <h3 style="--text-font-weight:500;" class="Text_container Text_subheading Text_weight AccordionItem_heading">בקשו מ-Gemini לחפש הודעות בתיבת הדואר הנכנס</h3>
+                      </div>
+                      <div slot="body">
+                        <div class="Text_container Text_body Text_lg AccordionItem_body"><gws-tooltip>
+                            <div class="Badge_badge Badge_badgeSmall">
+                              <picture><img src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-7LhoZoRSU32Sn20yI8213k-92d83d07ba564bddac887d329c3589c2-Vector.svg" alt width="12" height="15" loading="eager" fetchpriority="high" /></picture><span class="Badge_label">תכונת פרימיום בתשלום</span>
+                            </div><gws-popover offset="10" slot="popover" placement="bottom" class="Badge_tooltip">
+                              <div class="Text_container Text_body Text_xs">
+                                <p>התכונה הזו זמינה ב<span class="gws-button"><a href="https://one.google.com/about/google-ai-plans/?hl=iw" target="_blank" rel="noopener noreferrer" data-g-event="gmail_asw: body #5050-accordion" data-g-action="https://one.google.com/about/google-ai-plans/" data-g-label="https://one.google.com/about/google-ai-plans/?hl=iw" data-uj-def="body_5050_accordion" aria-label="הדף תוכניות Google AI Pro או Ultra ייפתח בכרטיסייה חדשה" class="button button--inline button--rtl"><span class="button__content">תוכניות Google AI Pro או Ultra</span></a></span>.</p>
+                              </div>
+                            </gws-popover>
+                          </gws-tooltip>
+                          <p>הפכו מידע לתשובות: בצעו חיפוש במילים שלכם וקבלו סקירת AI עם סיכום הפרטים העיקריים – ישירות בראש תיבת הדואר הנכנס.</p>
+                        </div>
+                      </div>
+                      <div slot="image" class="AccordionItem_imageContainer AccordionItem_ytContainer">
+                        <picture>
+                          <source srcset="https://lh3.googleusercontent.com/gcnRxUvUaJhG9ZYULig73HM1mEaagSEiUhPzkCrcL0ZBIgociaD8h02-sm08cT3RzATFFRqCH1XlKvruRZXDQtn7pu6yy39PFDM=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/gcnRxUvUaJhG9ZYULig73HM1mEaagSEiUhPzkCrcL0ZBIgociaD8h02-sm08cT3RzATFFRqCH1XlKvruRZXDQtn7pu6yy39PFDM=e365-pa-nu-rw-w1368 2x" media="(min-width: 1024px)" width="1368" height="1000" type="image/webp" />
+                          <source srcset="https://lh3.googleusercontent.com/b9C0sXYQVeiZdtI6GzmjIDgA6Kq120WxiNiCi4vK6d5Qq2ZotsfoJIX49pEfHabex2zx-ObsELqKvVjERe1lTThrOQSuM58Gjio=e365-pa-nu-rw-w632 1x, https://lh3.googleusercontent.com/b9C0sXYQVeiZdtI6GzmjIDgA6Kq120WxiNiCi4vK6d5Qq2ZotsfoJIX49pEfHabex2zx-ObsELqKvVjERe1lTThrOQSuM58Gjio=e365-pa-nu-rw-w944 2x" media="(min-width: 600px)" width="944" height="600" type="image/webp" /><img src="https://lh3.googleusercontent.com/CS_SeuufBeMXO_TS_SvxlMViLUkq7dTB4sg7WwPOyVyeG5HCqreNQu42w8tcj0XVU9Gxm0hMZUNrVK7x5EExVj1FRoCtWgJz_4M=e365-pa-nu-rw-w527" srcset="https://lh3.googleusercontent.com/CS_SeuufBeMXO_TS_SvxlMViLUkq7dTB4sg7WwPOyVyeG5HCqreNQu42w8tcj0XVU9Gxm0hMZUNrVK7x5EExVj1FRoCtWgJz_4M=e365-pa-nu-rw-w527 1x, https://lh3.googleusercontent.com/CS_SeuufBeMXO_TS_SvxlMViLUkq7dTB4sg7WwPOyVyeG5HCqreNQu42w8tcj0XVU9Gxm0hMZUNrVK7x5EExVj1FRoCtWgJz_4M=e365-pa-nu-rw-w608 2x" alt="‫Gmail מציג סקירת AI לשאלה שמשתמש שאל, בכל הנוגע לפרטים של משחק פיקלבול." width="608" height="500" loading="eager" fetchpriority="high" />
+                        </picture>
+                      </div>
+                    </gws-accordion-item></div>
+                </div>
+              </div>
+            </div>
+          </gws-accordion-5050-container></section>
+        <div id="m8" data-module="TemplateSpacer" data-g-section-id="spacer">
+          <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:92px;--gws-spacer-desktop-size:120px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+        </div>
+        <section id="m9" data-module="Template5050Accordion" data-g-section-id="5050-accordion">
+          <div style="Grid_grid" class="Grid_grid">
+            <div style="--gws-column-tablet-start:2;--gws-column-tablet-end:11;--gws-column-laptop-start:4;--gws-column-laptop-end:9;" class="Grid_column">
+              <div class="Text_container Text_body Template5050Accordion_header">
+                <h2 class="Heading_heading heading Heading_size:h3">אימייל מאובטח ופרטי שמאפשר לכם להיות בשליטה.</h2>
+              </div>
+            </div>
+          </div><gws-accordion-5050-container slide-timing="15" current="0">
+            <div style="Grid_grid" class="Grid_grid Template5050Accordion_container">
+              <div style="--gws-column-tablet-start:3;--gws-column-tablet-end:10;--gws-column-laptop-start:2;--gws-column-laptop-end:5;" class="Grid_column">
+                <div class="Template5050Accordion_column">
+                  <div class="Template5050Accordion_inner"><gws-accordion-item index="0" current="true" data-g-event="gmail: body" data-g-label="/gmail/" data-g-action="click:  gmail app  accordion item  we never use your gmail content for any ads purposes">
+                      <div slot="heading">
+                        <h3 style="--text-font-weight:500;" class="Text_container Text_subheading Text_weight AccordionItem_heading">אנחנו אף פעם לא משתמשים בתוכן שלכם ב-Gmail לפרסום מודעות</h3>
+                      </div>
+                      <div slot="body">
+                        <div class="Text_container Text_body Text_lg AccordionItem_body">
+                          <p>עם ההצפנה המובילה בתחום, Gmail מגן על כל ההודעות שאתם מקבלים ושולחים. אנחנו אף פעם לא משתמשים בתוכן שלכם ב-Gmail להתאמה אישית של מודעות.</p>
+                        </div>
+                      </div>
+                      <div slot="image" class="AccordionItem_imageContainer AccordionItem_ytContainer">
+                        <picture>
+                          <source srcset="https://lh3.googleusercontent.com/BR_gXTPBQrwb4aTeTpBYAMSpl_xOZieCCxX_5Awuir3UOuPsWK1J-zdPZyIEZAxwLO6tnX_Ea_3wKAnqkEYn0Wj9zGnt6m4ZqAI=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/BR_gXTPBQrwb4aTeTpBYAMSpl_xOZieCCxX_5Awuir3UOuPsWK1J-zdPZyIEZAxwLO6tnX_Ea_3wKAnqkEYn0Wj9zGnt6m4ZqAI=e365-pa-nu-rw-w1368 2x" media="(min-width: 1024px)" width="1368" height="1000" type="image/webp" />
+                          <source srcset="https://lh3.googleusercontent.com/TjTAVBYWc7dFWaZh5G9wXNVeznp7bm6DvJ-XNcC05YNYgfu1FHHE9TjksiYtG1nkT7u1KqHj6FczrfHjoGubKWQgl-Rz00itCLb1=e365-pa-nu-rw-w632 1x, https://lh3.googleusercontent.com/TjTAVBYWc7dFWaZh5G9wXNVeznp7bm6DvJ-XNcC05YNYgfu1FHHE9TjksiYtG1nkT7u1KqHj6FczrfHjoGubKWQgl-Rz00itCLb1=e365-pa-nu-rw-w945 2x" media="(min-width: 600px)" width="945" height="600" type="image/webp" /><img src="https://lh3.googleusercontent.com/f1FCowp2z17NBacYzg905JXHLqg1dyuxVMGhbkvBmwWOtcesAP5hC7b-yf_7rxgBB0gTzjCvEzd3g6DGX9-PTrwJoweFAMoSe9s=e365-pa-nu-rw-w527" srcset="https://lh3.googleusercontent.com/f1FCowp2z17NBacYzg905JXHLqg1dyuxVMGhbkvBmwWOtcesAP5hC7b-yf_7rxgBB0gTzjCvEzd3g6DGX9-PTrwJoweFAMoSe9s=e365-pa-nu-rw-w527 1x, https://lh3.googleusercontent.com/f1FCowp2z17NBacYzg905JXHLqg1dyuxVMGhbkvBmwWOtcesAP5hC7b-yf_7rxgBB0gTzjCvEzd3g6DGX9-PTrwJoweFAMoSe9s=e365-pa-nu-rw-w720 2x" alt="התראה בנושא פרטיות שמופיעה מעל אימייל" width="720" height="500" loading="eager" fetchpriority="high" />
+                        </picture>
+                      </div>
+                    </gws-accordion-item><gws-accordion-item index="1" current="false" data-g-event="gmail: body" data-g-label="/gmail/" data-g-action="click:  gmail app  accordion item  gmail keeps over a billion people safe every day">
+                      <div slot="heading">
+                        <h3 style="--text-font-weight:500;" class="Text_container Text_subheading Text_weight AccordionItem_heading">‫Gmail שומר על הבטיחות של יותר ממיליארד אנשים מדי יום</h3>
+                      </div>
+                      <div slot="body">
+                        <div class="Text_container Text_body Text_lg AccordionItem_body">
+                          <p>‫Gmail חוסם 99.9% מהספאם, התוכנות הזדוניות והקישורים המסוכנים, כך שהם לא יגיעו לתיבת הדואר הנכנס.</p>
+                        </div>
+                      </div>
+                      <div slot="image" class="AccordionItem_imageContainer AccordionItem_ytContainer">
+                        <picture>
+                          <source srcset="https://lh3.googleusercontent.com/anHngb0tJ-B9-VaFjDnxWDKl-RpamfssMXb1d6KmM0b_kt6kArsV309b_ig_qGifZq8Zfp2o4uCznEqGQiVVuI2MCkHBRbPffo2s=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/anHngb0tJ-B9-VaFjDnxWDKl-RpamfssMXb1d6KmM0b_kt6kArsV309b_ig_qGifZq8Zfp2o4uCznEqGQiVVuI2MCkHBRbPffo2s=e365-pa-nu-rw-w1368 2x" media="(min-width: 1024px)" width="1368" height="1000" type="image/webp" />
+                          <source srcset="https://lh3.googleusercontent.com/_o9uwKnQegmqapAsOCw1dscBCSNOgEE05ViYQi3onu7R5K-kn3F5g3dYFUUsoyDCAR0wEHCSTPInwHiHZO601gYixDJ6yuGj8DwStQ=e365-pa-nu-rw-w632 1x, https://lh3.googleusercontent.com/_o9uwKnQegmqapAsOCw1dscBCSNOgEE05ViYQi3onu7R5K-kn3F5g3dYFUUsoyDCAR0wEHCSTPInwHiHZO601gYixDJ6yuGj8DwStQ=e365-pa-nu-rw-w944 2x" media="(min-width: 600px)" width="944" height="600" type="image/webp" /><img src="https://lh3.googleusercontent.com/YrylOA0gU0IjQ9CbRQda_cAshA-BNAEB_sTGRY1yGQSy3_u8zVqAVhKqh9fWWXEOZRdI5VclOYD7lgsuCWhLoFudHIGeRMk2Cns=e365-pa-nu-rw-w527" srcset="https://lh3.googleusercontent.com/YrylOA0gU0IjQ9CbRQda_cAshA-BNAEB_sTGRY1yGQSy3_u8zVqAVhKqh9fWWXEOZRdI5VclOYD7lgsuCWhLoFudHIGeRMk2Cns=e365-pa-nu-rw-w527 1x, https://lh3.googleusercontent.com/YrylOA0gU0IjQ9CbRQda_cAshA-BNAEB_sTGRY1yGQSy3_u8zVqAVhKqh9fWWXEOZRdI5VclOYD7lgsuCWhLoFudHIGeRMk2Cns=e365-pa-nu-rw-w608 2x" alt="תיבת הדואר הנכנס הראשית ב-Gmail ולידה סמל אזהרה נפרד" width="608" height="500" loading="eager" fetchpriority="high" />
+                        </picture>
+                      </div>
+                    </gws-accordion-item><gws-accordion-item index="2" current="false" data-g-event="gmail: body" data-g-label="/gmail/" data-g-action="click:  gmail app  accordion item  the most advanced phishing protections available">
+                      <div slot="heading">
+                        <h3 style="--text-font-weight:500;" class="Text_container Text_subheading Text_weight AccordionItem_heading">ההגנות הכי מתקדמות מפני פישינג</h3>
+                      </div>
+                      <div slot="body">
+                        <div class="Text_container Text_body Text_lg AccordionItem_body">
+                          <p>‫Gmail מודיע לכם על הודעות אימייל שנראות חשודות, כך שתוכלו להחליט מה לעשות.</p>
+                        </div>
+                      </div>
+                      <div slot="image" class="AccordionItem_imageContainer AccordionItem_ytContainer">
+                        <picture>
+                          <source srcset="https://lh3.googleusercontent.com/j73UcrFihOUZ-WL-asfh7KViJVGHmWyf8t8qC_PPEXUxpFvBo72oh5IgVUgqpJP7_tbu__rmcvI7QNOy40N7CEs2DraTv6Xl7cY=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/j73UcrFihOUZ-WL-asfh7KViJVGHmWyf8t8qC_PPEXUxpFvBo72oh5IgVUgqpJP7_tbu__rmcvI7QNOy40N7CEs2DraTv6Xl7cY=e365-pa-nu-rw-w1368 2x" media="(min-width: 1024px)" width="1368" height="1000" type="image/webp" />
+                          <source srcset="https://lh3.googleusercontent.com/E2B-If-44mKRaB-EuLhzCmMlmAOgzKYDSBYlDNJx39Ft-KCtVt5eDR9Yn8F_4HlFqR9V2g_9ea5E1ahjHTiJvp4waoxB6047LMR4=e365-pa-nu-rw-w632 1x, https://lh3.googleusercontent.com/E2B-If-44mKRaB-EuLhzCmMlmAOgzKYDSBYlDNJx39Ft-KCtVt5eDR9Yn8F_4HlFqR9V2g_9ea5E1ahjHTiJvp4waoxB6047LMR4=e365-pa-nu-rw-w944 2x" media="(min-width: 600px)" width="944" height="600" type="image/webp" /><img src="https://lh3.googleusercontent.com/kpWr95tuV8tFDQ3zN4e02OPtjqoS_OFDBMNFEhrWtOfzeouoJylllG55i_4FNi7tDeZedjmkZwhwG5qfpHKOQnz34eeojGpB8dE=e365-pa-nu-rw-w527" srcset="https://lh3.googleusercontent.com/kpWr95tuV8tFDQ3zN4e02OPtjqoS_OFDBMNFEhrWtOfzeouoJylllG55i_4FNi7tDeZedjmkZwhwG5qfpHKOQnz34eeojGpB8dE=e365-pa-nu-rw-w527 1x, https://lh3.googleusercontent.com/kpWr95tuV8tFDQ3zN4e02OPtjqoS_OFDBMNFEhrWtOfzeouoJylllG55i_4FNi7tDeZedjmkZwhwG5qfpHKOQnz34eeojGpB8dE=e365-pa-nu-rw-w720 2x" alt="אימייל עם הודעת אזהרה צהובה" width="720" height="500" loading="eager" fetchpriority="high" />
+                        </picture>
+                      </div>
+                    </gws-accordion-item><gws-accordion-item index="3" current="false" data-g-event="gmail: body" data-g-label="/gmail/" data-g-action="click:  gmail app  accordion item  best in class controls over emails you send">
+                      <div slot="heading">
+                        <h3 style="--text-font-weight:500;" class="Text_container Text_subheading Text_weight AccordionItem_heading">שליטה מלאה על האימיילים שאתם שולחים</h3>
+                      </div>
+                      <div slot="body">
+                        <div class="Text_container Text_body Text_lg AccordionItem_body">
+                          <p>&quot;מצב סודי&quot; מאפשר להגדיר תאריכי תפוגה לאימיילים ולדרוש מנמענים לאמת את הזהות שלהם בהודעת טקסט. ניתן גם להסיר את האפשרויות להעברה, להעתקה, להורדה ולהדפסה של אימיילים.</p>
+                        </div>
+                      </div>
+                      <div slot="image" class="AccordionItem_imageContainer AccordionItem_ytContainer">
+                        <picture>
+                          <source srcset="https://lh3.googleusercontent.com/8cHO7WaYQsOObHs3PA0_7Au93UCIvvRzCoYA6XSZMd1W3TGBRQtJgroL6ruN_4TmIuyiCWqgwlhZz4IZaZfcVc3Q9o-Eykla3VLcOA=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/8cHO7WaYQsOObHs3PA0_7Au93UCIvvRzCoYA6XSZMd1W3TGBRQtJgroL6ruN_4TmIuyiCWqgwlhZz4IZaZfcVc3Q9o-Eykla3VLcOA=e365-pa-nu-rw-w1368 2x" media="(min-width: 1024px)" width="1368" height="1000" type="image/webp" />
+                          <source srcset="https://lh3.googleusercontent.com/TGIWw3Mf1gLXkS7pMdY8SAvsaKhs3Atd9swXXP0DbLDCEynRgs6CEJm5pVCpqJoG08qVWIF1WjR-ehnZ-KRKTCpGMgM39NOeMBhT=e365-pa-nu-rw-w632 1x, https://lh3.googleusercontent.com/TGIWw3Mf1gLXkS7pMdY8SAvsaKhs3Atd9swXXP0DbLDCEynRgs6CEJm5pVCpqJoG08qVWIF1WjR-ehnZ-KRKTCpGMgM39NOeMBhT=e365-pa-nu-rw-w944 2x" media="(min-width: 600px)" width="944" height="600" type="image/webp" /><img src="https://lh3.googleusercontent.com/RbClFf663t2-x5CoRLt_MAvt6nK6hy27j-I389v9JLO7ZCNMok9dk94Lj1xwLx9A3waBpds4Q3fstY5L8sGJxUXl73xGOquTBGJ8DA=e365-pa-nu-rw-w527" srcset="https://lh3.googleusercontent.com/RbClFf663t2-x5CoRLt_MAvt6nK6hy27j-I389v9JLO7ZCNMok9dk94Lj1xwLx9A3waBpds4Q3fstY5L8sGJxUXl73xGOquTBGJ8DA=e365-pa-nu-rw-w527 1x, https://lh3.googleusercontent.com/RbClFf663t2-x5CoRLt_MAvt6nK6hy27j-I389v9JLO7ZCNMok9dk94Lj1xwLx9A3waBpds4Q3fstY5L8sGJxUXl73xGOquTBGJ8DA=e365-pa-nu-rw-w720 2x" alt="אימייל עם תזכורת וסמל של שעון" width="720" height="500" loading="eager" fetchpriority="high" />
+                        </picture>
+                      </div>
+                    </gws-accordion-item></div>
+                </div>
+              </div>
+              <div style="--gws-column-tablet-start:3;--gws-column-tablet-end:10;--gws-column-laptop-start:6;--gws-column-laptop-end:11;" class="Grid_column Template5050Accordion_featuredImage">
+                <div class="Template5050Accordion_column">
+                  <div data-image-index="0" data-image-state="visible">
+                    <picture><img src="https://lh3.googleusercontent.com/BR_gXTPBQrwb4aTeTpBYAMSpl_xOZieCCxX_5Awuir3UOuPsWK1J-zdPZyIEZAxwLO6tnX_Ea_3wKAnqkEYn0Wj9zGnt6m4ZqAI=e365-pa-nu-rw-w684" srcset="https://lh3.googleusercontent.com/BR_gXTPBQrwb4aTeTpBYAMSpl_xOZieCCxX_5Awuir3UOuPsWK1J-zdPZyIEZAxwLO6tnX_Ea_3wKAnqkEYn0Wj9zGnt6m4ZqAI=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/BR_gXTPBQrwb4aTeTpBYAMSpl_xOZieCCxX_5Awuir3UOuPsWK1J-zdPZyIEZAxwLO6tnX_Ea_3wKAnqkEYn0Wj9zGnt6m4ZqAI=e365-pa-nu-rw-w1368 2x" alt="התראה בנושא פרטיות שמופיעה מעל אימייל" width="1368" height="1000" loading="eager" fetchpriority="high" attrs="[object Object]" class="Template5050Accordion_laptopImage" /></picture>
+                  </div>
+                  <div data-image-index="1" data-image-state="hidden">
+                    <picture><img src="https://lh3.googleusercontent.com/anHngb0tJ-B9-VaFjDnxWDKl-RpamfssMXb1d6KmM0b_kt6kArsV309b_ig_qGifZq8Zfp2o4uCznEqGQiVVuI2MCkHBRbPffo2s=e365-pa-nu-rw-w684" srcset="https://lh3.googleusercontent.com/anHngb0tJ-B9-VaFjDnxWDKl-RpamfssMXb1d6KmM0b_kt6kArsV309b_ig_qGifZq8Zfp2o4uCznEqGQiVVuI2MCkHBRbPffo2s=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/anHngb0tJ-B9-VaFjDnxWDKl-RpamfssMXb1d6KmM0b_kt6kArsV309b_ig_qGifZq8Zfp2o4uCznEqGQiVVuI2MCkHBRbPffo2s=e365-pa-nu-rw-w1368 2x" alt="תיבת הדואר הנכנס הראשית ב-Gmail ולידה סמל אזהרה נפרד" width="1368" height="1000" loading="eager" fetchpriority="high" attrs="[object Object]" class="Template5050Accordion_laptopImage" /></picture>
+                  </div>
+                  <div data-image-index="2" data-image-state="hidden">
+                    <picture><img src="https://lh3.googleusercontent.com/j73UcrFihOUZ-WL-asfh7KViJVGHmWyf8t8qC_PPEXUxpFvBo72oh5IgVUgqpJP7_tbu__rmcvI7QNOy40N7CEs2DraTv6Xl7cY=e365-pa-nu-rw-w684" srcset="https://lh3.googleusercontent.com/j73UcrFihOUZ-WL-asfh7KViJVGHmWyf8t8qC_PPEXUxpFvBo72oh5IgVUgqpJP7_tbu__rmcvI7QNOy40N7CEs2DraTv6Xl7cY=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/j73UcrFihOUZ-WL-asfh7KViJVGHmWyf8t8qC_PPEXUxpFvBo72oh5IgVUgqpJP7_tbu__rmcvI7QNOy40N7CEs2DraTv6Xl7cY=e365-pa-nu-rw-w1368 2x" alt="אימייל עם הודעת אזהרה צהובה" width="1368" height="1000" loading="eager" fetchpriority="high" attrs="[object Object]" class="Template5050Accordion_laptopImage" /></picture>
+                  </div>
+                  <div data-image-index="3" data-image-state="hidden">
+                    <picture><img src="https://lh3.googleusercontent.com/8cHO7WaYQsOObHs3PA0_7Au93UCIvvRzCoYA6XSZMd1W3TGBRQtJgroL6ruN_4TmIuyiCWqgwlhZz4IZaZfcVc3Q9o-Eykla3VLcOA=e365-pa-nu-rw-w684" srcset="https://lh3.googleusercontent.com/8cHO7WaYQsOObHs3PA0_7Au93UCIvvRzCoYA6XSZMd1W3TGBRQtJgroL6ruN_4TmIuyiCWqgwlhZz4IZaZfcVc3Q9o-Eykla3VLcOA=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/8cHO7WaYQsOObHs3PA0_7Au93UCIvvRzCoYA6XSZMd1W3TGBRQtJgroL6ruN_4TmIuyiCWqgwlhZz4IZaZfcVc3Q9o-Eykla3VLcOA=e365-pa-nu-rw-w1368 2x" alt="אימייל עם תזכורת וסמל של שעון" width="1368" height="1000" loading="eager" fetchpriority="high" attrs="[object Object]" class="Template5050Accordion_laptopImage" /></picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </gws-accordion-5050-container>
+        </section>
+        <div id="m10" data-module="TemplateSpacer" data-g-section-id="spacer">
+          <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:92px;--gws-spacer-desktop-size:120px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+        </div>
+        <section id="m11" data-module="Template5050Accordion" data-g-section-id="5050-accordion">
+          <div style="Grid_grid" class="Grid_grid">
+            <div style="--gws-column-tablet-start:2;--gws-column-tablet-end:11;--gws-column-laptop-start:4;--gws-column-laptop-end:9;" class="Grid_column">
+              <div class="Text_container Text_body Template5050Accordion_header">
+                <h2 class="Heading_heading heading Heading_size:h3">עם Gmail, אפשר להספיק הרבה יותר</h2>
+              </div>
+            </div>
+          </div><gws-accordion-5050-container slide-timing="15" current="0">
+            <div style="Grid_grid" class="Grid_grid Template5050Accordion_container">
+              <div style="--gws-column-tablet-start:3;--gws-column-tablet-end:10;--gws-column-laptop-start:2;--gws-column-laptop-end:7;" class="Grid_column Template5050Accordion_featuredImage">
+                <div class="Template5050Accordion_column">
+                  <div data-image-index="0" data-image-state="visible">
+                    <picture><img src="https://lh3.googleusercontent.com/RqPvsXcrNXK-3bYljVxR3OCcx5fOqNLC-BVbZwdlwcOIvvabgTsqnF1xStl5UKUpgXuK6p6tFDP-yBOA2369Hm-XiyG8PAH4UfJD_w=e365-pa-nu-rw-w684" srcset="https://lh3.googleusercontent.com/RqPvsXcrNXK-3bYljVxR3OCcx5fOqNLC-BVbZwdlwcOIvvabgTsqnF1xStl5UKUpgXuK6p6tFDP-yBOA2369Hm-XiyG8PAH4UfJD_w=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/RqPvsXcrNXK-3bYljVxR3OCcx5fOqNLC-BVbZwdlwcOIvvabgTsqnF1xStl5UKUpgXuK6p6tFDP-yBOA2369Hm-XiyG8PAH4UfJD_w=e365-pa-nu-rw-w1368 2x" alt="ממשק הצ'אט של Gmail שמראה שאפשר לשתף מסמכים ולשוחח בווידאו במסך אחד" width="1368" height="1000" loading="lazy" attrs="[object Object]" class="Template5050Accordion_laptopImage" /></picture>
+                  </div>
+                  <div data-image-index="1" data-image-state="hidden">
+                    <picture><img src="https://lh3.googleusercontent.com/xMtWjfbjp8I8ladBh13mHxgUGP-oLxlOkaxnl5xRk7Au6Qc2ismbIKJmikdmVwr_khgm2YjwFtgziWvDkCaqaivaF-0luD9KYio=e365-pa-nu-rw-w684" srcset="https://lh3.googleusercontent.com/xMtWjfbjp8I8ladBh13mHxgUGP-oLxlOkaxnl5xRk7Au6Qc2ismbIKJmikdmVwr_khgm2YjwFtgziWvDkCaqaivaF-0luD9KYio=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/xMtWjfbjp8I8ladBh13mHxgUGP-oLxlOkaxnl5xRk7Au6Qc2ismbIKJmikdmVwr_khgm2YjwFtgziWvDkCaqaivaF-0luD9KYio=e365-pa-nu-rw-w1368 2x" alt="אימייל חדש עם מילוי אוטומטי במסגרת התכונה &quot;כתיבה מהירה&quot;" width="1368" height="1000" loading="lazy" attrs="[object Object]" class="Template5050Accordion_laptopImage" /></picture>
+                  </div>
+                  <div data-image-index="2" data-image-state="hidden">
+                    <picture><img src="https://lh3.googleusercontent.com/lYklNNTI69Pt266dUNhzyitqDxDzPDYIdy-gEPHn24DEBMiP6pUU4b0l0OEim8GVVMLUedmHJNgk1cFMNmEf1JcZJFjXd2goKbE=e365-pa-nu-rw-w684" srcset="https://lh3.googleusercontent.com/lYklNNTI69Pt266dUNhzyitqDxDzPDYIdy-gEPHn24DEBMiP6pUU4b0l0OEim8GVVMLUedmHJNgk1cFMNmEf1JcZJFjXd2goKbE=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/lYklNNTI69Pt266dUNhzyitqDxDzPDYIdy-gEPHn24DEBMiP6pUU4b0l0OEim8GVVMLUedmHJNgk1cFMNmEf1JcZJFjXd2goKbE=e365-pa-nu-rw-w1368 2x" alt="תיבת הדואר הנכנס של Gmail עם תזכורת למעקב בכתום" width="1368" height="1000" loading="lazy" attrs="[object Object]" class="Template5050Accordion_laptopImage" /></picture>
+                  </div>
+                </div>
+              </div>
+              <div style="--gws-column-tablet-start:3;--gws-column-tablet-end:10;--gws-column-laptop-start:8;--gws-column-laptop-end:11;" class="Grid_column">
+                <div class="Template5050Accordion_column">
+                  <div class="Template5050Accordion_inner"><gws-accordion-item index="0" current="true" data-g-event="gmail: body" data-g-label="/gmail/" data-g-action="click:  gmail app  accordion item  stay connected and get organized">
+                      <div slot="heading">
+                        <h3 style="--text-font-weight:500;" class="Text_container Text_subheading Text_weight AccordionItem_heading">הישארו בעניינים, הישארו מאורגנים</h3>
+                      </div>
+                      <div slot="body">
+                        <div class="Text_container Text_body Text_lg AccordionItem_body">
+                          <p>התחילו צ'אט, הצטרפו לשיחת וידאו ב-Meet או שתפו פעולה במסמך ב-Docs – הכול ישירות מ-Gmail.</p>
+                        </div>
+                      </div>
+                      <div slot="image" class="AccordionItem_imageContainer AccordionItem_ytContainer">
+                        <picture>
+                          <source srcset="https://lh3.googleusercontent.com/RqPvsXcrNXK-3bYljVxR3OCcx5fOqNLC-BVbZwdlwcOIvvabgTsqnF1xStl5UKUpgXuK6p6tFDP-yBOA2369Hm-XiyG8PAH4UfJD_w=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/RqPvsXcrNXK-3bYljVxR3OCcx5fOqNLC-BVbZwdlwcOIvvabgTsqnF1xStl5UKUpgXuK6p6tFDP-yBOA2369Hm-XiyG8PAH4UfJD_w=e365-pa-nu-rw-w1368 2x" media="(min-width: 1024px)" width="1368" height="1000" type="image/webp" />
+                          <source srcset="https://lh3.googleusercontent.com/mePw3N5BsLxATHfVgyvVyrS874CnVmOqnrwkhWciE2EILN59KldNLarD8MKKRBJ8OnBzN5ek5ZJSIo84bjHFHM_jFVKN1JzFZAt_=e365-pa-nu-rw-w632 1x, https://lh3.googleusercontent.com/mePw3N5BsLxATHfVgyvVyrS874CnVmOqnrwkhWciE2EILN59KldNLarD8MKKRBJ8OnBzN5ek5ZJSIo84bjHFHM_jFVKN1JzFZAt_=e365-pa-nu-rw-w944 2x" media="(min-width: 600px)" width="944" height="600" type="image/webp" /><img src="https://lh3.googleusercontent.com/0BsQPw-Q14idtsnh1KBuWv6SM6ZZ49H0wYIyWX3vEb7LqYcKpZ5hoTXr6rnN9z6_htkl4Mm7AIY_MCTmJAkiHYnFiAtW7sovXx8K=e365-pa-nu-rw-w527" srcset="https://lh3.googleusercontent.com/0BsQPw-Q14idtsnh1KBuWv6SM6ZZ49H0wYIyWX3vEb7LqYcKpZ5hoTXr6rnN9z6_htkl4Mm7AIY_MCTmJAkiHYnFiAtW7sovXx8K=e365-pa-nu-rw-w527 1x, https://lh3.googleusercontent.com/0BsQPw-Q14idtsnh1KBuWv6SM6ZZ49H0wYIyWX3vEb7LqYcKpZ5hoTXr6rnN9z6_htkl4Mm7AIY_MCTmJAkiHYnFiAtW7sovXx8K=e365-pa-nu-rw-w608 2x" alt="ממשק הצ'אט של Gmail שמראה שאפשר לשתף מסמכים ולשוחח בווידאו במסך אחד" width="608" height="500" loading="lazy" />
+                        </picture>
+                      </div>
+                    </gws-accordion-item><gws-accordion-item index="1" current="false" data-g-event="gmail: body" data-g-label="/gmail/" data-g-action="click:  gmail app  accordion item  get more done faster">
+                      <div slot="heading">
+                        <h3 style="--text-font-weight:500;" class="Text_container Text_subheading Text_weight AccordionItem_heading">הספיקו יותר, חסכו בזמן</h3>
+                      </div>
+                      <div slot="body">
+                        <div class="Text_container Text_body Text_lg AccordionItem_body">
+                          <p>כתבו אימיילים והודעות מהר יותר בעזרת תכונות כמו &quot;כתיבה מהירה&quot;, כך שתוכלו להשקיע יותר זמן במה שאתם אוהבים.</p>
+                        </div>
+                      </div>
+                      <div slot="image" class="AccordionItem_imageContainer AccordionItem_ytContainer">
+                        <picture>
+                          <source srcset="https://lh3.googleusercontent.com/xMtWjfbjp8I8ladBh13mHxgUGP-oLxlOkaxnl5xRk7Au6Qc2ismbIKJmikdmVwr_khgm2YjwFtgziWvDkCaqaivaF-0luD9KYio=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/xMtWjfbjp8I8ladBh13mHxgUGP-oLxlOkaxnl5xRk7Au6Qc2ismbIKJmikdmVwr_khgm2YjwFtgziWvDkCaqaivaF-0luD9KYio=e365-pa-nu-rw-w1368 2x" media="(min-width: 1024px)" width="1368" height="1000" type="image/webp" />
+                          <source srcset="https://lh3.googleusercontent.com/oFPE5yylK8_7gROdDbSBz2JzeWG4OwGMdUs7s8b6YugOZSioL7AvOrC9vUzPJgFvHWFOtzkqSyze6W4emXlHN95_bttcQ9gKrDW1=e365-pa-nu-rw-w632 1x, https://lh3.googleusercontent.com/oFPE5yylK8_7gROdDbSBz2JzeWG4OwGMdUs7s8b6YugOZSioL7AvOrC9vUzPJgFvHWFOtzkqSyze6W4emXlHN95_bttcQ9gKrDW1=e365-pa-nu-rw-w944 2x" media="(min-width: 600px)" width="944" height="600" type="image/webp" /><img src="https://lh3.googleusercontent.com/sYeL2IQC0W1uHZoYSrK3JVZtwX5FY_y4tbiCYNbet3gRBmJk2q2sITKybme5oKJTFJO-WSXMk0LuJ5G4mnbki_M_48DYcnBhfNzG=e365-pa-nu-rw-w527" srcset="https://lh3.googleusercontent.com/sYeL2IQC0W1uHZoYSrK3JVZtwX5FY_y4tbiCYNbet3gRBmJk2q2sITKybme5oKJTFJO-WSXMk0LuJ5G4mnbki_M_48DYcnBhfNzG=e365-pa-nu-rw-w527 1x, https://lh3.googleusercontent.com/sYeL2IQC0W1uHZoYSrK3JVZtwX5FY_y4tbiCYNbet3gRBmJk2q2sITKybme5oKJTFJO-WSXMk0LuJ5G4mnbki_M_48DYcnBhfNzG=e365-pa-nu-rw-w608 2x" alt="אימייל חדש עם מילוי אוטומטי במסגרת התכונה &quot;כתיבה מהירה&quot;" width="608" height="500" loading="lazy" />
+                        </picture>
+                      </div>
+                    </gws-accordion-item><gws-accordion-item index="2" current="false" data-g-event="gmail: body" data-g-label="/gmail/" data-g-action="click:  gmail app  accordion item  never forget to reply">
+                      <div slot="heading">
+                        <h3 style="--text-font-weight:500;" class="Text_container Text_subheading Text_weight AccordionItem_heading">אל תפספסו אף אימייל</h3>
+                      </div>
+                      <div slot="body">
+                        <div class="Text_container Text_body Text_lg AccordionItem_body">
+                          <p>קבלו תזכורות קטנות שיעזרו לכם להישאר בעניינים.</p>
+                        </div>
+                      </div>
+                      <div slot="image" class="AccordionItem_imageContainer AccordionItem_ytContainer">
+                        <picture>
+                          <source srcset="https://lh3.googleusercontent.com/lYklNNTI69Pt266dUNhzyitqDxDzPDYIdy-gEPHn24DEBMiP6pUU4b0l0OEim8GVVMLUedmHJNgk1cFMNmEf1JcZJFjXd2goKbE=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/lYklNNTI69Pt266dUNhzyitqDxDzPDYIdy-gEPHn24DEBMiP6pUU4b0l0OEim8GVVMLUedmHJNgk1cFMNmEf1JcZJFjXd2goKbE=e365-pa-nu-rw-w1368 2x" media="(min-width: 1024px)" width="1368" height="1000" type="image/webp" />
+                          <source srcset="https://lh3.googleusercontent.com/rLZmeWU8UUmrf9HqDET89Mk-tqW8qomhV4uagDdk_HhtNRY-ObIySkMzri5SZ_aStmdxSObRU1usPUSOIuLRWLC-VkN7LeaMlZqV=e365-pa-nu-rw-w632 1x, https://lh3.googleusercontent.com/rLZmeWU8UUmrf9HqDET89Mk-tqW8qomhV4uagDdk_HhtNRY-ObIySkMzri5SZ_aStmdxSObRU1usPUSOIuLRWLC-VkN7LeaMlZqV=e365-pa-nu-rw-w944 2x" media="(min-width: 600px)" width="944" height="600" type="image/webp" /><img src="https://lh3.googleusercontent.com/58kOPgzUQA8DsIIWeOfwiR1HKAGSZYqiGWpcnZHt3HDJ-lSytkmdcpSg-Tx33q_wHBOr8qmsiLJJ3C5nWhx7dLiWSIXyHaeAZfALzA=e365-pa-nu-rw-w527" srcset="https://lh3.googleusercontent.com/58kOPgzUQA8DsIIWeOfwiR1HKAGSZYqiGWpcnZHt3HDJ-lSytkmdcpSg-Tx33q_wHBOr8qmsiLJJ3C5nWhx7dLiWSIXyHaeAZfALzA=e365-pa-nu-rw-w527 1x, https://lh3.googleusercontent.com/58kOPgzUQA8DsIIWeOfwiR1HKAGSZYqiGWpcnZHt3HDJ-lSytkmdcpSg-Tx33q_wHBOr8qmsiLJJ3C5nWhx7dLiWSIXyHaeAZfALzA=e365-pa-nu-rw-w608 2x" alt="תיבת הדואר הנכנס של Gmail עם תזכורת למעקב בכתום" width="608" height="500" loading="lazy" />
+                        </picture>
+                      </div>
+                    </gws-accordion-item></div>
+                </div>
+              </div>
+            </div>
+          </gws-accordion-5050-container>
+        </section>
+        <div id="m12" data-module="TemplateSpacer" data-g-section-id="spacer">
+          <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:92px;--gws-spacer-desktop-size:120px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+        </div>
+        <section id="m13" data-module="Template5050Accordion" data-g-section-id="5050-accordion">
+          <div style="Grid_grid" class="Grid_grid">
+            <div style="--gws-column-tablet-start:2;--gws-column-tablet-end:11;--gws-column-laptop-start:4;--gws-column-laptop-end:9;" class="Grid_column">
+              <div class="Text_container Text_body Template5050Accordion_header">
+                <h2 class="Heading_heading heading Heading_size:h3">‫Gmail מוצלח יותר באפליקציה</h2>
+              </div>
+            </div>
+          </div><gws-accordion-5050-container slide-timing="15" current="0">
+            <div style="Grid_grid" class="Grid_grid Template5050Accordion_container">
+              <div style="--gws-column-tablet-start:3;--gws-column-tablet-end:10;--gws-column-laptop-start:2;--gws-column-laptop-end:5;" class="Grid_column">
+                <div class="Template5050Accordion_column">
+                  <div class="Template5050Accordion_inner"><gws-accordion-item index="0" current="true" data-g-event="gmail: body" data-g-label="/gmail/" data-g-action="click:  gmail app  accordion item  express yourself with emojis">
+                      <div slot="heading">
+                        <h3 style="--text-font-weight:500;" class="Text_container Text_subheading Text_weight AccordionItem_heading">תגובות באמוג'י</h3>
+                      </div>
+                      <div slot="body">
+                        <div class="Text_container Text_body Text_lg AccordionItem_body">
+                          <p>תגובות באמוג'י מאפשרות לכם להשיב לאימיילים במהירות, והן זמינות רק באפליקציית Gmail.</p>
+                        </div>
+                      </div>
+                      <div slot="image" class="AccordionItem_imageContainer AccordionItem_ytContainer">
+                        <div style="--gws-lottie-desktop-aspect-ratio:undefined / undefined;--gws-lottie-desktop-height:undefinedpx;--gws-lottie-desktop-width:undefinedpx;" class="ResponsiveLottie_lottieWrapper">
+                          <div class="ResponsiveLottie_desktopLottie"><gws-lottie loop src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-6ifa1QhVhbE06aPJ9VS4ui-fef9819cdc6c07ea89bc13ff266155d8-Desktop_-_Gmail_Product_update_-_Emoji_animation_-_230920.json" alt="גרסה פשוטה של ממשק משתמש בטלפון שבה מוצג אימייל שמברך את הלן על ההצטרפות לצוות. סרגל מוגדל מראה כמה פשוט להגיב באמוג'י." controls-position="staggered" wait-until-idle="true"></gws-lottie></div>
+                          <div class="ResponsiveLottie_tabletLottie"><gws-lottie src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-5rmJOweIRJOW7by63zsPdI-ab8dbbc3b0476f5b0867884b81b76d52-Tablet_-_Gmail_Product_update_-_Emoji_animation_-_230920.json" alt="גרסה פשוטה של ממשק משתמש בטלפון שבה מוצג אימייל שמברך את הלן על ההצטרפות לצוות. סרגל מוגדל מראה כמה פשוט להגיב באמוג'י." controls-position="staggered" wait-until-idle="true"></gws-lottie></div>
+                          <div class="ResponsiveLottie_mobileLottie"><gws-lottie src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-4IEWC26oCqedKypzOo54Ii-55bd5c64c4f6f827460d1da839f7adff-Mobile_-_Gmail_Product_update_-_Emoji_animation_-_230920.json" alt="גרסה פשוטה של ממשק משתמש בטלפון שבה מוצג אימייל שמברך את הלן על ההצטרפות לצוות. סרגל מוגדל מראה כמה פשוט להגיב באמוג'י." controls-position="staggered" wait-until-idle="true"></gws-lottie></div>
+                        </div>
+                      </div>
+                    </gws-accordion-item><gws-accordion-item index="1" current="false" data-g-event="gmail: body" data-g-label="/gmail/" data-g-action="click:  gmail app  accordion item  find your emails faster">
+                      <div slot="heading">
+                        <h3 style="--text-font-weight:500;" class="Text_container Text_subheading Text_weight AccordionItem_heading">קל מתמיד למצוא אימיילים</h3>
+                      </div>
+                      <div slot="body">
+                        <div class="Text_container Text_body Text_lg AccordionItem_body">
+                          <p>פונקציית חיפוש מתקדמת שעוזרת לכם למצוא את מה שאתם מחפשים.</p>
+                        </div>
+                      </div>
+                      <div slot="image" class="AccordionItem_imageContainer AccordionItem_ytContainer">
+                        <picture>
+                          <source srcset="https://lh3.googleusercontent.com/314Y9Xqp426C0uZ2_YyIA4RjFNDpENzU5mz2VAC6Cnm-ODSFqnC3Bf2QBzmzmzKs6exkTTf8KEBPGgc-kg5ZPx8a8s40VFcz4g06Zw=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/314Y9Xqp426C0uZ2_YyIA4RjFNDpENzU5mz2VAC6Cnm-ODSFqnC3Bf2QBzmzmzKs6exkTTf8KEBPGgc-kg5ZPx8a8s40VFcz4g06Zw=e365-pa-nu-rw-w1368 2x" media="(min-width: 1024px)" width="1368" height="1000" type="image/webp" />
+                          <source srcset="https://lh3.googleusercontent.com/wrmEalyyY1x2iDYLyV8Z2YGj5azguWSN0gr6KrbziRHIOk-a3Bw4TDkPTNj5442ZFtR4wELhdiNirlztQWq_tnQdZZJ-hP8JDYR1=e365-pa-nu-rw-w632 1x, https://lh3.googleusercontent.com/wrmEalyyY1x2iDYLyV8Z2YGj5azguWSN0gr6KrbziRHIOk-a3Bw4TDkPTNj5442ZFtR4wELhdiNirlztQWq_tnQdZZJ-hP8JDYR1=e365-pa-nu-rw-w944 2x" media="(min-width: 600px)" width="944" height="600" type="image/webp" /><img src="https://lh3.googleusercontent.com/8h3a048vh4yp_KRDczX8WQ8divoxkwa7KduxO2xwPDcRlJXxkve1xw8Gbn6zMsE17-lj4rINjbOzV5T_1LC7YKYttAoA3OKDbDgBRg=e365-pa-nu-rw-w527" srcset="https://lh3.googleusercontent.com/8h3a048vh4yp_KRDczX8WQ8divoxkwa7KduxO2xwPDcRlJXxkve1xw8Gbn6zMsE17-lj4rINjbOzV5T_1LC7YKYttAoA3OKDbDgBRg=e365-pa-nu-rw-w527 1x, https://lh3.googleusercontent.com/8h3a048vh4yp_KRDczX8WQ8divoxkwa7KduxO2xwPDcRlJXxkve1xw8Gbn6zMsE17-lj4rINjbOzV5T_1LC7YKYttAoA3OKDbDgBRg=e365-pa-nu-rw-w608 2x" alt="סרגל חיפוש בגרסה פשוטה של ממשק משתמש בטלפון.
+המילה RSVP (אישור השתתפות) מוקלדת בו ולמטה מוצגות התוצאות שבהן המילה מופיעה." width="608" height="500" loading="lazy" />
+                        </picture>
+                      </div>
+                    </gws-accordion-item><gws-accordion-item index="2" current="false" data-g-event="gmail: body" data-g-label="/gmail/" data-g-action="click:  gmail app  accordion item  switch between accounts">
+                      <div slot="heading">
+                        <h3 style="--text-font-weight:500;" class="Text_container Text_subheading Text_weight AccordionItem_heading">מעבר בין חשבונות</h3>
+                      </div>
+                      <div slot="body">
+                        <div class="Text_container Text_body Text_lg AccordionItem_body">
+                          <p>כל האימיילים מכל הספקים, באפליקציה אחת.</p>
+                        </div>
+                      </div>
+                      <div slot="image" class="AccordionItem_imageContainer AccordionItem_ytContainer">
+                        <picture>
+                          <source srcset="https://lh3.googleusercontent.com/5c7Fi-SOjGsR9oTj53GVi-6dSafbMYKk_A5zr3jqQmVNogmAlAuX8yMgroz3gpcMw0jq7Vc_Er_tnxszVmwirOfgDRezCCQao-6ytg=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/5c7Fi-SOjGsR9oTj53GVi-6dSafbMYKk_A5zr3jqQmVNogmAlAuX8yMgroz3gpcMw0jq7Vc_Er_tnxszVmwirOfgDRezCCQao-6ytg=e365-pa-nu-rw-w1368 2x" media="(min-width: 1024px)" width="1368" height="1000" type="image/webp" />
+                          <source srcset="https://lh3.googleusercontent.com/2gT7f9ZSrUVjpH6y4h12l-XyEPLsCPOeOTFiV5IKdbuGMWjV46rYryqdJRCGsRe-slJbHD1FlHi13ogdTO_Xxuigi5nsGLF_FszL=e365-pa-nu-rw-w632 1x, https://lh3.googleusercontent.com/2gT7f9ZSrUVjpH6y4h12l-XyEPLsCPOeOTFiV5IKdbuGMWjV46rYryqdJRCGsRe-slJbHD1FlHi13ogdTO_Xxuigi5nsGLF_FszL=e365-pa-nu-rw-w944 2x" media="(min-width: 600px)" width="944" height="600" type="image/webp" /><img src="https://lh3.googleusercontent.com/2gZzMIUd87yNreZvx0XT4Aawcgf43AsZnu0Gl-hHv7eDTeY1IRPfavgHX5-gXoNgEY4R03rUxalB1yb5VkP2LfgDpfrvG1a5Fg4Z=e365-pa-nu-rw-w527" srcset="https://lh3.googleusercontent.com/2gZzMIUd87yNreZvx0XT4Aawcgf43AsZnu0Gl-hHv7eDTeY1IRPfavgHX5-gXoNgEY4R03rUxalB1yb5VkP2LfgDpfrvG1a5Fg4Z=e365-pa-nu-rw-w527 1x, https://lh3.googleusercontent.com/2gZzMIUd87yNreZvx0XT4Aawcgf43AsZnu0Gl-hHv7eDTeY1IRPfavgHX5-gXoNgEY4R03rUxalB1yb5VkP2LfgDpfrvG1a5Fg4Z=e365-pa-nu-rw-w608 2x" alt="גרסה פשוטה של ממשק משתמש בטלפון עם הכותרת Add account (הוספת חשבון) וסמלים של שירותי אימייל שונים, שמראה כמה קל להוסיף אותם לאפליקציית Gmail." width="608" height="500" loading="lazy" />
+                        </picture>
+                      </div>
+                    </gws-accordion-item></div>
+                </div>
+              </div>
+              <div style="--gws-column-tablet-start:3;--gws-column-tablet-end:10;--gws-column-laptop-start:6;--gws-column-laptop-end:11;" class="Grid_column Template5050Accordion_featuredImage">
+                <div class="Template5050Accordion_column">
+                  <div data-image-index="0" data-image-state="visible">
+                    <div style="--gws-lottie-desktop-aspect-ratio:undefined / undefined;--gws-lottie-desktop-height:undefinedpx;--gws-lottie-desktop-width:undefinedpx;" class="ResponsiveLottie_lottieWrapper Template5050Accordion_laptopImage">
+                      <div class="ResponsiveLottie_desktopLottie"><gws-lottie loop src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-6ifa1QhVhbE06aPJ9VS4ui-fef9819cdc6c07ea89bc13ff266155d8-Desktop_-_Gmail_Product_update_-_Emoji_animation_-_230920.json" alt="גרסה פשוטה של ממשק משתמש בטלפון שבה מוצג אימייל שמברך את הלן על ההצטרפות לצוות. סרגל מוגדל מראה כמה פשוט להגיב באמוג'י." controls-position="staggered" wait-until-idle="true"></gws-lottie></div>
+                      <div class="ResponsiveLottie_tabletLottie"><gws-lottie src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-5rmJOweIRJOW7by63zsPdI-ab8dbbc3b0476f5b0867884b81b76d52-Tablet_-_Gmail_Product_update_-_Emoji_animation_-_230920.json" alt="גרסה פשוטה של ממשק משתמש בטלפון שבה מוצג אימייל שמברך את הלן על ההצטרפות לצוות. סרגל מוגדל מראה כמה פשוט להגיב באמוג'י." controls-position="staggered" wait-until-idle="true"></gws-lottie></div>
+                      <div class="ResponsiveLottie_mobileLottie"><gws-lottie src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-4IEWC26oCqedKypzOo54Ii-55bd5c64c4f6f827460d1da839f7adff-Mobile_-_Gmail_Product_update_-_Emoji_animation_-_230920.json" alt="גרסה פשוטה של ממשק משתמש בטלפון שבה מוצג אימייל שמברך את הלן על ההצטרפות לצוות. סרגל מוגדל מראה כמה פשוט להגיב באמוג'י." controls-position="staggered" wait-until-idle="true"></gws-lottie></div>
+                    </div>
+                  </div>
+                  <div data-image-index="1" data-image-state="hidden">
+                    <picture><img src="https://lh3.googleusercontent.com/314Y9Xqp426C0uZ2_YyIA4RjFNDpENzU5mz2VAC6Cnm-ODSFqnC3Bf2QBzmzmzKs6exkTTf8KEBPGgc-kg5ZPx8a8s40VFcz4g06Zw=e365-pa-nu-rw-w684" srcset="https://lh3.googleusercontent.com/314Y9Xqp426C0uZ2_YyIA4RjFNDpENzU5mz2VAC6Cnm-ODSFqnC3Bf2QBzmzmzKs6exkTTf8KEBPGgc-kg5ZPx8a8s40VFcz4g06Zw=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/314Y9Xqp426C0uZ2_YyIA4RjFNDpENzU5mz2VAC6Cnm-ODSFqnC3Bf2QBzmzmzKs6exkTTf8KEBPGgc-kg5ZPx8a8s40VFcz4g06Zw=e365-pa-nu-rw-w1368 2x" alt="סרגל חיפוש בגרסה פשוטה של ממשק משתמש בטלפון.
+המילה RSVP (אישור השתתפות) מוקלדת בו ולמטה מוצגות התוצאות שבהן המילה מופיעה." width="1368" height="1000" loading="lazy" attrs="[object Object]" class="Template5050Accordion_laptopImage" /></picture>
+                  </div>
+                  <div data-image-index="2" data-image-state="hidden">
+                    <picture><img src="https://lh3.googleusercontent.com/5c7Fi-SOjGsR9oTj53GVi-6dSafbMYKk_A5zr3jqQmVNogmAlAuX8yMgroz3gpcMw0jq7Vc_Er_tnxszVmwirOfgDRezCCQao-6ytg=e365-pa-nu-rw-w684" srcset="https://lh3.googleusercontent.com/5c7Fi-SOjGsR9oTj53GVi-6dSafbMYKk_A5zr3jqQmVNogmAlAuX8yMgroz3gpcMw0jq7Vc_Er_tnxszVmwirOfgDRezCCQao-6ytg=e365-pa-nu-rw-w684 1x, https://lh3.googleusercontent.com/5c7Fi-SOjGsR9oTj53GVi-6dSafbMYKk_A5zr3jqQmVNogmAlAuX8yMgroz3gpcMw0jq7Vc_Er_tnxszVmwirOfgDRezCCQao-6ytg=e365-pa-nu-rw-w1368 2x" alt="גרסה פשוטה של ממשק משתמש בטלפון עם הכותרת Add account (הוספת חשבון) וסמלים של שירותי אימייל שונים, שמראה כמה קל להוסיף אותם לאפליקציית Gmail." width="1368" height="1000" loading="lazy" attrs="[object Object]" class="Template5050Accordion_laptopImage" /></picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </gws-accordion-5050-container>
+        </section>
+        <div id="m14" data-module="TemplateSpacer" data-g-section-id="spacer">
+          <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:60px;--gws-spacer-desktop-size:80px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+        </div>
+        <section id="m15" data-module="TemplateBackgroundContainer" data-g-section-id="background-container">
+          <div class="TemplateBackgroundContainer_container TemplateBackgroundContainer_contained">
+            <div class="TemplateBackgroundContainer_wrapper TemplateBackgroundContainer_grey">
+              <div class="TemplateBackgroundContainer_modules">
+                <div id="m15-1" data-module="TemplateSpacer">
+                  <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:48px;--gws-spacer-desktop-size:60px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+                </div>
+                <section id="m15-2" data-module="TemplateSectionBreak">
+                  <div style="Grid_grid" class="Grid_grid TemplateSectionBreak_grid">
+                    <div style="--gws-column-laptop-start:3;--gws-column-laptop-end:10;" class="Grid_column TemplateSectionBreak_container">
+                      <div class="Text_container Text_body Text_lg TemplateSectionBreak_copyGroup">
+                        <h2 class="Heading_heading heading Heading_size:h4">הפיצ'רים הכי טובים של Gmail אצלכם במכשיר</h2>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div id="m15-3" data-module="TemplateSpacer">
+                  <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:36px;--gws-spacer-tablet-size:36px;--gws-spacer-desktop-size:36px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+                </div>
+                <section id="m15-4" data-module="TemplateSectionBreak">
+                  <div style="Grid_grid" class="Grid_grid TemplateSectionBreak_grid">
+                    <div style="--gws-column-laptop-start:4;--gws-column-laptop-end:9;" class="Grid_column TemplateSectionBreak_container">
+                      <div class="Text_container Text_body Text_lg TemplateSectionBreak_copyGroup">
+                        <div class="ButtonGroup_buttonGroup ButtonGroup_buttonGroupHorizontal button-group horizontal"><span class="gws-button"><a href="https://apps.apple.com/il/app/gmail-email-by-google/id422689480" target="_blank" rel="noopener noreferrer" data-g-event="gmail_asw: body #section-break" data-g-action="app store" data-g-label="https://apps.apple.com/il/app/gmail-email-by-google/id422689480" data-uj-def="body_section_break" aria-label="הורדת Gmail מ-App Store" class="button button--rtl button--store-badge"><span class="button__content"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119.664 40">
+                                  <path d="M110.135 0H9.535c-.367 0-.73 0-1.095.002-.306.002-.61.008-.919.013A13.215 13.215 0 0 0 5.517.19a6.665 6.665 0 0 0-1.9.627 6.438 6.438 0 0 0-1.62 1.18A6.258 6.258 0 0 0 .82 3.617a6.601 6.601 0 0 0-.625 1.903 12.993 12.993 0 0 0-.179 2.002c-.01.307-.01.615-.015.921V31.56c.005.31.006.61.015.921a12.992 12.992 0 0 0 .18 2.002 6.588 6.588 0 0 0 .624 1.905A6.208 6.208 0 0 0 1.998 38a6.274 6.274 0 0 0 1.618 1.179 6.7 6.7 0 0 0 1.901.63 13.455 13.455 0 0 0 2.004.177c.31.007.613.011.919.011.366.002.728.002 1.095.002h100.6c.36 0 .724 0 1.084-.002.304 0 .617-.004.922-.01a13.279 13.279 0 0 0 2-.178 6.804 6.804 0 0 0 1.908-.63A6.277 6.277 0 0 0 117.666 38a6.395 6.395 0 0 0 1.182-1.614 6.604 6.604 0 0 0 .619-1.905 13.506 13.506 0 0 0 .185-2.002c.004-.31.004-.61.004-.921.008-.364.008-.725.008-1.094V9.536c0-.366 0-.73-.008-1.092 0-.306 0-.614-.004-.92a13.507 13.507 0 0 0-.185-2.003 6.618 6.618 0 0 0-.62-1.903 6.466 6.466 0 0 0-2.798-2.8 6.768 6.768 0 0 0-1.908-.627 13.044 13.044 0 0 0-2-.176c-.305-.005-.618-.011-.922-.013-.36-.002-.725-.002-1.084-.002Z" style="fill:#a6a6a6"></path>
+                                  <path d="M8.445 39.125c-.305 0-.602-.004-.904-.01a12.687 12.687 0 0 1-1.87-.164 5.884 5.884 0 0 1-1.656-.548 5.406 5.406 0 0 1-1.397-1.016 5.32 5.32 0 0 1-1.02-1.397 5.722 5.722 0 0 1-.544-1.657 12.414 12.414 0 0 1-.166-1.875c-.007-.21-.015-.913-.015-.913v-23.1s.009-.692.015-.895a12.37 12.37 0 0 1 .165-1.872 5.755 5.755 0 0 1 .544-1.662 5.373 5.373 0 0 1 1.015-1.398 5.565 5.565 0 0 1 1.402-1.023 5.823 5.823 0 0 1 1.653-.544A12.586 12.586 0 0 1 7.543.887l.902-.012h102.769l.913.013a12.385 12.385 0 0 1 1.858.162 5.938 5.938 0 0 1 1.671.548 5.594 5.594 0 0 1 2.415 2.42 5.763 5.763 0 0 1 .535 1.649 12.995 12.995 0 0 1 .174 1.887c.003.283.003.588.003.89.008.375.008.732.008 1.092v20.929c0 .363 0 .718-.008 1.075 0 .325 0 .623-.004.93a12.731 12.731 0 0 1-.17 1.853 5.739 5.739 0 0 1-.54 1.67 5.48 5.48 0 0 1-1.016 1.386 5.413 5.413 0 0 1-1.4 1.022 5.862 5.862 0 0 1-1.668.55 12.542 12.542 0 0 1-1.869.163c-.293.007-.6.011-.897.011l-1.084.002Z"></path>
+                                  <g data-name="&lt;Group>">
+                                    <g data-name="&lt;Group>">
+                                      <path d="M24.769 20.3a4.949 4.949 0 0 1 2.356-4.151 5.066 5.066 0 0 0-3.99-2.158c-1.68-.176-3.308 1.005-4.164 1.005-.872 0-2.19-.988-3.608-.958a5.315 5.315 0 0 0-4.473 2.728c-1.934 3.348-.491 8.269 1.361 10.976.927 1.325 2.01 2.805 3.428 2.753 1.387-.058 1.905-.885 3.58-.885 1.658 0 2.144.885 3.59.852 1.489-.025 2.426-1.332 3.32-2.67a10.962 10.962 0 0 0 1.52-3.092 4.782 4.782 0 0 1-2.92-4.4ZM22.037 12.21a4.872 4.872 0 0 0 1.115-3.49 4.957 4.957 0 0 0-3.208 1.66A4.636 4.636 0 0 0 18.8 13.74a4.1 4.1 0 0 0 3.237-1.53Z" data-name="&lt;Path>" style="fill:#fff"></path>
+                                    </g>
+                                    <path d="M42.302 27.14H37.57l-1.137 3.356h-2.005l4.484-12.418h2.083l4.483 12.418h-2.039Zm-4.243-1.55h3.752l-1.85-5.446h-.051ZM55.16 25.97c0 2.813-1.506 4.62-3.779 4.62a3.07 3.07 0 0 1-2.848-1.583h-.043v4.484H46.63V21.442h1.8v1.506h.033a3.212 3.212 0 0 1 2.883-1.6c2.298 0 3.813 1.816 3.813 4.622Zm-1.91 0c0-1.833-.948-3.038-2.393-3.038-1.42 0-2.375 1.23-2.375 3.038 0 1.824.955 3.046 2.375 3.046 1.445 0 2.393-1.197 2.393-3.046ZM65.125 25.97c0 2.813-1.506 4.62-3.779 4.62a3.07 3.07 0 0 1-2.848-1.583h-.043v4.484h-1.859V21.442h1.799v1.506h.034a3.212 3.212 0 0 1 2.883-1.6c2.298 0 3.813 1.816 3.813 4.622Zm-1.91 0c0-1.833-.948-3.038-2.393-3.038-1.42 0-2.375 1.23-2.375 3.038 0 1.824.955 3.046 2.375 3.046 1.445 0 2.392-1.197 2.392-3.046ZM71.71 27.036c.138 1.232 1.334 2.04 2.97 2.04 1.566 0 2.693-.808 2.693-1.919 0-.964-.68-1.54-2.29-1.936l-1.609-.388c-2.28-.55-3.339-1.617-3.339-3.348 0-2.142 1.867-3.614 4.519-3.614 2.624 0 4.423 1.472 4.483 3.614h-1.876c-.112-1.239-1.136-1.987-2.634-1.987s-2.521.757-2.521 1.858c0 .878.654 1.395 2.255 1.79l1.368.336c2.548.603 3.606 1.626 3.606 3.443 0 2.323-1.85 3.778-4.793 3.778-2.754 0-4.614-1.42-4.734-3.667ZM83.346 19.3v2.142h1.722v1.472h-1.722v4.991c0 .776.345 1.137 1.102 1.137a5.808 5.808 0 0 0 .611-.043v1.463a5.104 5.104 0 0 1-1.032.086c-1.833 0-2.548-.689-2.548-2.445v-5.189h-1.316v-1.472h1.316V19.3ZM86.065 25.97c0-2.849 1.678-4.639 4.294-4.639 2.625 0 4.295 1.79 4.295 4.639 0 2.856-1.661 4.638-4.295 4.638-2.633 0-4.294-1.782-4.294-4.638Zm6.695 0c0-1.954-.895-3.108-2.401-3.108s-2.4 1.162-2.4 3.108c0 1.962.894 3.106 2.4 3.106s2.401-1.144 2.401-3.106ZM96.186 21.442h1.773v1.541h.043a2.16 2.16 0 0 1 2.177-1.635 2.866 2.866 0 0 1 .637.069v1.738a2.598 2.598 0 0 0-.835-.112 1.873 1.873 0 0 0-1.937 2.083v5.37h-1.858ZM109.384 27.837c-.25 1.643-1.85 2.771-3.898 2.771-2.634 0-4.269-1.764-4.269-4.595 0-2.84 1.644-4.682 4.19-4.682 2.506 0 4.08 1.72 4.08 4.466v.637h-6.394v.112a2.358 2.358 0 0 0 2.436 2.564 2.048 2.048 0 0 0 2.09-1.273Zm-6.282-2.702h4.526a2.177 2.177 0 0 0-2.22-2.298 2.292 2.292 0 0 0-2.306 2.298Z" style="fill:#fff"></path>
+                                  </g>
+                                  <g data-name="&lt;Group>">
+                                    <path d="M37.826 8.731a2.64 2.64 0 0 1 2.808 2.965c0 1.906-1.03 3.002-2.808 3.002h-2.155V8.73Zm-1.228 5.123h1.125a1.876 1.876 0 0 0 1.967-2.146 1.881 1.881 0 0 0-1.967-2.134h-1.125ZM41.68 12.444a2.133 2.133 0 1 1 4.248 0 2.134 2.134 0 1 1-4.247 0Zm3.334 0c0-.976-.439-1.547-1.208-1.547-.773 0-1.207.571-1.207 1.547 0 .984.434 1.55 1.207 1.55.77 0 1.208-.57 1.208-1.55ZM51.573 14.698h-.922l-.93-3.317h-.07l-.927 3.317h-.913l-1.242-4.503h.902l.806 3.436h.067l.926-3.436h.852l.926 3.436h.07l.803-3.436h.889ZM53.854 10.195h.855v.715h.066a1.348 1.348 0 0 1 1.344-.802 1.465 1.465 0 0 1 1.559 1.675v2.915h-.889v-2.692c0-.724-.314-1.084-.972-1.084a1.033 1.033 0 0 0-1.075 1.141v2.635h-.888ZM59.094 8.437h.888v6.26h-.888ZM61.218 12.444a2.133 2.133 0 1 1 4.247 0 2.134 2.134 0 1 1-4.247 0Zm3.333 0c0-.976-.439-1.547-1.208-1.547-.773 0-1.207.571-1.207 1.547 0 .984.434 1.55 1.207 1.55.77 0 1.208-.57 1.208-1.55ZM66.4 13.424c0-.81.604-1.278 1.676-1.344l1.22-.07v-.389c0-.475-.315-.744-.922-.744-.497 0-.84.182-.939.5h-.86c.09-.773.818-1.27 1.84-1.27 1.128 0 1.765.563 1.765 1.514v3.077h-.855v-.633h-.07a1.515 1.515 0 0 1-1.353.707 1.36 1.36 0 0 1-1.501-1.348Zm2.895-.384v-.377l-1.1.07c-.62.042-.9.253-.9.65 0 .405.351.64.834.64a1.062 1.062 0 0 0 1.166-.983ZM71.348 12.444c0-1.423.732-2.324 1.87-2.324a1.484 1.484 0 0 1 1.38.79h.067V8.437h.888v6.26h-.851v-.71h-.07a1.563 1.563 0 0 1-1.415.785c-1.145 0-1.869-.901-1.869-2.328Zm.918 0c0 .955.45 1.53 1.203 1.53.75 0 1.212-.583 1.212-1.526 0-.938-.468-1.53-1.212-1.53-.748 0-1.203.58-1.203 1.526ZM79.23 12.444a2.133 2.133 0 1 1 4.247 0 2.134 2.134 0 1 1-4.247 0Zm3.333 0c0-.976-.438-1.547-1.208-1.547-.772 0-1.207.571-1.207 1.547 0 .984.435 1.55 1.207 1.55.77 0 1.208-.57 1.208-1.55ZM84.67 10.195h.855v.715h.066a1.348 1.348 0 0 1 1.344-.802 1.465 1.465 0 0 1 1.559 1.675v2.915h-.889v-2.692c0-.724-.314-1.084-.972-1.084a1.033 1.033 0 0 0-1.075 1.141v2.635h-.889ZM93.515 9.074v1.141h.976v.749h-.976v2.315c0 .472.194.679.637.679a2.967 2.967 0 0 0 .339-.021v.74a2.916 2.916 0 0 1-.484.046c-.988 0-1.381-.348-1.381-1.216v-2.543h-.715v-.749h.715V9.074ZM95.705 8.437h.88v2.481h.07a1.386 1.386 0 0 1 1.374-.806 1.483 1.483 0 0 1 1.55 1.679v2.907h-.889V12.01c0-.72-.335-1.084-.963-1.084a1.052 1.052 0 0 0-1.134 1.142v2.63h-.888ZM104.761 13.482a1.828 1.828 0 0 1-1.95 1.303 2.045 2.045 0 0 1-2.081-2.325 2.077 2.077 0 0 1 2.076-2.352c1.253 0 2.009.856 2.009 2.27v.31h-3.18v.05a1.19 1.19 0 0 0 1.2 1.29 1.08 1.08 0 0 0 1.07-.546Zm-3.126-1.451h2.275a1.086 1.086 0 0 0-1.109-1.167 1.152 1.152 0 0 0-1.166 1.167Z" style="fill:#fff"></path>
+                                  </g>
+                                </svg></span></a></span><span class="gws-button"><a href="https://play.google.com/store/apps/details?id=com.google.android.gm&amp;hl=iw&amp;gl=IL" target="_blank" rel="noopener noreferrer" data-g-event="gmail_asw: body #section-break" data-g-action="play store" data-g-label="https://play.google.com/store/apps/details?id=com.google.android.gm&amp;hl=iw&amp;gl=IL" data-uj-def="body_section_break" aria-label="הורדת Gmail מחנות Google Play" class="button button--rtl button--store-badge"><span class="button__content"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 41" fill="none">
+                                  <clipPath id="a">
+                                    <path d="M.332.5h135v40h-135z"></path>
+                                  </clipPath>
+                                  <g clip-path="url(#a)">
+                                    <path fill="#000" d="M130.332 40.5h-125c-2.8 0-5-2.2-5-5v-30c0-2.8 2.2-5 5-5h125c2.8 0 5 2.2 5 5v30c0 2.7-2.2 5-5 5z"></path>
+                                    <path fill="#b6a6a6" d="M130.332 1.3c2.3 0 4.2 1.9 4.2 4.2v30c0 2.3-1.9 4.2-4.2 4.2h-125c-2.3 0-4.2-1.9-4.2-4.2v-30c0-2.3 1.9-4.2 4.2-4.2zm0-.8h-125c-2.8 0-5 2.2-5 5v30c0 2.8 2.2 5 5 5h125c2.8 0 5-2.2 5-5v-30c0-2.7-2.2-5-5-5z"></path>
+                                    <g fill="#fff">
+                                      <path stroke="#fff" stroke-miterlimit="10" stroke-width=".2" d="M47.732 10.7c0 .8-.2 1.5-.7 2-.6.6-1.3.9-2.2.9s-1.6-.3-2.2-.9-.9-1.3-.9-2.2.3-1.6.9-2.2 1.3-.9 2.2-.9c.4 0 .9.1 1.2.2.4.2.7.4 1 .7l-.6.6c-.2-.2-.4-.4-.7-.5s-.6-.2-.9-.2c-.7 0-1.2.2-1.7.7-.4.5-.7 1-.7 1.7s.2 1.3.7 1.7c.5.5 1 .7 1.7.7.6 0 1.1-.2 1.5-.5s.6-.8.7-1.4h-2.2v-.7h2.9zM52.332 7.5v.7h-2.7v1.9h2.5v.7h-2.5v1.9h2.7v.8h-3.5v-6zM55.633 8.2v5.3h-.8V8.2h-1.7v-.7h4.2v.7zM61.032 13.5h-.8v-6h.8zM64.433 8.2v5.3h-.8V8.2h-1.7v-.7h4.1v.7zM74.833 10.5c0 .9-.3 1.6-.9 2.2s-1.3.9-2.2.9-1.6-.3-2.2-.9-.9-1.3-.9-2.2.3-1.6.9-2.2 1.3-.9 2.2-.9 1.6.3 2.2.9.9 1.3.9 2.2zm-5.4 0c0 .7.2 1.3.7 1.7.4.5 1 .7 1.6.7.7 0 1.2-.2 1.6-.7.4-.4.7-1 .7-1.7s-.2-1.3-.7-1.7c-.4-.5-1-.7-1.6-.7-.7 0-1.2.2-1.6.7-.5.4-.7 1-.7 1.7zM76.632 13.5h-.8v-6h.9l2.9 4.7V7.5h.8v6h-.8l-3.1-4.9v4.9z"></path>
+                                      <path d="M68.432 22.3c-2.4 0-4.3 1.8-4.3 4.3 0 2.4 1.9 4.3 4.3 4.3s4.3-1.8 4.3-4.3c0-2.6-1.9-4.3-4.3-4.3zm0 6.8c-1.3 0-2.4-1.1-2.4-2.6s1.1-2.6 2.4-2.6 2.4 1 2.4 2.6c0 1.5-1.1 2.6-2.4 2.6zm-9.3-6.8c-2.4 0-4.3 1.8-4.3 4.3 0 2.4 1.9 4.3 4.3 4.3s4.3-1.8 4.3-4.3c0-2.6-1.9-4.3-4.3-4.3zm0 6.8c-1.3 0-2.4-1.1-2.4-2.6s1.1-2.6 2.4-2.6 2.4 1 2.4 2.6c0 1.5-1.1 2.6-2.4 2.6zm-11.1-5.5v1.8h4.3c-.1 1-.5 1.8-1 2.3-.6.6-1.6 1.3-3.3 1.3-2.7 0-4.7-2.1-4.7-4.8s2.1-4.8 4.7-4.8c1.4 0 2.5.6 3.3 1.3l1.3-1.3c-1.1-1-2.5-1.8-4.5-1.8-3.6 0-6.7 3-6.7 6.6s3.1 6.6 6.7 6.6c2 0 3.4-.6 4.6-1.9 1.2-1.2 1.6-2.9 1.6-4.2 0-.4 0-.8-.1-1.1zm45.4 1.4c-.4-1-1.4-2.7-3.6-2.7s-4 1.7-4 4.3c0 2.4 1.8 4.3 4.2 4.3 1.9 0 3.1-1.2 3.5-1.9l-1.4-1c-.5.7-1.1 1.2-2.1 1.2s-1.6-.4-2.1-1.3l5.7-2.4zm-5.8 1.4c0-1.6 1.3-2.5 2.2-2.5.7 0 1.4.4 1.6.9zm-4.7 4.1h1.9V18h-1.9zm-3-7.3c-.5-.5-1.3-1-2.3-1-2.1 0-4.1 1.9-4.1 4.3s1.9 4.2 4.1 4.2c1 0 1.8-.5 2.2-1h.1v.6c0 1.6-.9 2.5-2.3 2.5-1.1 0-1.9-.8-2.1-1.5l-1.6.7c.5 1.1 1.7 2.5 3.8 2.5 2.2 0 4-1.3 4-4.4v-7.6h-1.8zm-2.2 5.9c-1.3 0-2.4-1.1-2.4-2.6s1.1-2.6 2.4-2.6 2.3 1.1 2.3 2.6-1 2.6-2.3 2.6zm24.4-11.1h-4.5v12.5h1.9v-4.7h2.6c2.1 0 4.1-1.5 4.1-3.9s-2-3.9-4.1-3.9zm.1 6h-2.7v-4.3h2.7c1.4 0 2.2 1.2 2.2 2.1-.1 1.1-.9 2.2-2.2 2.2zm11.5-1.8c-1.4 0-2.8.6-3.3 1.9l1.7.7c.4-.7 1-.9 1.7-.9 1 0 1.9.6 2 1.6v.1c-.3-.2-1.1-.5-1.9-.5-1.8 0-3.6 1-3.6 2.8 0 1.7 1.5 2.8 3.1 2.8 1.3 0 1.9-.6 2.4-1.2h.1v1h1.8v-4.8c-.2-2.2-1.9-3.5-4-3.5zm-.2 6.9c-.6 0-1.5-.3-1.5-1.1 0-1 1.1-1.3 2-1.3.8 0 1.2.2 1.7.4-.2 1.2-1.2 2-2.2 2zm10.5-6.6-2.1 5.4h-.1l-2.2-5.4h-2l3.3 7.6-1.9 4.2h1.9l5.1-11.8zm-16.8 8h1.9V18h-1.9z"></path>
+                                    </g>
+                                    <path fill="#ea4335" d="m21.032 19.9-10.6 11.3c.3 1.2 1.4 2.1 2.8 2.1.5 0 1-.1 1.5-.4l12-6.9z"></path>
+                                    <path fill="#fbbc04" d="m31.832 18-5.2-3-5.8 5.2 5.8 5.8 5.1-3c.9-.5 1.5-1.4 1.5-2.5.1-1.1-.5-2-1.4-2.5z"></path>
+                                    <path fill="#4285f4" d="M10.432 9.8c-.1.2-.1.5-.1.7v20c0 .3 0 .5.1.7l11-11z"></path>
+                                    <path fill="#34a853" d="m21.132 20.5 5.5-5.5-12-6.9c-.4-.3-.9-.4-1.5-.4-1.3 0-2.5.9-2.8 2.1z"></path>
+                                  </g>
+                                </svg></span></a></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div id="m15-5" data-module="TemplateSpacer">
+                  <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:48px;--gws-spacer-desktop-size:60px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="m16" data-module="TemplateSpacer" data-g-section-id="spacer">
+          <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:60px;--gws-spacer-desktop-size:80px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+        </div>
+        <section id="m17" data-module="TemplateBackgroundContainer" data-g-section-id="background-container">
+          <div class="TemplateBackgroundContainer_container">
+            <div class="TemplateBackgroundContainer_wrapper TemplateBackgroundContainer_grey">
+              <div class="TemplateBackgroundContainer_modules">
+                <div id="m17-1" data-module="TemplateSpacer">
+                  <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:60px;--gws-spacer-desktop-size:80px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+                </div>
+                <section id="m17-2" data-module="TemplateMulticolumn">
+                  <div style="Grid_grid" class="Grid_grid">
+                    <div style="--gws-column-tablet-start:1;--gws-column-tablet-end:12;--gws-column-laptop-start:2;--gws-column-laptop-end:11;--gws-column-desktop-start:2;--gws-column-desktop-end:11;" class="Grid_column">
+                      <div style="--card-count:3;" data-count="3" class="TemplateMulticolumn_innerGrid">
+                        <div class="TemplateMulticolumn_card">
+                          <div class="TemplateMulticolumn_cardIcon">
+                            <picture><img src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-32gba2PjbUMYXtzXnESsih-931d9cf6159d22b675e5f607aa40acba-Icon.svg" alt="סימן אישור" width="45" height="44" loading="lazy" /></picture>
+                          </div>
+                          <div class="Text_container Text_subheading Text_lg TemplateMulticolumn_cardTitle">
+                            <p>עובד מצוין עם כלים אחרים</p>
+                          </div>
+                          <div class="Text_container Text_body Text_lg TemplateMulticolumn_cardBody">
+                            <p>‫Gmail עובד מעולה עם יישומי מחשב כמו Microsoft Outlook, ‏ Apple Mail ו-Mozilla Thunderbird, ומאפשר סנכרון של אנשי קשר ואירועים.</p>
+                          </div>
+                        </div>
+                        <div class="TemplateMulticolumn_card">
+                          <div class="TemplateMulticolumn_cardIcon">
+                            <picture><img src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-7ev7sVBRefeLyFw3FKLX0C-5d5caaf4db50da492ee9cc482b47ac9c-AI_for_HR_TemplateMulticolumn_Icon_Effective_performance_management.svg" alt="סמל של מצב אופליין" width="45" height="44" loading="lazy" /></picture>
+                          </div>
+                          <div class="Text_container Text_subheading Text_lg TemplateMulticolumn_cardTitle">
+                            <p>שמרו על פרודוקטיביות, גם בלי חיבור לאינטרנט</p>
+                          </div>
+                          <div class="Text_container Text_body Text_lg TemplateMulticolumn_cardBody">
+                            <p>לא מחוברים לאינטרנט? אין בעיה: Gmail אופליין מאפשר לחפש ולקרוא הודעות ב-Gmail, להשיב עליהן או למחוק אותן גם בלי חיבור.</p>
+                          </div>
+                        </div>
+                        <div class="TemplateMulticolumn_card">
+                          <div class="TemplateMulticolumn_cardIcon">
+                            <picture><img src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-2zCPv3JQx1zhM6vY5sqHFS-8a2560093e4105f5db389f59703026d4-AI_for_HR_TemplateMulticolumn_Icon_Faster_decision_making_at_scale.svg" alt="מחשב נייד, שעון חכם ומכשירים ניידים" width="45" height="44" loading="lazy" /></picture>
+                          </div>
+                          <div class="Text_container Text_subheading Text_lg TemplateMulticolumn_cardTitle">
+                            <p>היתרונות של Gmail מכל מכשיר</p>
+                          </div>
+                          <div class="Text_container Text_body Text_lg TemplateMulticolumn_cardBody">
+                            <p>תיהנו מהקלות והיעילות של Gmail, בכל מקום.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div id="m17-3" data-module="TemplateSpacer">
+                  <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:60px;--gws-spacer-desktop-size:80px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="m18" data-module="TemplateSpacer" data-g-section-id="spacer">
+          <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:92px;--gws-spacer-desktop-size:120px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+        </div>
+        <section id="m19" data-module="TemplateSectionBreak" data-g-section-id="section-break">
+          <div style="Grid_grid" class="Grid_grid TemplateSectionBreak_grid TemplateSectionBreak_fullWidthGrid">
+            <div style="--gws-column-laptop-start:4;--gws-column-laptop-end:9;" class="Grid_column TemplateSectionBreak_container">
+              <picture><img src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-3o5OAIAU0V4vxIn3lNLoiB-2c2568f4c76442271ff3a08e323ffbe3-6-Logo_Lockup_Recreated.optimized.svg" alt="שורת סמלים של מוצרי Google Workspace" width="300" height="36" loading="lazy" /></picture>
+              <div class="Text_container Text_body Text_lg TemplateSectionBreak_copyGroup">
+                <h2 class="Heading_heading heading Heading_size:h3">‫Gmail נהיה חלק מ-Google Workspace</h2>
+                <p>עבדו יחד מהר יותר, מכל מכשיר ובכל זמן, והכול במקום אחד.</p>
+                <p>‫Google Workspace הוא מערך כלים לעבודה משותפת ויעילה, שעוזר לכולם – אנשים פרטיים, צוותים, ועסקים – להישאר מאורגנים. זה פתרון חדשני וגמיש לשימוש <span class="gws-button"><a href="/intl/iw/solutions/business-email/" data-g-event="gmail_asw: body #section-break" data-g-action="/solutions/business-email/" data-g-label="/intl/iw/solutions/business-email/" data-uj-def="body_section_break" aria-label="הדף עסקי ייפתח" class="button button--inline button--rtl"><span class="button__content">עסקי</span></a></span> או אישי שכולל את כל האפליקציות המוכרות: Gmail, יומן Google, ‏Drive, ‏Docs, ‏Meet ועוד.</p><span class="gws-button"><a href="https://workspace.google.com/intl/iw/" data-g-event="gmail_asw: body #section-break" data-g-action="https://workspace.google.com/" data-g-label="https://workspace.google.com/intl/iw/" data-uj-def="body_section_break" aria-label="אל האתר של Google Workspace" class="button button--low button--rtl"><span class="button__content">מידע נוסף</span></a></span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="m20" data-module="TemplateSpacer" data-g-section-id="spacer">
+          <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:92px;--gws-spacer-desktop-size:120px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+        </div>
+        <section id="m21" data-module="TemplateBackgroundContainer" data-g-section-id="background-container">
+          <div class="TemplateBackgroundContainer_container">
+            <div class="TemplateBackgroundContainer_wrapper TemplateBackgroundContainer_grey">
+              <div class="TemplateBackgroundContainer_modules">
+                <div id="m21-1" data-module="TemplateSpacer">
+                  <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:60px;--gws-spacer-desktop-size:80px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+                </div>
+                <section id="m21-2" data-module="TemplateFaq">
+                  <div class="Container_layout">
+                    <div class="TemplateFaq_faq">
+                      <div class="TemplateFaq_faq__chapter">
+                        <h2 class="Heading_heading heading Heading_size:h3 TemplateFaq_faq__chapter__heading">יש לכם שאלות? לנו יש תשובות</h2>
+                      </div>
+                      <div class="TemplateFaq_faq__content">
+                        <div class="TemplateFaq_faq__content__details"><gws-details-group module="faq">
+                            <div slot="toggle"><gws-toggle-button states="[{&quot;label&quot;:&quot;הרחבה של הכול&quot;,&quot;icon&quot;:&quot;unfold_more&quot;},{&quot;label&quot;:&quot;כיווץ הכול&quot;,&quot;icon&quot;:&quot;unfold_less&quot;}]" initial-state-index="0"><span class="gws-button"><button style="--material-icon: 'unfold_more';" aria-label="הרחבה של הכול" data-g-event="gmail: body" data-g-action="expand-all" data-g-label="in-page interaction" class="button button--low"><span class="button__content">הרחבה של הכול</span></button></span></gws-toggle-button></div>
+                            <div slot="title" class="TemplateFaq_faq__content__details__title"></div>
+                            <li class="TemplateFaq_faq__content__details__card"><gws-details question="איך Gmail שומר על האבטחה והפרטיות של התכתובות שלי באימייל?" tracking-action="expand: How does Gmail keep my email communications secure and private?" module="faq" open>
+                                <div class="Text_container Text_body">
+                                  <p>מאז ומתמיד Gmail התבסס על אבטחה חזקה. אנחנו עושים את כל המאמצים כדי להגן עליכם מפני ספאם, פישינג ותוכנות זדוניות, ולא מאפשרים להם להגיע לתיבת הדואר הנכנס. יכולות סינון הספאם שלנו, שמבוססות על AI, חוסמות קרוב ל-10 מיליון הודעות ספאם מדי דקה.</p>
+                                </div>
+                              </gws-details></li>
+                            <li class="TemplateFaq_faq__content__details__card"><gws-details question="אתם משתמשים בכתובת האימייל שלי כדי להציג לי מודעות?" tracking-action="expand: Do you use my email for ads?" module="faq">
+                                <div class="Text_container Text_body">
+                                  <p>לא. גם אם מופיעות מודעות בחשבון Gmail החינמי שלכם, האימיילים נשארים פרטיים. ‫Google לא סורקת ולא מעבדת את התכנים ב-Gmail למטרות פרסום.</p>
+                                </div>
+                              </gws-details></li>
+                            <li class="TemplateFaq_faq__content__details__card"><gws-details question="איך אפשר להגביר את האבטחה של האימיילים?" tracking-action="expand: How can I keep my emails even more safe and secure?" module="faq">
+                                <div class="Text_container Text_body">
+                                  <p>התכונות של Gmail כבר מספיק מאובטחות לרוב המשתמשים, אבל בחלק מהחשבונות נדרשות שכבות אבטחה נוספות. תוכנית ההגנה המתקדמת של Google מגינה על משתמשים מוכרים בציבור ובעלי מידע רגיש, שנמצאים בסיכון להתקפות סייבר ממוקדות.</p><span class="gws-button"><a href="https://landing.google.com/advancedprotection/" target="_blank" rel="noopener noreferrer" data-g-event="gmail_asw: body #faq" data-g-action="https://landing.google.com/advancedprotection/" data-g-label="https://landing.google.com/advancedprotection/" data-uj-def="body_faq" aria-label="הדף מידע נוסף ייפתח בכרטיסייה חדשה" class="button button--inline button--rtl"><span class="button__content">מידע נוסף</span></a></span>
+                                </div>
+                              </gws-details></li>
+                            <li class="TemplateFaq_faq__content__details__card"><gws-details question="מה אם אני רוצה להשתמש ב-Gmail לעבודה או לעסק שלי?" tracking-action="expand: What if I want to use Gmail for work or my business?" module="faq">
+                                <div class="Text_container Text_body">
+                                  <p>‫Gmail הוא חלק מ-Google Workspace, שבו אפשר לבחור מבין תוכניות שונות. בנוסף לתכונות המוכרות של Gmail, אתם מקבלים כתובת אימייל עסקית עם דומיין משלכם (‎@yourcompany.com), כתובות אימייל קבוצתיות בלי הגבלה, הבטחה שהשירות יהיה זמין 99.9% מהזמן, שטח אחסון כפול מזה שמקבלים בגרסה האישית של Gmail, אפס מודעות, תמיכה מסביב לשעון, הכלי Google Workspace Sync for Microsoft Outlook ועוד.</p><span class="gws-button"><a href="https://workspace.google.com/intl/iw/" data-g-event="gmail_asw: body #faq" data-g-action="https://workspace.google.com/" data-g-label="https://workspace.google.com/intl/iw/" data-uj-def="body_faq" aria-label="הדף מידע נוסף ייפתח" class="button button--inline button--rtl"><span class="button__content">מידע נוסף</span></a></span>
+                                </div>
+                              </gws-details></li>
+                          </gws-details-group></div>
+                        <div class="TemplateFaq_faq__cards">
+                          <div>
+                            <div class="FaqPromoCard_card">
+                              <h3 class="Text_container Text_subheading Text_lg FaqPromoCard_card__heading">צריכים עזרה נוספת?</h3>
+                              <div class="Text_container Text_body FaqPromoCard_card__body">
+                                <p>תוכלו לעיין בטיפים ובמדריכים מפורטים שמיועדים למשתמשים חדשים ומתקדמים.</p><span class="gws-button"><a href="https://support.google.com/mail/?hl=iw#topic=7065107" target="_blank" rel="noopener noreferrer" data-g-event="gmail_asw: body #faq" data-g-action="https://support.google.com/mail/#topic=7065107" data-g-label="https://support.google.com/mail/?hl=iw#topic=7065107" data-uj-def="body_faq" aria-label="אל מרכז העזרה של Gmail" class="button button--medium button--rtl"><span class="button__content">מרכז העזרה</span></a></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div id="m21-3" data-module="TemplateSpacer">
+                  <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:60px;--gws-spacer-desktop-size:80px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="m22" data-module="TemplateSpacer" data-g-section-id="spacer">
+          <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:92px;--gws-spacer-desktop-size:120px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+        </div>
+        <section id="m23" data-module="TemplateTileSimple" data-g-section-id="tile-simple">
+          <div class="TemplateTileSimple_container">
+            <div style="
+    --gws-template-tile-simple-padding-tablet: 60px 0;
+    --gws-template-tile-simple-padding-desktop: 80px 0;
+    --gws-template-tile-simple-bg: #F8F9FA;
+  " class="TemplateTileSimple_wrapper">
+              <div style="Grid_grid" class="Grid_grid TemplateTileSimple_grid">
+                <div style="--gws-column-tablet-start:1;--gws-column-tablet-end:12;--gws-column-laptop-start:1;--gws-column-laptop-end:12;" class="Grid_column">
+                  <picture><img src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-2Z6U76m8Jyp5R8zasALBYo-f424d5e7938a254785029e8369249702-gmail_2026-192px.optimized.svg" alt="הסמל של Gmail" width="192" height="192" loading="lazy" class="TemplateTileSimple_image TemplateTileSimple_productLogoImageSizing" /></picture>
+                </div>
+                <div style="--gws-column-tablet-start:1;--gws-column-tablet-end:12;--gws-column-laptop-start:4;--gws-column-laptop-end:9;" class="Grid_column">
+                  <div class="Text_container Text_body Text_lg TemplateTileSimple_body">
+                    <h2 class="Heading_heading heading Heading_size:h2">רוצים להראות לכולם איך עובדים נכון?</h2>
+                    <p>זה הזמן לעבור ל-Gmail מתקדם יותר.</p>
+                    <div class="ButtonGroup_buttonGroup ButtonGroup_buttonGroupHorizontal button-group-with-dropdown button-group horizontal"><dropdown-button-wrapper class="dropdown-wrapper">
+                        <div class="dropdown-gws-button variant-primary size-normal align-left valign-below">
+                          <details>
+                            <summary data-g-event="gmail_asw: footer" data-g-action="create an account" data-g-label="in-page interaction"><span class="button-label">יצירת חשבון</span><span class="button-divider"></span><span class="button-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="chevron">
+                                  <path d="M10 13.3333L5 8.33333H15L10 13.3333Z" fill="currentColor"></path>
+                                </svg></span></summary>
+                            <nav role="menu" class="dropdown-menu"><a href="https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp&amp;ec=asw-gmail-[module]-create&amp;theme=glif&amp;source=gafb-gmail_asw-footer-iw&amp;hl=iw&amp;ga_region=amer&amp;ga_country=us&amp;ga_lang=iw" role="menuitem" aria-label="‫Gmail – לשימוש אישי" data-g-event="gmail_asw: footer" data-g-action="https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https%3a%2f%2fmail.google.com%2fmail%2f&amp;flowname=glifwebsignin&amp;flowentry=signup&amp;ec=asw-gmail-%5bmodule%5d-create&amp;theme=glif" data-g-label="https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https://mail.google.com/mail/&amp;flowname=glifwebsignin&amp;flowentry=signup&amp;ec=asw-gmail-[module]-create&amp;theme=glif">לשימוש פרטי</a><a href="https://workspace.google.com/business/signup/newbusiness?xsell=google_accounts&amp;source=gafb-gmail_asw-footer-iw&amp;back=https%3A%2F%2Faccounts.google.com%2FSignUp%3Fec%3Dasw-gmail-[module]-create2%26biz%3Dtrue&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowEntry=SignUp&amp;flowName=GlifWebSignIn&amp;service=mail&amp;theme=glif&amp;ec=asw-gmail-[module]-create2&amp;hl=iw&amp;ga_region=amer&amp;ga_country=us&amp;ga_lang=iw" role="menuitem" aria-label="‫Gmail – לשימוש בעבודה או בעסק" data-g-event="gmail_asw: footer" data-g-action="https://workspace.google.com/business/signup/newbusiness?xsell=google_accounts&amp;source=gafb-gmailasw-%5bmodule%5d-%5blanguage%5d&amp;back=https%3a%2f%2faccounts.google.com%2fsignup%3fec%3dasw-gmail-%5bmodule%5d-create2%26biz%3dtrue&amp;continue=https%3a%2f%2fmail.google.com%2fmail%2f&amp;flowentry=signup&amp;flowname=glifwebsignin&amp;service=mail&amp;theme=glif&amp;ec=asw-gmail-%5bmodule%5d-create2" data-g-label="https://workspace.google.com/business/signup/newbusiness?xsell=google_accounts&amp;source=gafb-gmailasw-[module]-[language]&amp;back=https%3a%2f%2faccounts.google.com%2fsignup%3fec%3dasw-gmail-[module]-create2%26biz%3dtrue&amp;continue=https://mail.google.com/mail/&amp;flowentry=signup&amp;flowname=glifwebsignin&amp;service=mail&amp;theme=glif&amp;ec=asw-gmail-[module]-create2">לשימוש בעבודה או בעסק</a></nav>
+                          </details>
+                        </div>
+                      </dropdown-button-wrapper><span class="gws-button"><a href="/intl/iw/products/gmail/" data-g-event="gmail_asw: footer" data-g-action="for work" data-g-label="/intl/iw/products/gmail/" data-uj-def="footer" aria-label="לדף המוצר של Gmail" class="button button--low button--rtl"><span class="button__content">לעבודה</span></a></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="m24" data-module="TemplateSpacer" data-g-section-id="spacer">
+          <div style="--gws-spacer-background-color:transparent;--gws-spacer-mobile-size:48px;--gws-spacer-desktop-size:60px;" class="Spacer_spacer Spacer_filled Spacer_desktop Spacer_tablet Spacer_mobile Spacer_all"></div>
+        </div>
+      </main><gws-footer>
+        <footer>
+          <div class="TemplateFooter_footer TemplateFooter_footer--simple">
+            <div class="TemplateFooter_footer__content">
+              <div class="TemplateFooter_footer__controls">
+                <div class="TemplateFooter_footer__social">
+                  <div class="TemplateFooter_footer__social__title">
+                    <p>כדאי לעקוב אחרי ה<span class="gws-button"><a href="https://workspace.google.com/blog/?hl=iw" data-g-event="gmail_asw: footer" data-g-action="https://workspace.google.com/blog/" data-g-label="https://workspace.google.com/blog/?hl=iw" data-uj-def="footer" aria-label="הדף בלוג ייפתח" class="button button--inline button--rtl"><span class="button__content">בלוג</span></a></span></p>
+                    <p>שלנו</p>
+                  </div>
+                  <ul class="TemplateFooter_footer__social__icons">
+                    <li><a href="https://x.com/googleworkspace" aria-label="הדף footer social links X ייפתח בכרטיסייה חדשה" data-g-action="footer social links" data-g-event="gmail_asw: footer" data-g-label="מעקב ב-X" target="_blank" rel="noopener noreferrer">
+                        <picture><img src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-1umOaKNcjcEr2mhzCSlF12-1f0cb9d1b806aaa99772cdc5bc26c043-social-x.svg" alt="מעקב ב-X" width="24" height="24" loading="lazy" /></picture>
+                      </a></li>
+                    <li><a href="https://www.youtube.com/channel/UCBmwzQnSoj9b6HzNmFrg_yw/" aria-label="הדף footer social links YouTube ייפתח בכרטיסייה חדשה" data-g-action="footer social links" data-g-event="gmail_asw: footer" data-g-label="YouTube" target="_blank" rel="noopener noreferrer">
+                        <picture><img src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-2OApfq8kkSLS05HBSQsgRo-4c87d4f931acc7af2cca2e55bd0ff8b5-social-youtube.svg" alt="YouTube" width="24" height="24" loading="lazy" /></picture>
+                      </a></li>
+                    <li><a href="https://www.linkedin.com/showcase/googleworkspace/" aria-label="הדף footer social links LinkedIn ייפתח בכרטיסייה חדשה" data-g-action="footer social links" data-g-event="gmail_asw: footer" data-g-label="לינקדאין" target="_blank" rel="noopener noreferrer">
+                        <picture><img src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-4CtJLWoMz9zitTD6evCrRJ-e26868c4b703bdaf7269d28f277abd8b-social-linkedin.svg" alt="לינקדאין" width="24" height="24" loading="lazy" /></picture>
+                      </a></li>
+                    <li><a href="https://www.instagram.com/googleworkspace/" aria-label="הדף footer social links Instagram ייפתח בכרטיסייה חדשה" data-g-action="footer social links" data-g-event="gmail_asw: footer" data-g-label="אינסטגרם" target="_blank" rel="noopener noreferrer">
+                        <picture><img src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-2MQ7jfS9rcCfUITolVRnEL-3b7ac6e9dac32136215b879b25d16826-social-instagram.svg" alt="אינסטגרם" width="24" height="24" loading="lazy" /></picture>
+                      </a></li>
+                    <li><a href="https://www.facebook.com/googleworkspace/" aria-label="הדף footer social links Facebook ייפתח בכרטיסייה חדשה" data-g-action="footer social links" data-g-event="gmail_asw: footer" data-g-label="Facebook" target="_blank" rel="noopener noreferrer">
+                        <picture><img src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-5Udpge5UoQaK9XlYfriDJY-9222b4e3f4e7c0d14a779d88163211a6-social-facebook.svg" alt="Facebook" width="24" height="24" loading="lazy" /></picture>
+                      </a></li>
+                    <li><a href="https://goo.gle/3xj0b2F" aria-label="הדף footer social links TikTok ייפתח בכרטיסייה חדשה" data-g-action="footer social links" data-g-event="gmail_asw: footer" data-g-label="טיקטוק" target="_blank" rel="noopener noreferrer">
+                        <picture><img src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-4jzpKqKaRj5vYLZTFOS568-d34beb4904efce872112594ce0bcad13-social-tiktok.svg" alt="טיקטוק" width="24" height="24" loading="lazy" /></picture>
+                      </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div><gws-footer-nav-bar dark-theme="false" language-label="שינוי שפה">
+              <div slot="logo" class="TemplateFooter_footer__nav__logo">
+                <picture><img src="https://storage.googleapis.com/gweb-workspace-assets/uploads/7uffzv9dk4sn-2QNOheeN6FD0S5Sfmqzhjn-b7f4e1aad73efc4d18b33d89e934fac5-logo-google.svg" alt="Google" width="84" height="28" loading="lazy" /></picture>
+              </div>
+              <ul slot="links" class="TemplateFooter_footer__nav__links">
+                <li><a href="https://policies.google.com/privacy?hl=he" aria-label="הדף פרטיות ייפתח בכרטיסייה חדשה" data-g-action="https://policies.google.com/privacy" data-g-event="gmail_asw: footer" data-g-label="https://policies.google.com/privacy?hl=he" target="_blank" rel="noopener noreferrer" class="TemplateFooter_footer__nav__link">פרטיות</a></li>
+                <li><a href="https://policies.google.com/terms?hl=he" aria-label="הדף תנאים ייפתח בכרטיסייה חדשה" data-g-action="https://policies.google.com/terms" data-g-event="gmail_asw: footer" data-g-label="https://policies.google.com/terms?hl=he" target="_blank" rel="noopener noreferrer" class="TemplateFooter_footer__nav__link">תנאים</a></li>
+                <li><a href="https://about.google/?hl=he" aria-label="הדף מידע על Google ייפתח בכרטיסייה חדשה" data-g-action="https://about.google/" data-g-event="gmail_asw: footer" data-g-label="https://about.google/?hl=he" target="_blank" rel="noopener noreferrer" class="TemplateFooter_footer__nav__link">מידע על Google</a></li>
+                <li><a href="https://www.google.com/intl/he/about/products/" aria-label="הדף מוצרי Google ייפתח בכרטיסייה חדשה" data-g-action="https://www.google.com/about/products/" data-g-event="gmail_asw: footer" data-g-label="https://www.google.com/intl/he/about/products/" target="_blank" rel="noopener noreferrer" class="TemplateFooter_footer__nav__link">מוצרי Google</a></li>
+                <li><a href="https://support.google.com/workspace/?hl=he" aria-label="הדף עזרה ייפתח בכרטיסייה חדשה" data-g-action="https://support.google.com/workspace/" data-g-event="gmail_asw: footer" data-g-label="https://support.google.com/workspace/?hl=he" target="_blank" rel="noopener noreferrer" class="TemplateFooter_footer__nav__link">עזרה</a></li>
+                <li><button aria-hidden="true" class="TemplateFooter_glue-cookie-notification-bar-control">Manage cookies</button></li>
+              </ul>
+              <div slot="help"><a href="https://support.google.com/a" aria-label="הדף עזרה ייפתח בכרטיסייה חדשה" data-g-event="gmail_asw: footer" data-g-action="https://support.google.com/a" data-g-label="https://support.google.com/a" target="_blank" rel="noopener noreferrer" class="TemplateFooter_footer__nav__help__button"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="#5f6368" inert>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                  </svg><span>עזרה</span></a></div>
+              <div slot="active-language">עברית</div>
+              <div slot="language" class="TemplateFooter_footer__languages"><a href="/intl/id/gmail/" tabindex="0" aria-label="הדף Bahasa Indonesia locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="bahasa-indonesia" data-g-label="/intl/id/gmail/" class="TemplateFooter_footer__language-link">Bahasa Indonesia</a><a href="/intl/cs/gmail/" tabindex="0" aria-label="הדף Čeština locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="čeština" data-g-label="/intl/cs/gmail/" class="TemplateFooter_footer__language-link">Čeština</a><a href="/intl/da/gmail/" tabindex="0" aria-label="הדף Dansk locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="dansk" data-g-label="/intl/da/gmail/" class="TemplateFooter_footer__language-link">Dansk</a><a href="/intl/de/gmail/" tabindex="0" aria-label="הדף Deutsch locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="deutsch" data-g-label="/intl/de/gmail/" class="TemplateFooter_footer__language-link">Deutsch</a><a href="/intl/de_ch/gmail/" tabindex="0" aria-label="הדף Deutsch – Schweiz locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="deutsch-–-schweiz" data-g-label="/intl/de_ch/gmail/" class="TemplateFooter_footer__language-link">Deutsch – Schweiz</a><a href="/intl/en/gmail/" tabindex="0" aria-label="הדף English locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="english" data-g-label="/intl/en/gmail/" class="TemplateFooter_footer__language-link">English</a><a href="/intl/en_au/gmail/" tabindex="0" aria-label="הדף English – Australia locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="english-–-australia" data-g-label="/intl/en_au/gmail/" class="TemplateFooter_footer__language-link">English – Australia</a><a href="/intl/en_ca/gmail/" tabindex="0" aria-label="הדף English – Canada locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="english-–-canada" data-g-label="/intl/en_ca/gmail/" class="TemplateFooter_footer__language-link">English – Canada</a><a href="/intl/en_in/gmail/" tabindex="0" aria-label="הדף English – India locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="english-–-india" data-g-label="/intl/en_in/gmail/" class="TemplateFooter_footer__language-link">English – India</a><a href="/intl/en_id/gmail/" tabindex="0" aria-label="הדף English – Indonesia locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="english-–-indonesia" data-g-label="/intl/en_id/gmail/" class="TemplateFooter_footer__language-link">English – Indonesia</a><a href="/intl/en_ie/gmail/" tabindex="0" aria-label="הדף English – Ireland locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="english-–-ireland" data-g-label="/intl/en_ie/gmail/" class="TemplateFooter_footer__language-link">English – Ireland</a><a href="/intl/en_my/gmail/" tabindex="0" aria-label="הדף English – Malaysia locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="english-–-malaysia" data-g-label="/intl/en_my/gmail/" class="TemplateFooter_footer__language-link">English – Malaysia</a><a href="/intl/en_nz/gmail/" tabindex="0" aria-label="הדף English – New Zealand locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="english-–-new-zealand" data-g-label="/intl/en_nz/gmail/" class="TemplateFooter_footer__language-link">English – New Zealand</a><a href="/intl/en_ph/gmail/" tabindex="0" aria-label="הדף English – Philippines locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="english-–-philippines" data-g-label="/intl/en_ph/gmail/" class="TemplateFooter_footer__language-link">English – Philippines</a><a href="/intl/en_sg/gmail/" tabindex="0" aria-label="הדף English – Singapore locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="english-–-singapore" data-g-label="/intl/en_sg/gmail/" class="TemplateFooter_footer__language-link">English – Singapore</a><a href="/intl/en_za/gmail/" tabindex="0" aria-label="הדף English – South Africa locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="english-–-south-africa" data-g-label="/intl/en_za/gmail/" class="TemplateFooter_footer__language-link">English – South Africa</a><a href="/intl/en_uk/gmail/" tabindex="0" aria-label="הדף English – United Kingdom locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="english-–-united-kingdom" data-g-label="/intl/en_uk/gmail/" class="TemplateFooter_footer__language-link">English – United Kingdom</a><a href="/intl/es/gmail/" tabindex="0" aria-label="הדף Español locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="español" data-g-label="/intl/es/gmail/" class="TemplateFooter_footer__language-link">Español</a><a href="/intl/es-419/gmail/" tabindex="0" aria-label="הדף Español (Latinoamérica) locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="español-latinoamérica" data-g-label="/intl/es-419/gmail/" class="TemplateFooter_footer__language-link">Español (Latinoamérica)</a><a href="/intl/es-419_ar/gmail/" tabindex="0" aria-label="הדף Español (Latinoamérica) – Argentina locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="español-latinoamérica-–-argentina" data-g-label="/intl/es-419_ar/gmail/" class="TemplateFooter_footer__language-link">Español (Latinoamérica) – Argentina</a><a href="/intl/es-419_us/gmail/" tabindex="0" aria-label="הדף Español (Latinoamérica) – Estados Unidos locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="español-latinoamérica-–-estados-unidos" data-g-label="/intl/es-419_us/gmail/" class="TemplateFooter_footer__language-link">Español (Latinoamérica) – Estados Unidos</a><a href="/intl/es-419_mx/gmail/" tabindex="0" aria-label="הדף Español (Latinoamérica) – México locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="español-latinoamérica-–-méxico" data-g-label="/intl/es-419_mx/gmail/" class="TemplateFooter_footer__language-link">Español (Latinoamérica) – México</a><a href="/intl/fr/gmail/" tabindex="0" aria-label="הדף Français locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="français" data-g-label="/intl/fr/gmail/" class="TemplateFooter_footer__language-link">Français</a><a href="/intl/fr_ca/gmail/" tabindex="0" aria-label="הדף Français – Canada locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="français-–-canada" data-g-label="/intl/fr_ca/gmail/" class="TemplateFooter_footer__language-link">Français – Canada</a><a href="/intl/fr_ch/gmail/" tabindex="0" aria-label="הדף Français – Suisse locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="français-–-suisse" data-g-label="/intl/fr_ch/gmail/" class="TemplateFooter_footer__language-link">Français – Suisse</a><a href="/intl/it/gmail/" tabindex="0" aria-label="הדף Italiano locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="italiano" data-g-label="/intl/it/gmail/" class="TemplateFooter_footer__language-link">Italiano</a><a href="/intl/hu/gmail/" tabindex="0" aria-label="הדף Magyar locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="magyar" data-g-label="/intl/hu/gmail/" class="TemplateFooter_footer__language-link">Magyar</a><a href="/intl/nl/gmail/" tabindex="0" aria-label="הדף Nederlands locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="nederlands" data-g-label="/intl/nl/gmail/" class="TemplateFooter_footer__language-link">Nederlands</a><a href="/intl/no/gmail/" tabindex="0" aria-label="הדף Norsk locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="norsk" data-g-label="/intl/no/gmail/" class="TemplateFooter_footer__language-link">Norsk</a><a href="/intl/pl/gmail/" tabindex="0" aria-label="הדף Polski locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="polski" data-g-label="/intl/pl/gmail/" class="TemplateFooter_footer__language-link">Polski</a><a href="/intl/pt-BR/gmail/" tabindex="0" aria-label="הדף Português (Brasil) locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="português-brasil" data-g-label="/intl/pt-BR/gmail/" class="TemplateFooter_footer__language-link">Português (Brasil)</a><a href="/intl/pt-PT/gmail/" tabindex="0" aria-label="הדף Português (Portugal) locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="português-portugal" data-g-label="/intl/pt-PT/gmail/" class="TemplateFooter_footer__language-link">Português (Portugal)</a><a href="/intl/fi/gmail/" tabindex="0" aria-label="הדף Suomi locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="suomi" data-g-label="/intl/fi/gmail/" class="TemplateFooter_footer__language-link">Suomi</a><a href="/intl/sv/gmail/" tabindex="0" aria-label="הדף Svenska locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="svenska" data-g-label="/intl/sv/gmail/" class="TemplateFooter_footer__language-link">Svenska</a><a href="/intl/vi/gmail/" tabindex="0" aria-label="הדף Tiếng Việt locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="tiếng-việt" data-g-label="/intl/vi/gmail/" class="TemplateFooter_footer__language-link">Tiếng Việt</a><a href="/intl/tr/gmail/" tabindex="0" aria-label="הדף Türkçe locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="türkçe" data-g-label="/intl/tr/gmail/" class="TemplateFooter_footer__language-link">Türkçe</a><a href="/intl/ru/gmail/" tabindex="0" aria-label="הדף Русский locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="русский" data-g-label="/intl/ru/gmail/" class="TemplateFooter_footer__language-link">Русский</a><a href="/intl/uk/gmail/" tabindex="0" aria-label="הדף Українська locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="українська" data-g-label="/intl/uk/gmail/" class="TemplateFooter_footer__language-link">Українська</a><span class="TemplateFooter_footer__language-link">עברית</span><a href="/intl/ar/gmail/" tabindex="0" aria-label="הדף العربية locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="العربية" data-g-label="/intl/ar/gmail/" class="TemplateFooter_footer__language-link">العربية</a><a href="/intl/ar_eg/gmail/" tabindex="0" aria-label="הדף العربية – مصر locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="العربية-–-مصر" data-g-label="/intl/ar_eg/gmail/" class="TemplateFooter_footer__language-link">العربية – مصر</a><a href="/intl/fa/gmail/" tabindex="0" aria-label="הדף فارسی locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="فارسی" data-g-label="/intl/fa/gmail/" class="TemplateFooter_footer__language-link">فارسی</a><a href="/intl/th/gmail/" tabindex="0" aria-label="הדף ไทย locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="ไทย" data-g-label="/intl/th/gmail/" class="TemplateFooter_footer__language-link">ไทย</a><a href="/intl/ko/gmail/" tabindex="0" aria-label="הדף 한국어 locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="한국어" data-g-label="/intl/ko/gmail/" class="TemplateFooter_footer__language-link">한국어</a><a href="/intl/zh-HK/gmail/" tabindex="0" aria-label="הדף 中文 (香港) locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="中文-香港" data-g-label="/intl/zh-HK/gmail/" class="TemplateFooter_footer__language-link">中文 (香港)</a><a href="/intl/zh-CN/gmail/" tabindex="0" aria-label="הדף 中文（简体中文） locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="中文（简体中文）" data-g-label="/intl/zh-CN/gmail/" class="TemplateFooter_footer__language-link">中文（简体中文）</a><a href="/intl/zh-TW/gmail/" tabindex="0" aria-label="הדף 中文（繁體中文） locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="中文（繁體中文）" data-g-label="/intl/zh-TW/gmail/" class="TemplateFooter_footer__language-link">中文（繁體中文）</a><a href="/intl/ja/gmail/" tabindex="0" aria-label="הדף 日本語 locale ייפתח" data-g-event="gmail_asw: footer" data-g-action="日本語" data-g-label="/intl/ja/gmail/" class="TemplateFooter_footer__language-link">日本語</a></div>
+            </gws-footer-nav-bar>
+          </div>
+        </footer>
+      </gws-footer>
+    </div>
+  </body>
+
+</html>
+<!-- Injection By NetFree -->
+<script src="//netfree.link/injection-script/go-payment.js" type="text/javascript" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>
+<script src="//netfree.link/injection-script/popup-card-init.js" type="text/javascript" async nonce="sy5PKanYsQMyAneVg7b9sA"></script>

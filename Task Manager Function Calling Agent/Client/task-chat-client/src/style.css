@@ -1,0 +1,296 @@
+:root {
+  --bg: #f5f0e7;
+  --ink: #1c1f2a;
+  --muted: #5f6472;
+  --panel: #fffef8;
+  --line: #d8cfc0;
+  --accent: #ea5b0c;
+  --accent-soft: #ffe5d6;
+  --agent: #133b5c;
+  --agent-soft: #dbe9f4;
+  --ok: #0f766e;
+  --warn: #b45309;
+  --new: #6d28d9;
+  --shadow: 0 18px 45px rgba(22, 28, 45, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 20% 20%, #fff6e9, transparent 38%),
+    radial-gradient(circle at 80% 0%, #eaf5ff, transparent 34%),
+    var(--bg);
+}
+
+#root {
+  min-height: 100vh;
+  padding: 26px;
+}
+
+.dashboard-layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 18px;
+  min-height: calc(100vh - 52px);
+}
+
+.chat-panel,
+.tasks-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.chat-panel {
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  overflow: hidden;
+}
+
+.panel-header {
+  padding: 22px 24px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.panel-header h1 {
+  margin: 0;
+  font-size: 1.7rem;
+  letter-spacing: 0.3px;
+}
+
+.panel-header p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.chat-log {
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message-bubble {
+  max-width: 78%;
+  border-radius: 16px;
+  padding: 10px 12px;
+  animation: rise-in 0.24s ease-out;
+}
+
+.message-bubble.user {
+  margin-inline-start: auto;
+  background: var(--accent-soft);
+  border: 1px solid #f9c7aa;
+}
+
+.message-bubble.bot {
+  margin-inline-end: auto;
+  background: var(--agent-soft);
+  border: 1px solid #bed8eb;
+}
+
+.sender-chip {
+  display: inline-flex;
+  font-size: 0.72rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.message-bubble.user .sender-chip {
+  background: var(--accent);
+}
+
+.message-bubble.bot .sender-chip {
+  background: var(--agent);
+}
+
+.message-bubble p {
+  margin: 0;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.composer {
+  padding: 14px 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.composer input {
+  border: 1px solid #c8bfb1;
+  background: #fff;
+  color: var(--ink);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+}
+
+.composer input:focus {
+  outline: 2px solid #ffd6bf;
+  border-color: var(--accent);
+}
+
+.composer button,
+.ghost-btn {
+  border: 0;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 700;
+}
+
+.composer button {
+  background: var(--accent);
+  color: #fff;
+}
+
+.composer button:disabled,
+.ghost-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.error-banner {
+  margin: 0;
+  padding: 10px 20px;
+  border-top: 1px solid #f7b5b5;
+  border-bottom: 1px solid #f7b5b5;
+  background: #ffe4e4;
+  color: #8b1f1f;
+}
+
+.tasks-panel {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.tasks-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.tasks-title-row h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.ghost-btn {
+  background: #efe8db;
+  color: #54452d;
+}
+
+.loading-text {
+  margin: 4px 0 0;
+  color: var(--muted);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px;
+  background: #fff;
+}
+
+.task-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.task-head strong {
+  font-size: 1rem;
+}
+
+.status-pill {
+  font-size: 0.75rem;
+  border-radius: 999px;
+  padding: 3px 9px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.status-pill.done {
+  background: var(--ok);
+}
+
+.status-pill.progress {
+  background: var(--warn);
+}
+
+.status-pill.new {
+  background: var(--new);
+}
+
+.task-card p {
+  margin: 8px 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.task-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: #4f5568;
+  font-size: 0.8rem;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 960px) {
+  #root {
+    padding: 14px;
+  }
+
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .chat-panel {
+    min-height: 68vh;
+  }
+
+  .tasks-panel {
+    min-height: 40vh;
+  }
+}

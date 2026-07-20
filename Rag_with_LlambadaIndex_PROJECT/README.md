@@ -33,6 +33,31 @@ uv run workflow_engine.py
 - `LLM מלא`: Gemini זמין, תשובה מלאה.
 - `Fallback אחזור`: אם Gemini חסום (למשל SSL/NetFree), המערכת מחזירה סיכום מתוך מקורות Pinecone כדי לאפשר עבודה רציפה.
 
+## Visual Examples
+
+### Structured Answer (LLM Saving)
+
+<p align="center">
+	<img src="assets/status%20structure.png" alt="Structured answer mode with reduced LLM usage" width="920" />
+</p>
+
+<p align="center">
+	When the query matches structured signals, the workflow can answer from structured data and reduce unnecessary LLM calls.
+</p>
+
+### Rules View (Clean and Readable)
+
+<p align="center">
+	<img src="assets/rules%20for%20edit.png" alt="Rules-oriented response example" width="920" />
+</p>
+
+<p align="center">
+	A clear rules-style answer format that keeps decisions, constraints, and guidance easy to scan.
+</p>
+
+> Tip:
+> Use structured/rules-oriented prompts for predictable output and lower model cost.
+
 ## Troubleshooting
 
 - אם האפליקציה לא עולה: בדקי API keys ב-`.env`.
