@@ -38,6 +38,7 @@ from api import services
 from api.schemas import (
     AddNoteRequest,
     AddSourceRequest,
+    ApprovalRequest,
     ArtifactKind,
     ChatRequest,
     ChatResponse,
@@ -66,34 +67,83 @@ async def no_store(request: Request, call_next):
 def health() -> dict[str, str]:
     return {"status": "ok"}
 @app.post("/api/chat/approve")
-def approve(data: dict):
+def approve(req: ApprovalRequest):
 
-    thread_id = data["thread_id"]
-
-    decision = data["decision"]
-
-
-    result = services.chat.agent.invoke(
-        Command(
-            resume={
-                "decisions":[
-                    {
-                        "type": decision
-                    }
-                ]
-            }
-        ),
-        config={
-            "configurable":{
-                "thread_id":thread_id
-            }
+    try:
+        print(f"🔄 Resuming with decision: {req.decision}, thread: {req.thread_id}")
+        if req.selected_urls:
+            print(f"   Selected URLs: {req.selected_urls}")
+        
+        # Create resume value with proper structure for the middleware
+        # The middleware expects: {"decisions": [{"type": "approve"|"reject", ...}]}
+        resume_value = {
+            "decisions": [
+                {
+                    "type": req.decision,
+                    "selected_urls": req.selected_urls or []
+                }
+            ]
         }
-    )
+        
+        result = services.chat.agent.invoke(
+            Command(
+                resume=resume_value
+            ),
+            config={
+                "configurable":{
+                    "thread_id": req.thread_id
+                }
+            }
+        )
 
-
-    return {
-        "response": result["messages"][-1].content
-    }
+        print(f"✅ Resume succeeded")
+        
+        # Extract the final answer
+        answer = "No response"
+        
+        if isinstance(result, dict) and "messages" in result and result["messages"]:
+            last_msg = result["messages"][-1]
+            
+            # If it's an AIMessage object
+            if hasattr(last_msg, 'content'):
+                content = last_msg.content
+                # Handle case where content is a list of content blocks (Anthropic format)
+                if isinstance(content, list):
+                    # Extract text from content blocks
+                    text_parts = []
+                    for block in content:
+                        if isinstance(block, dict) and block.get('type') == 'text':
+                            text_parts.append(block.get('text', ''))
+                        elif isinstance(block, str):
+                            text_parts.append(block)
+                    answer = ''.join(text_parts)
+                else:
+                    answer = str(content)
+            # If it's a dict with content
+            elif isinstance(last_msg, dict) and "content" in last_msg:
+                content = last_msg["content"]
+                if isinstance(content, list):
+                    text_parts = []
+                    for block in content:
+                        if isinstance(block, dict) and block.get('type') == 'text':
+                            text_parts.append(block.get('text', ''))
+                        elif isinstance(block, str):
+                            text_parts.append(block)
+                    answer = ''.join(text_parts)
+                else:
+                    answer = str(content)
+        
+        print(f"✅ Final answer extracted: {str(answer)[:100]}...")
+        
+        return {
+            "answer": answer
+        }
+    
+    except Exception as e:
+        print(f"❌ Error in approve: {type(e).__name__}: {e}")
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"{type(e).__name__}: {str(e)}")
 
 
 # -- sources -------------------------------------------------------------------

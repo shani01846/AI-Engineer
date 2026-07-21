@@ -24,6 +24,12 @@ class Answer:
     text: str
     sources: list[str]
     interrupt: bool = False
+    approval_urls: list[str] = None  # URLs requiring approval
+    tool_name: str = None  # Name of the tool that triggered interrupt
+    
+    def __post_init__(self):
+        if self.approval_urls is None:
+            self.approval_urls = []
 
 
 
@@ -89,7 +95,7 @@ Answer only using those sources.
 3.
 If information is missing:
 
-Use web_search.
+Use web_search to find candidate URLs.
 
 Never answer using search snippets.
 
@@ -97,63 +103,59 @@ Search results are candidates only.
 
 
 4.
-IMPORTANT HUMAN-IN-THE-LOOP FLOW:
+HUMAN-IN-THE-LOOP FOR SOURCE SELECTION:
 
-When you find useful webpages:
+When you find useful webpages from web_search:
 
-DO NOT ask the user for approval in normal text.
-
-DO NOT write:
-"Would you like me to scrape these pages?"
+DO NOT call scrape_source directly for each URL.
 
 Instead:
 
-Call scrape_source or crawl_source.
+Call request_source_approval with the list of discovered URLs.
 
-The HumanInTheLoopMiddleware will automatically interrupt execution
-and request approval from the user.
+The HumanInTheLoopMiddleware will interrupt execution
+and ask the user to SELECT which sources to add.
 
-Never bypass this mechanism.
+IMPORTANT: The user will choose, and the approved URLs will be returned.
 
 
 
 5.
-After the user approves:
+After user approval:
 
-Continue execution.
+You will receive the list of APPROVED URLs.
 
-The approved tool must:
+For each approved URL:
 
-- scrape the webpage
-- save it into the notebook
-- add it to the vector store
+Call sc or crawl_source to save it.
 
-Then:
+After scraping all approved sources:
 
-- call search_sources again
-- answer only from saved notebook sources
+Call search_sources again.
+
+Answer ONLY using saved notebook sources.
 
 
 
 6.
-For deep research:
+The approval flow:
 
-Use deep_web_research when multiple sources are needed.
+request_source_approval(urls: [...])  ← You call this
 
-It only collects URLs.
+User sees: "Select which sources to add"
 
-After collecting URLs:
+User chooses ✅
 
-Use scrape_source or crawl_source for selected URLs.
+You get back: The selected URLs
 
-The middleware handles approval.
+You then scrape: scrape_source(url) for each selected URL
 
 
 
 7.
 Never invent information.
 
-If approved notebook sources do not contain the answer:
+If notebook sources do not contain the answer:
 
 Say that more sources are required.
 
@@ -162,15 +164,15 @@ Say that more sources are required.
 8.
 Source priority:
 
-Highest priority:
+Highest:
 1. Approved notebook sources
 
-Lower priority:
+Lower:
 2. Newly approved scraped sources
 
 Never use:
-- search snippets
 - unapproved webpages
+- search snippets
 - assumptions
 
 
@@ -317,6 +319,37 @@ DESCRIPTION:
 
 
     @tool
+    def request_source_approval(
+            urls: list[str]
+    ) -> str:
+        """
+        Ask user to approve and select sources from discovered URLs.
+        This tool is protected by HumanInTheLoopMiddleware.
+        
+        Provides list of URLs and asks user which ones to add to notebook.
+        User must explicitly select before sc
+        
+        Args:
+            urls: List of URLs discovered from web search
+            
+        Returns:
+            Confirmation message with approved URLs
+        """
+        
+        print(
+            f"🔗 REQUESTING APPROVAL FOR {len(urls)} URLs:"
+        )
+        
+        for i, url in enumerate(urls, 1):
+            print(f"  {i}. {url}")
+        
+        return (
+            f"Requesting user approval for {len(urls)} discovered sources. "
+            "Please wait for user to select which sources to add."
+        )
+
+    
+    @tool
     def scrape_source(
             url:str
     )->str:
@@ -351,6 +384,7 @@ DESCRIPTION:
             content=content
         )
 
+        used_sources.add(source.name)
 
         print(
             "✅ SAVED:",
@@ -413,10 +447,12 @@ DESCRIPTION:
 
             if content:
 
-                store.add(
+                source = store.add(
                     name=title,
                     content=content
                 )
+
+                used_sources.add(source.name)
 
                 count+=1
 
@@ -492,6 +528,7 @@ DESCRIPTION:
         list_sources,
         get_source,
         web_search,
+        request_source_approval,
         scrape_source,
         crawl_source,
         deep_web_research
@@ -510,43 +547,25 @@ DESCRIPTION:
 checkpointer = InMemorySaver()
 
 
-
 def build_agent():
-
-
     return create_agent(
-
         model=MODEL,
-
         system_prompt=SYSTEM_PROMPT,
-
         tools=make_tools(
             store,
             set()
         ),
-
-
         checkpointer=checkpointer,
-
-
         middleware=[
-
             HumanInTheLoopMiddleware(
-
                 interrupt_on={
-
-                    "scrape_source":True,
-
-                    "crawl_source":True
-
+                    "request_source_approval": True,
+                    "scrape_source": True,
+                    "crawl_source": True
                 }
-
             )
-
         ]
-
     )
-
 
 
 agent = build_agent()
@@ -600,26 +619,60 @@ def answer(
 
     if "__interrupt__" in result:
 
+        # Extract interrupt information
+        interrupt_value = result["__interrupt__"][0].value
+        interrupt_text = "Please approve the sources to continue."
+        
+        # Extract tool name and URLs from the interrupt
+        tool_name = None
+        urls = []
+        
+        try:
+            if hasattr(interrupt_value, 'name'):
+                tool_name = interrupt_value.name
+            
+            if hasattr(interrupt_value, 'args') and isinstance(interrupt_value.args, dict):
+                # Handle request_source_approval (multiple URLs)
+                if 'urls' in interrupt_value.args:
+                    urls = interrupt_value.args.get('urls', [])
+                # Handle scrape_source / crawl_source (single URL)
+                elif 'url' in interrupt_value.args:
+                    urls = [interrupt_value.args['url']]
+        except:
+            pass
 
         return Answer(
-
-            text=str(
-                result["__interrupt__"][0].value
-            ),
-
-            sources=[],
-
-            interrupt=True
-
+            text=interrupt_text,
+            sources=list(used_sources),
+            interrupt=True,
+            approval_urls=urls,
+            tool_name=tool_name
         )
 
 
-
-    interrupt = result["__interrupt__"][0].value
-
+    # Extract the final answer from messages
+    final_message = "No response"
+    
+    if result.get("messages"):
+        last_msg = result["messages"][-1]
+        content = getattr(last_msg, 'content', None)
+        
+        if content:
+            # Handle list of content blocks (Gemini format)
+            if isinstance(content, list):
+                text_parts = []
+                for block in content:
+                    if isinstance(block, dict):
+                        if block.get('type') == 'text':
+                            text_parts.append(block.get('text', ''))
+                    else:
+                        text_parts.append(str(block))
+                final_message = ''.join(text_parts)
+            else:
+                final_message = str(content)
 
     return Answer(
-        text="Waiting for approval",
-        sources=[],
-        interrupt=True,
+        text=final_message,
+        sources=list(used_sources),
+        interrupt=False,
     )

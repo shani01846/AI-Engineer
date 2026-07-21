@@ -42,7 +42,7 @@ def scrape_web(url: str) -> str:
         client = get_client()
         result = client.scrape_url(
             url,
-            params={"formats": ["markdown"]}
+            formats=["markdown"]
         )
 
         if hasattr(result, "markdown"):
@@ -63,12 +63,10 @@ def crawl_web(url: str) -> list[dict]:
         client = get_client()
         result = client.crawl_url(
             url,
-            params={
-                "limit": 5,
-                "scrapeOptions": {
-                    "formats": ["markdown"]
-                },
-            },
+            limit=5,
+            scrapeOptions={
+                "formats": ["markdown"]
+            }
         )
 
         if hasattr(result, "data"):

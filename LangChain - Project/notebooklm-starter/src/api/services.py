@@ -14,6 +14,7 @@ from __future__ import annotations
 
 
 import uuid
+import datetime
 
 
 from langgraph.types import Command
@@ -230,12 +231,24 @@ def run_chat(
         for name in result.sources
     ]
 
+    # Ensure result.text is a string
+    answer_text = result.text
+    if isinstance(answer_text, list):
+        # Handle list of content blocks
+        text_parts = []
+        for block in answer_text:
+            if isinstance(block, dict):
+                if block.get('type') == 'text':
+                    text_parts.append(block.get('text', ''))
+            else:
+                text_parts.append(str(block))
+        answer_text = ''.join(text_parts)
+    else:
+        answer_text = str(answer_text) if answer_text else "No response"
 
+    response = ChatResponse(
 
-
-    return ChatResponse(
-
-        answer=result.text,
+        answer=answer_text,
 
         citations=citations,
 
@@ -243,7 +256,38 @@ def run_chat(
 
         thread_id=thread_id,
 
+        interrupt=result.interrupt,
+
     )
+
+    # If interrupted, create approval data
+    if result.interrupt:
+        from api.schemas import ApprovalData, ApprovalAction
+        
+        actions = []
+        urls = result.approval_urls or []
+        
+        # Determine approval type based on tool name
+        approval_type = "scrape_confirmation"
+        if result.tool_name == "request_source_approval":
+            approval_type = "source_selection"
+        
+        for url in urls:
+            actions.append(
+                ApprovalAction(
+                    name=result.tool_name or "scurce",
+                    args={"url": url}
+                )
+            )
+        
+        response.approval = ApprovalData(
+            status="waiting",
+            actions=actions,
+            urls=urls,
+            approval_type=approval_type
+        )
+
+    return response
 
 
 
@@ -330,107 +374,168 @@ def resume_chat(
 # STUDIO
 # ------------------------------------------------------------------------------
 
-
 ARTIFACTS = [
-
     ArtifactKind(
-
-        key="infographic",
-
-        title="Infographic",
-
-        icon="📊",
-
-        status="planned",
-    ),
-
-
-    ArtifactKind(
-
-        key="powerpoint",
-
-        title="PowerPoint",
-
-        icon="📑",
-
-        status="planned",
-    ),
-
-
-    ArtifactKind(
-
         key="summary",
-
         title="Summary",
-
         icon="📄",
-
-        status="planned",
+        status="ready",
     ),
-
-
     ArtifactKind(
-
-        key="faq",
-
-        title="FAQ",
-
-        icon="❓",
-
-        status="planned",
+        key="powerpoint",
+        title="PowerPoint",
+        icon="📑",
+        status="ready",
     ),
-
+    ArtifactKind(
+        key="faq",
+        title="FAQ",
+        icon="❓",
+        status="ready",
+    ),
+    ArtifactKind(
+        key="quiz",
+        title="Quiz",
+        icon="🧠",
+        status="ready",
+    ),
+    ArtifactKind(
+        key="infographic",
+        title="Infographic",
+        icon="📊",
+        status="ready",
+    ),
 ]
 
 
-
 _ARTIFACTS_BY_KEY = {
-
     a.key:a
-
     for a in ARTIFACTS
-
 }
 
 
-
-
-
 def list_artifacts():
-
     return ARTIFACTS
-
-
-
 
 
 def generate_artifact(
     kind: str,
     impl: str
 ) -> Note:
+    """Generate an artifact based on active sources."""
+    
+    artifact = _ARTIFACTS_BY_KEY.get(kind)
+    title = artifact.title if artifact else "Artifact"
+    
+    try:
+        # Get all active sources
+        active_sources = store.list()
+        active_sources = [s for s in active_sources if s.active]
+        
+        if not active_sources:
+            raise ComingSoon(
+                f"Please add sources first to generate a {title}."
+            )
+        
+        # Combine all source content
+        combined_content = "\n\n---\n\n".join(
+            f"## {s.name}\n{s.content}"
+            for s in active_sources
+        )
+        
+        # Use the chat model to generate the artifact
+        try:
+            from agents.chat import MODEL
+            from langchain_core.messages import HumanMessage
+        except Exception as e:
+            raise ComingSoon(f"Failed to load model: {str(e)}")
+        
+        prompts = {
+            "summary": f"""Based on the following sources, write a comprehensive executive summary (500-800 words):
 
+{combined_content}
 
-    artifact = (
-        _ARTIFACTS_BY_KEY.get(kind)
-    )
+Provide a well-structured summary with clear headings.""",
+            
+            "powerpoint": f"""Based on the following sources, create presentation slide content with 6-8 slides. 
+For each slide, provide:
+- SLIDE TITLE
+- Bullet points (3-5 per slide)
 
+{combined_content}
 
-    title = (
+Create engaging, clear slide content suitable for a PowerPoint presentation.""",
+            
+            "faq": f"""Based on the following sources, create a FAQ (Frequently Asked Questions) document with 8-10 questions.
+Format each Q&A as:
+Q: [Question]
+A: [Answer]
 
-        artifact.title
+{combined_content}
 
-        if artifact
+Ensure questions are practical and answers are clear and concise.""",
+            
+            "quiz": f"""Based on the following sources, create a quiz with 10 multiple-choice questions.
+Format each question as:
+Q#: [Question]
+A) [Option A]
+B) [Option B]
+C) [Option C]
+D) [Option D]
+Answer: [Correct option letter]
 
-        else "Artifact"
+{combined_content}
 
-    )
+Create questions that test understanding of the key concepts.""",
+            
+            "infographic": f"""Based on the following sources, create a text-based infographic outline.
+Include:
+- Key statistics
+- Visual ASCII representation suggestions
+- Important points
+- Data relationships
 
+{combined_content}
 
-    raise ComingSoon(
+Present information in a structured, visually organized way.""",
+        }
+        
+        prompt = prompts.get(kind, prompts["summary"])
+        
+        response = MODEL.invoke([
+            HumanMessage(content=prompt)
+        ])
+        
+        content = response.content
+        if isinstance(content, list):
+            # Handle Gemini's content blocks format
+            text_parts = []
+            for block in content:
+                if isinstance(block, dict) and block.get('type') == 'text':
+                    text_parts.append(block.get('text', ''))
+                elif isinstance(block, str):
+                    text_parts.append(block)
+            content = ''.join(text_parts)
+        
+        note = Note(
+            id=uuid.uuid4().hex[:8],
+            title=f"{title} - {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}",
+            content=str(content)
+        )
+        
+        _NOTES[note.id] = note
+        return note
+        
+    except ComingSoon:
+        raise
+    except Exception as e:
+        import traceback
+        error_details = traceback.format_exc()
+        print(f"Error in generate_artifact: {error_details}")
+        raise ComingSoon(
+            f"Error generating {title}: {str(e)}"
+        )
 
-        f"{title} generation is coming soon."
-
-    )
 
 
 

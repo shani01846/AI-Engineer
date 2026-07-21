@@ -115,41 +115,12 @@ ApprovalStatus = Literal[
 ]
 
 
-ApprovalAction = Literal[
-    "scrape_source",
-    "crawl_source",
-]
-
-
 class ApprovalAction(BaseModel):
+    """Action that requires approval."""
 
     name: str
 
     args: dict
-
-
-class ApprovalData(BaseModel):
-
-    status: str
-
-    actions: list[ApprovalAction] = Field(
-        default_factory=list
-    )
-class ApprovalRequest(BaseModel):
-    """
-    User decision after HITL interrupt.
-    """
-
-    thread_id: str
-
-
-    decision: Literal[
-        "approve",
-        "reject",
-    ]
-
-
-
 
 
 class ApprovalData(BaseModel):
@@ -159,16 +130,33 @@ class ApprovalData(BaseModel):
 
     status: ApprovalStatus = "none"
 
-
-    tool: ApprovalAction | None = None
-
-
-    message: str | None = None
-
+    actions: list[ApprovalAction] = Field(
+        default_factory=list
+    )
 
     urls: list[str] = Field(
         default_factory=list
     )
+    
+    # Type of approval: "source_selection" for request_source_approval, 
+    # "scrape_confirmation" for scrape_source/crawl_source
+    approval_type: Literal["source_selection", "scrape_confirmation"] = "scrape_confirmation"
+
+
+class ApprovalRequest(BaseModel):
+    """
+    User decision after HITL interrupt.
+    """
+
+    thread_id: str
+
+    decision: Literal[
+        "approve",
+        "reject",
+    ]
+    
+    # Selected URLs (for request_source_approval)
+    selected_urls: list[str] | None = None
 
 
 

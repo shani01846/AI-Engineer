@@ -61,67 +61,107 @@ function showApproval(data) {
 
   div.className = "msg ai";
 
+  const approval_type = data.approval?.approval_type || "scrape_confirmation";
+  const urls = data.approval?.urls || [];
 
-  let html = `
-    <div>
-      <strong>🔎 Sources found</strong>
-    </div>
-  `;
+  if (approval_type === "source_selection") {
+    // Source selection UI with checkboxes
+    let html = `
+      <div>
+        <strong>🔗 Found ${urls.length} potential sources</strong>
+      </div>
+      <div style="margin: 10px 0; font-size: 14px;">
+        Select which sources to add to your notebook:
+      </div>
+    `;
 
+    html += '<div style="margin: 10px 0;">';
 
-  const actions =
-    data.approval?.urls || [];
-
-
-  if(actions.length){
-
-    html += "<ul>";
-
-    actions.forEach(url=>{
+    urls.forEach((url, idx) => {
       html += `
-        <li>
-          ${escapeHtml(url)}
-        </li>
+        <label style="display: block; margin: 8px 0; cursor: pointer;">
+          <input type="checkbox" class="url-checkbox" data-url="${escapeHtml(url)}" checked />
+          <span style="margin-left: 8px;">${escapeHtml(url.substring(0, 60))}${url.length > 60 ? '…' : ''}</span>
+        </label>
       `;
     });
 
+    html += '</div>';
 
-    html += "</ul>";
+    html += `
+      <button class="approve-btn" style="margin-right: 8px;">
+        ✅ Add Selected
+      </button>
+
+      <button class="reject-btn">
+        ❌ Cancel
+      </button>
+    `;
+
+    div.innerHTML = html;
+
+    div.querySelector(".approve-btn")
+      .onclick = () => {
+        const checkboxes = div.querySelectorAll(".url-checkbox:checked");
+        const selected = Array.from(checkboxes).map(cb => cb.dataset.url);
+        approveAction("approve", selected);
+      };
+
+    div.querySelector(".reject-btn")
+      .onclick = () => approveAction("reject", []);
+
+  } else {
+    // Scrape confirmation UI
+    let html = `
+      <div>
+        <strong>🔎 Sources found</strong>
+      </div>
+    `;
+
+    if(urls.length){
+
+      html += "<ul>";
+
+      urls.forEach(url=>{
+        html += `
+          <li>
+            ${escapeHtml(url)}
+          </li>
+        `;
+      });
+
+      html += "</ul>";
+    }
+
+    html += `
+      <div>
+        Add these sources to notebook?
+      </div>
+
+      <button class="approve-btn">
+        ✅ Approve
+      </button>
+
+      <button class="reject-btn">
+        ❌ Reject
+      </button>
+    `;
+
+    div.innerHTML = html;
+
+    div.querySelector(".approve-btn")
+      .onclick = ()=>approveAction("approve");
+
+    div.querySelector(".reject-btn")
+      .onclick = ()=>approveAction("reject");
   }
-
-
-  html += `
-    <div>
-      Add these sources to notebook?
-    </div>
-
-    <button class="approve-btn">
-      ✅ Approve
-    </button>
-
-    <button class="reject-btn">
-      ❌ Reject
-    </button>
-  `;
-
-
-  div.innerHTML = html;
-
-
-  div.querySelector(".approve-btn")
-    .onclick = ()=>approveAction("approve");
-
-
-  div.querySelector(".reject-btn")
-    .onclick = ()=>approveAction("reject");
-
 
   $("messages").appendChild(div);
 
   $("messages").scrollTop =
       $("messages").scrollHeight;
 }
-async function approveAction(decision){
+async function approveAction(decision, selected_urls = []){
 
 
   const pending = addMessage(
@@ -132,14 +172,19 @@ async function approveAction(decision){
 
   try {
 
+    const body = {
+      thread_id: state.threadId,
+      decision: decision
+    };
+
+    if (selected_urls && selected_urls.length > 0) {
+      body.selected_urls = selected_urls;
+    }
 
     const data = await api.send(
       "POST",
       "/api/chat/approve",
-      {
-        thread_id: state.threadId,
-        decision: decision
-      }
+      body
     );
 
 
@@ -320,31 +365,21 @@ pending.remove();
 
 
 
-if(
-    data.answer &&
-    data.answer.includes("action_requests")
-){
+if(data.interrupt){
 
-    try {
+    // Save thread ID for approval
+    state.threadId = data.thread_id || state.threadId;
 
-        const interrupt =
-            JSON.parse(
-                data.answer.replaceAll("'", '"')
-            );
-
-        showApprovalFromInterrupt(
-            interrupt
-        );
-
+    // Show the interrupt message
+    if(data.answer){
+        addMessage("ai", data.answer);
     }
-    catch(e){
 
-        addMessage(
-            "system",
-            "Approval parsing failed"
-        );
-
-    }
+    // Show approval UI
+    showApproval({
+        approval: data.approval,
+        threadId: data.thread_id
+    });
 
 }
 else if(
