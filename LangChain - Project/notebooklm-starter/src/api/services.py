@@ -13,12 +13,14 @@ Supports:
 from __future__ import annotations
 
 
-import uuid
 import datetime
-
+import re
+import uuid
+from pathlib import Path
 
 from langgraph.types import Command
-
+from pptx import Presentation
+from pptx.util import Inches
 
 from api.schemas import (
     ArtifactKind,
@@ -34,6 +36,10 @@ from api.schemas import (
 from agents import chat
 
 from core.store import store
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+ARTIFACTS_DIR = PROJECT_ROOT / "artifacts"
 
 
 
@@ -252,6 +258,8 @@ def run_chat(
 
         citations=citations,
 
+        tools_used=result.tools_used or [],
+
         engine="gemini",
 
         thread_id=thread_id,
@@ -418,6 +426,78 @@ def list_artifacts():
     return ARTIFACTS
 
 
+def _parse_powerpoint_outline(content: str) -> list[dict[str, list[str] | str]]:
+    """Parse slide output produced by the LLM into structured slide titles/bullets."""
+    raw_lines = [line.strip() for line in str(content).splitlines() if line.strip()]
+    slides: list[dict[str, list[str] | str]] = []
+    current_title: str | None = None
+    current_bullets: list[str] = []
+
+    def flush_slide() -> None:
+        nonlocal current_title, current_bullets
+        if not current_title and not current_bullets:
+            return
+        slides.append({
+            "title": current_title or f"Slide {len(slides) + 1}",
+            "bullets": current_bullets or ["No supporting bullets provided."],
+        })
+        current_title = None
+        current_bullets = []
+
+    for line in raw_lines:
+        slide_header_match = re.match(r"^(?:SLIDE\s*)?(\d+|[A-Z0-9 _-]+)\s*[:\-]\s*(.+)$", line, re.IGNORECASE)
+        if line.upper().startswith("SLIDE TITLE") or re.match(r"^TITLE\s*[:\-]", line, re.IGNORECASE):
+            flush_slide()
+            current_title = line.split(":", 1)[1].strip() if ":" in line else line.replace("SLIDE TITLE", "", 1).strip().strip("-:")
+            continue
+        if slide_header_match:
+            flush_slide()
+            current_title = slide_header_match.group(2).strip() or f"Slide {len(slides) + 1}"
+            continue
+        if line.upper().startswith("- ") or line.startswith("• "):
+            bullet = line[2:].strip() if line.startswith("- ") else line[2:].strip()
+            current_bullets.append(bullet)
+            continue
+        if current_title is None and len(line) < 120 and not line.startswith("#"):
+            current_title = line
+            continue
+        if current_title is not None and line and not line.startswith("#"):
+            current_bullets.append(line)
+
+    flush_slide()
+    return slides or [{"title": "Key Insights", "bullets": ["Overview generated from the selected sources."]}]
+
+
+def _create_powerpoint_file(content: str, title: str) -> str:
+    """Generate a real .pptx file from the AI-produced slide outline."""
+    ARTIFACTS_DIR.mkdir(exist_ok=True)
+
+    prs = Presentation()
+    prs.slide_width = Inches(13.333)
+    prs.slide_height = Inches(7.5)
+
+    slide_specs = _parse_powerpoint_outline(content)
+    for slide_spec in slide_specs:
+        slide = prs.slides.add_slide(prs.slide_layouts[1])
+        slide.shapes.title.text = str(slide_spec["title"])
+        body = slide.shapes.placeholders[1]
+        tf = body.text_frame
+        tf.clear()
+        for index, bullet in enumerate(slide_spec["bullets"]):
+            if index == 0:
+                p = tf.paragraphs[0]
+            else:
+                p = tf.add_paragraph()
+            p.text = str(bullet)
+            p.level = 0
+
+    safe_title = re.sub(r"[^a-zA-Z0-9_-]+", "_", title.lower()).strip("_") or "artifact"
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_path = ARTIFACTS_DIR / f"{safe_title}_{timestamp}.pptx"
+    prs.save(str(output_path))
+    return str(output_path)
+
+
 def generate_artifact(
     kind: str,
     impl: str
@@ -508,7 +588,6 @@ Present information in a structured, visually organized way.""",
         
         content = response.content
         if isinstance(content, list):
-            # Handle Gemini's content blocks format
             text_parts = []
             for block in content:
                 if isinstance(block, dict) and block.get('type') == 'text':
@@ -516,11 +595,22 @@ Present information in a structured, visually organized way.""",
                 elif isinstance(block, str):
                     text_parts.append(block)
             content = ''.join(text_parts)
+
+        content_text = str(content)
+        if kind == "powerpoint":
+            output_path = _create_powerpoint_file(content_text, title)
+            note_content = (
+                f"PowerPoint generated successfully.\n\n"
+                f"File: {output_path}\n\n"
+                f"Slide outline:\n{content_text}"
+            )
+        else:
+            note_content = content_text
         
         note = Note(
             id=uuid.uuid4().hex[:8],
             title=f"{title} - {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}",
-            content=str(content)
+            content=note_content
         )
         
         _NOTES[note.id] = note

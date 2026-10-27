@@ -40,6 +40,10 @@ const SUGGESTIONS = [
   "What are the key risks to the subscription strategy?",
 ];
 
+function formatToolLabel(tool) {
+  return tool.replace(/_/g, " ");
+}
+
 function escapeHtml(s) {
   return String(s).replace(
     /[&<>"']/g,
@@ -314,6 +318,67 @@ function clearEmptyState() {
   if (e) e.remove();
 }
 
+const AGENT_TOOL_SEQUENCE = [
+  "search_sources",
+  "web_search",
+  "request_source_approval",
+  "scrape_source",
+  "crawl_source",
+  "search_sources",
+];
+
+function addPendingAgentMessage() {
+  clearEmptyState();
+  const div = document.createElement("div");
+  div.className = "msg ai pending";
+
+  const header = document.createElement("div");
+  header.className = "agent-status";
+  header.innerHTML = "<strong>Agent is working</strong>";
+
+  const list = document.createElement("div");
+  list.className = "agent-tool-list";
+
+  const toolEls = [];
+  AGENT_TOOL_SEQUENCE.forEach((tool, index) => {
+    const pill = document.createElement("span");
+    pill.className = `tool-pill ${index === 0 ? "active" : ""}`;
+    pill.textContent = formatToolLabel(tool);
+    list.appendChild(pill);
+    toolEls.push(pill);
+  });
+
+  div.appendChild(header);
+  div.appendChild(list);
+  $("messages").appendChild(div);
+  $("messages").scrollTop = $("messages").scrollHeight;
+
+  let index = 0;
+  const interval = setInterval(() => {
+    toolEls.forEach((el, i) => {
+      el.classList.toggle("active", i === index);
+      el.classList.toggle("done", i < index);
+    });
+    index = (index + 1) % toolEls.length;
+  }, 650);
+
+  div.dataset.activityInterval = String(interval);
+
+  const liveLabel = document.createElement("div");
+  liveLabel.className = "agent-live-label";
+  liveLabel.textContent = "Using: search_sources";
+  div.appendChild(liveLabel);
+
+  return div;
+}
+
+function stopPendingAgentMessage(div) {
+  if (!div) return;
+  const interval = Number(div.dataset.activityInterval || 0);
+  if (interval) clearInterval(interval);
+  div.classList.remove("pending");
+}
+
 function addMessage(role, text, { pending = false } = {}) {
   clearEmptyState();
   const div = document.createElement("div");
@@ -327,14 +392,33 @@ function addMessage(role, text, { pending = false } = {}) {
 function decorateAnswer(div, data) {
   div.className = "msg ai";
   div.textContent = data.answer;
+
+  const meta = document.createElement("div");
+  meta.className = "meta";
+
+  const parts = [];
+
   if (data.citations?.length) {
-    const meta = document.createElement("div");
-    meta.className = "meta";
-    meta.innerHTML = `<div><span class="label">sources:</span> ${data.citations
-      .map((c) => `<span class="chip">${escapeHtml(c.source)}</span>`)
-      .join("")}</div>`;
+    parts.push(
+      `<div><span class="label">sources:</span> ${data.citations
+        .map((c) => `<span class="chip">${escapeHtml(c.source)}</span>`)
+        .join("")}</div>`
+    );
+  }
+
+  if (data.tools_used?.length) {
+    parts.push(
+      `<div><span class="label">tools:</span> ${data.tools_used
+        .map((tool) => `<span class="chip tool-chip">${escapeHtml(formatToolLabel(tool))}</span>`)
+        .join("")}</div>`
+    );
+  }
+
+  if (parts.length) {
+    meta.innerHTML = parts.join("");
     div.appendChild(meta);
   }
+
   const actions = document.createElement("div");
   actions.className = "msg-actions";
   const save = document.createElement("button");
@@ -347,7 +431,7 @@ function decorateAnswer(div, data) {
 
 async function sendMessage(message) {
   addMessage("user", message);
-  const pending = addMessage("ai", "thinking…", { pending: true });
+  const pending = addPendingAgentMessage();
   $("send").disabled = true;
   try {
     const data = await api.send(
@@ -361,6 +445,7 @@ async function sendMessage(message) {
 
 
 
+stopPendingAgentMessage(pending);
 pending.remove();
 
 
@@ -419,9 +504,14 @@ async function loadArtifacts() {
 }
 
 async function generateArtifact(a) {
+  const pending = addMessage("ai", `Generating ${a.title}…`, { pending: true });
   try {
-    await api.send("POST", "/api/studio/generate", { kind: a.key });
+    const note = await api.send("POST", "/api/studio/generate", { kind: a.key });
+    pending.remove();
+    decorateAnswer(addMessage("ai", ""), { answer: note.content, citations: [] });
+    await loadNotes();
   } catch (e) {
+    pending.remove();
     addMessage("system", `⚠ ${e.message}`);
   }
 }

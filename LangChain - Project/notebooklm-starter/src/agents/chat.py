@@ -26,10 +26,55 @@ class Answer:
     interrupt: bool = False
     approval_urls: list[str] = None  # URLs requiring approval
     tool_name: str = None  # Name of the tool that triggered interrupt
+    tools_used: list[str] = None  # Tools invoked during the execution
     
     def __post_init__(self):
         if self.approval_urls is None:
             self.approval_urls = []
+        if self.tools_used is None:
+            self.tools_used = []
+
+
+def _extract_tools_used(result: dict) -> list[str]:
+    """Best-effort extraction of tool names from LangGraph messages."""
+    tools: list[str] = []
+    seen: set[str] = set()
+
+    messages = result.get("messages", []) if isinstance(result, dict) else []
+
+    for message in messages:
+        if isinstance(message, dict):
+            names = []
+            if message.get("name"):
+                names.append(str(message["name"]))
+            for call in message.get("tool_calls") or []:
+                if isinstance(call, dict) and call.get("name"):
+                    names.append(str(call["name"]))
+            for name in names:
+                if name and name not in seen:
+                    seen.add(name)
+                    tools.append(name)
+            continue
+
+        if hasattr(message, "name") and getattr(message, "name"):
+            name = str(message.name)
+            if name not in seen:
+                seen.add(name)
+                tools.append(name)
+
+        tool_calls = getattr(message, "tool_calls", None) or []
+        if isinstance(tool_calls, list):
+            for call in tool_calls:
+                name = None
+                if isinstance(call, dict):
+                    name = call.get("name")
+                elif hasattr(call, "name"):
+                    name = getattr(call, "name")
+                if name and str(name) not in seen:
+                    seen.add(str(name))
+                    tools.append(str(name))
+
+    return tools
 
 
 
@@ -188,8 +233,14 @@ Never use:
 
 def make_tools(
         store: SourceStore,
-        used_sources:set[str]
+        used_sources:set[str],
+        used_tools:set[str],
 ):
+
+
+    def track(name:str):
+        used_tools.add(name)
+        return name
 
 
     @tool
@@ -197,6 +248,8 @@ def make_tools(
         """
         Search notebook vector database.
         """
+
+        track("search_sources")
 
         print(
             "🔎 VECTOR SEARCH:",
@@ -230,6 +283,8 @@ def make_tools(
         List available notebook sources.
         """
 
+        track("list_sources")
+
         return "\n".join(
             f"{s.id}: {s.name}"
             for s in store.list()
@@ -244,6 +299,8 @@ def make_tools(
         """
         Get full source content.
         """
+
+        track("get_source")
 
         source = store.get(source_id)
 
@@ -356,7 +413,7 @@ DESCRIPTION:
         """
         Save approved webpage into notebook.
         """
-
+        track("scrape_source")
         print(
             "📥 SCRAPING:",
             url
@@ -547,13 +604,15 @@ DESCRIPTION:
 checkpointer = InMemorySaver()
 
 
-def build_agent():
+def build_agent(used_tools: set[str] | None = None):
+    active_tools = used_tools if used_tools is not None else set()
     return create_agent(
         model=MODEL,
         system_prompt=SYSTEM_PROMPT,
         tools=make_tools(
             store,
-            set()
+            set(),
+            active_tools,
         ),
         checkpointer=checkpointer,
         middleware=[
@@ -586,6 +645,7 @@ def answer(
 
 
     used_sources=set()
+    used_tools=set()
 
 
     config={
@@ -599,6 +659,8 @@ def answer(
     }
 
 
+
+    agent = build_agent(used_tools)
 
     result = agent.invoke(
 
@@ -614,6 +676,8 @@ def answer(
         config=config
 
     )
+
+    used_tools = used_tools or set()
 
 
 
@@ -646,7 +710,8 @@ def answer(
             sources=list(used_sources),
             interrupt=True,
             approval_urls=urls,
-            tool_name=tool_name
+            tool_name=tool_name,
+            tools_used=sorted(set(_extract_tools_used(result)) | used_tools),
         )
 
 
@@ -675,4 +740,5 @@ def answer(
         text=final_message,
         sources=list(used_sources),
         interrupt=False,
+        tools_used=sorted(set(_extract_tools_used(result)) | used_tools),
     )
